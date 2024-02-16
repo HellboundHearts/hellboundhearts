@@ -12,7 +12,7 @@ function AddBooks() {
   const [condition, setCondition] = useState("");
   const [price, setPrice] = useState(0);
   const [imageUrl, setImageUrl] = useState("");
-
+  console.log("test");
   //handler functions for the inputs
   const handleBookId = (e) => setBookId(e.target.value);
   const handleTitle = (e) => setTitle(e.target.value);
