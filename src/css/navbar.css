@@ -5,6 +5,8 @@
     height: 80px;
      outline: 1px solid black; /* To remove after the tests  */
     list-style-type: none;/* Remove the dot */
+    font-family: garamond;
+    font-weight: 500;
     
 }
 .Box{
@@ -17,4 +19,7 @@
 .Navbar a{
     text-decoration:none;
     color:black;/* Text color inside the link*/
+}
+.Navbar a:hover{
+    color: chocolate;
 }
