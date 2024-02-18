@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import '../css/navbar.css'
-
+import "../css/navbar.css";
+import Books from "../pages/Books";
 
 function Navbar() {
   return (
     <>
       <ul className="Navbar">
         <li className="Box">
-          <Link to="/genres">Genres</Link>
+          <Link to="/books">Books</Link>
         </li>
         <li className="Box">
           <Link to="/about">About</Link>

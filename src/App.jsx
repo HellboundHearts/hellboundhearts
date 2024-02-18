@@ -2,16 +2,15 @@ import React, { useState, useEffect } from "react";
 import Header from "./components/Header.jsx";
 import Navbar from "./components/Navbar.jsx";
 import { Routes, Route } from "react-router-dom";
-import Genres from "./pages/Genres.jsx";
+import Books from "./pages/Books.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import Shipping from "./pages/Shipping.jsx";
 //import HomePage from "./pages/HomePage";
-import NewArrivals from "./components/NewArrivals.jsx";
-import BookListPage from "./components/BookListPage.jsx"
+
 import NotFound from "./pages/NotFound.jsx";
 import HomePage from "./pages/HomePage.jsx";
-import BookDetailsPage from "./pages/BookDetails.jsx"
+import BookDetailsPage from "./pages/BookDetails.jsx";
 
 function App() {
   const [books, setBooks] = useState([]);
@@ -26,21 +25,17 @@ function App() {
     <div>
       <Header />
       <Navbar />
-      {/* <section className="FrontImage">
-        <img src="src/assets/illustrations/Home_01.jpg"></img>
-      </section> */}
 
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/genres" element={<Genres />} />
+
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/shipping" element={<Shipping />} />
-        <Route path="/books" element={<BookListPage />} />
+        <Route path="/books" element={<Books />} />
         <Route path="/books/:bookId" element={<BookDetailsPage />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
-      <NewArrivals books={books} />
     </div>
   );
 }
