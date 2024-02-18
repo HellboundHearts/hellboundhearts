@@ -14,7 +14,7 @@ function BookListPage() {
     const getAllBooks = () => {
         axios.get(`${API_URL}/books?_embed=tasks`)
             .then((response) => {
-                console.log(response.data)
+                
                 setBooks(response.data);
             })
             .catch((error) => {
@@ -38,11 +38,11 @@ function BookListPage() {
                         <div className="ProjectCard card" key={bookDetails.id} >
                             <Link to={`/books/${bookDetails.id}`}>
                                 <h3>{bookDetails.title}</h3>
-                                <h3>{bookDetails.author}</h3>
+                                {/* <h3>{bookDetails.author}</h3>
                                 <h3>{bookDetails.year}</h3>
                                 <h3>{bookDetails.genre}</h3>
                                 <h3>{bookDetails.price}</h3>
-                                <h3><img src={bookDetails.image_url}></img></h3>
+                                <h3><img src={bookDetails.image_url}></img></h3> */}
                             </Link>
                         </div>
                     )

@@ -23,3 +23,9 @@
 .Navbar a:hover{
     color: chocolate;
 }
+/****  480px is the maximum size for mobiles  ****/
+@media (max-width: 480px) {
+    .Navbar{
+        flex-direction: column;/* The menu becomes vertical   */
+    }
+  }
