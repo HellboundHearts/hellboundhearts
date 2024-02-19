@@ -13,7 +13,7 @@ const HomePage = () => {
           src="src/assets/illustrations/Home_01.jpg"
         ></img>
 
-        <NewArrivals books={books} />
+        {/* <NewArrivals books={books} /> */}
       </section>
     </div>
   );

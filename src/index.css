@@ -2,3 +2,15 @@
 .thinking{
     width:300px;
 }
+
+
+.FrontImage{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.homepage-image{
+    width:70vw;
+    height: 50vh;
+}
