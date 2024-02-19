@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "../index.css";
+import "../css/navbar.css"
 import NewArrivals from "../components/NewArrivals";
+import Navbar from './../components/Navbar';
 
 const HomePage = () => {
   const [books, setBooks] = useState([]);

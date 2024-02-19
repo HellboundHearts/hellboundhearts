@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 114,
+            "activePatchIndex": 123,
             "patches": [
                 {
                     "date": 1708124974528,
@@ -464,6 +464,42 @@
                 {
                     "date": 1708354723793,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,23 @@\n+import React, { useState } from \"react\";\r\n+import \"../index.css\";\r\n+import NewArrivals from \"../components/NewArrivals\";\r\n+\r\n+\r\n+const HomePage = () => {\r\n+  const [books, setBooks] = useState([]);\r\n+\r\n+  return (\r\n+    <div>\r\n+      <section className=\"FrontImage\">\r\n+        <img\r\n+          className=\"homepage-image\"\r\n+          src=\"src/assets/illustrations/Home_01.jpg\"\r\n+        ></img>\r\n+        \r\n+        {/* <NewArrivals books={books} /> */}\r\n+      </section>\r\n+    </div>\r\n+  );\r\n+};\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708358704567,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n import React, { useState } from \"react\";\r\n import \"../index.css\";\r\n import NewArrivals from \"../components/NewArrivals\";\r\n \r\n-\r\n const HomePage = () => {\r\n   const [books, setBooks] = useState([]);\r\n \r\n   return (\r\n@@ -12,35 +11,12 @@\n         <img\r\n           className=\"homepage-image\"\r\n           src=\"src/assets/illustrations/Home_01.jpg\"\r\n         ></img>\r\n-        \r\n+\r\n         {/* <NewArrivals books={books} /> */}\r\n       </section>\r\n     </div>\r\n   );\r\n };\r\n \r\n export default HomePage;\r\n-import React, { useState } from \"react\";\r\n-import \"../index.css\";\r\n-import NewArrivals from \"../components/NewArrivals\";\r\n-\r\n-\r\n-const HomePage = () => {\r\n-  const [books, setBooks] = useState([]);\r\n-\r\n-  return (\r\n-    <div>\r\n-      <section className=\"FrontImage\">\r\n-        <img\r\n-          className=\"homepage-image\"\r\n-          src=\"src/assets/illustrations/Home_01.jpg\"\r\n-        ></img>\r\n-        \r\n-        <NewArrivals books={books} />\r\n-      </section>\r\n-    </div>\r\n-  );\r\n-};\r\n-\r\n-export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708358717846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n           className=\"homepage-image\"\r\n           src=\"src/assets/illustrations/Home_01.jpg\"\r\n         ></img>\r\n \r\n-        {/* <NewArrivals books={books} /> */}\r\n+        <NewArrivals books={books} />\r\n       </section>\r\n     </div>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1708359747465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n           className=\"homepage-image\"\r\n           src=\"src/assets/illustrations/Home_01.jpg\"\r\n         ></img>\r\n \r\n-        <NewArrivals books={books} />\r\n+        {/* <NewArrivals books={books} /> */}\r\n       </section>\r\n     </div>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1708360873075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n import React, { useState } from \"react\";\r\n import \"../index.css\";\r\n+import \r\n import NewArrivals from \"../components/NewArrivals\";\r\n \r\n const HomePage = () => {\r\n   const [books, setBooks] = useState([]);\r\n"
+                },
+                {
+                    "date": 1708360878843,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React, { useState } from \"react\";\r\n import \"../index.css\";\r\n-import \r\n+import \"../\"\r\n import NewArrivals from \"../components/NewArrivals\";\r\n \r\n const HomePage = () => {\r\n   const [books, setBooks] = useState([]);\r\n"
+                },
+                {
+                    "date": 1708360885007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React, { useState } from \"react\";\r\n import \"../index.css\";\r\n-import \"../\"\r\n+import \"../css/\"\r\n import NewArrivals from \"../components/NewArrivals\";\r\n \r\n const HomePage = () => {\r\n   const [books, setBooks] = useState([]);\r\n"
+                },
+                {
+                    "date": 1708360914570,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import React, { useState } from \"react\";\r\n import \"../index.css\";\r\n-import \"../css/\"\r\n+import \"./css/Navbar\"\r\n import NewArrivals from \"../components/NewArrivals\";\r\n+import Navbar from './../components/Navbar';\r\n \r\n const HomePage = () => {\r\n   const [books, setBooks] = useState([]);\r\n \r\n"
+                },
+                {
+                    "date": 1708360921524,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React, { useState } from \"react\";\r\n import \"../index.css\";\r\n-import \"./css/Navbar\"\r\n+import \"../css/Navbar\"\r\n import NewArrivals from \"../components/NewArrivals\";\r\n import Navbar from './../components/Navbar';\r\n \r\n const HomePage = () => {\r\n"
+                },
+                {
+                    "date": 1708360936409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React, { useState } from \"react\";\r\n import \"../index.css\";\r\n-import \"../css/Navbar\"\r\n+import \"../css/navbar.css\"\r\n import NewArrivals from \"../components/NewArrivals\";\r\n import Navbar from './../components/Navbar';\r\n \r\n const HomePage = () => {\r\n"
                 }
             ],
             "date": 1708124974528,
