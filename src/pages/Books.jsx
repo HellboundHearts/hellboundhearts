@@ -1,13 +1,22 @@
-import React from "react";
-
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import AddBooks from "../components/AddBooks";
+
+const SearchBar = ({ searchTerm, handleSearch }) => (
+  <input
+    type="text"
+    placeholder="Search by title..."
+    value={searchTerm}
+    onChange={handleSearch}
+  />
+);
 
 function Books() {
   const API_URL = "https://books.adaptable.app";
 
   const [books, setBooks] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
 
   const getAllBooks = () => {
     axios
@@ -25,28 +34,59 @@ function Books() {
     getAllBooks();
   }, []);
 
-  return (
-    <div className="ProjectListPage">
-      {books === null ? (
-        <p>Loading...</p>
-      ) : (
-        books.map((bookDetails) => {
-          return (
-            <div className="ProjectCard card" key={bookDetails.id}>
-              <Link to={`/books/${bookDetails.id}`}>
-                <h3>{bookDetails.title}</h3>
-                <h3>{bookDetails.author}</h3>
+  const handleDelete = (bookId) => {
+    axios
+      .delete(`${API_URL}/books/${bookId}`)
+      .then((response) => {
+        getAllBooks();
+        console.log("Book deleted successfully", response.data);
+      })
+      .catch((error) => {
+        console.log("Error deleting the book with id: " + bookId);
+        console.error(error);
+      });
+  };
 
-                <h3>{bookDetails.price}</h3>
+  const handleSearch = (event) => {
+    const searchValue = event.target.value;
+    setSearchTerm(searchValue);
+  };
+
+  const filteredBooks = books
+    ? books.filter((bookDetails) =>
+        bookDetails.title.toLowerCase().includes(searchTerm.toLowerCase())
+      )
+    : [];
+
+  return (
+    <>
+      <AddBooks />
+      <div className="ProjectListPage">
+        <SearchBar searchTerm={searchTerm} handleSearch={handleSearch} />
+
+        {filteredBooks.length === 0 ? (
+          <p>No matching books found.</p>
+        ) : (
+          filteredBooks.map((bookDetails) => (
+            <div className="ProjectCard card" key={bookDetails.id}>
+              <h2>
+                {bookDetails.title}{" "}
+                <button onClick={() => handleDelete(bookDetails.id)}>
+                  Delete
+                </button>{" "}
+              </h2>
+              <h3>{bookDetails.author}</h3>
+              <h3>{bookDetails.price}</h3>
+              <Link to={`/books/${bookDetails.id}`}>
                 <h3>
-                  <img src={bookDetails.image_url}></img>
+                  <img src={bookDetails.image_url} alt={bookDetails.title} />
                 </h3>
               </Link>
             </div>
-          );
-        })
-      )}
-    </div>
+          ))
+        )}
+      </div>
+    </>
   );
 }
 

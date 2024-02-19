@@ -12,6 +12,7 @@ const HomePage = () => {
           className="homepage-image"
           src="src/assets/illustrations/Home_01.jpg"
         ></img>
+
         <NewArrivals books={books} />
       </section>
     </div>
