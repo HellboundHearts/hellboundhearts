@@ -1,9 +1,16 @@
 .ship-container{
-
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content:flex-start;
+    align-items:flex-start;
 }
 .ship-left{
-
+    flex: 1;
+    padding: 20px;
 }
 .ship-right{
-    
+    flex: 1; 
+    padding: 20px;
 }

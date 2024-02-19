@@ -5,7 +5,7 @@ function Shipping() {
             <section className="ship-left">
             <div>
                 <p>
-                    Final prices for shipping will be calculated at checkout depending on weight.
+                    Final prices for shipping will be calculated at checkout depending on weight.<br/>
                     Orders will normally be dispatched within 1-2 working days.
                     Standard delivery on your own risk. We do not cover lost parcels.
                 </p>
