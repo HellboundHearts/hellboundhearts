@@ -1,0 +1,138 @@
+{
+    "sourceFile": "src/index.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 30,
+            "patches": [
+                {
+                    "date": 1708166420715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1708166430039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,3 @@\n+homepage-image{\r\n+    wit\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708166436112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,3 @@\n homepage-image{\r\n-    wit\r\n-}\n-homepage-image\n\\ No newline at end of file\n+    width:60\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708166450178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n homepage-image{\r\n-    width:60\r\n+    width:40px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708166459269,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n homepage-image{\r\n     width:40px;\r\n+    \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708166464788,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n homepage-image{\r\n     width:40px;\r\n-    \r\n+    height:40px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708166585871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n homepage-image{\r\n     width:40px;\r\n-    height:40px;\r\n+    \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708166594689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n homepage-image{\r\n-    width:40px;\r\n+    width:20px;\r\n     \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708166634508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n homepage-image{\r\n     width:20px;\r\n+    height:auto\r\n     \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708166654805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n homepage-image{\r\n-    width:20px;\r\n-    height:auto\r\n+    width:20;\r\n+    height:auto;\r\n     \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708174586471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-homepage-image{\r\n-    width:20;\r\n+/* homepage-image{\r\n+    width:20%;\r\n     height:auto;\r\n\\ No newline at end of file\n     \r\n-}\n+} */\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708174593689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,8 @@\n /* homepage-image{\r\n     width:20%;\r\n     height:auto;\r\n     \r\n-} */\n\\ No newline at end of file\n+} */\r\n+img{\r\n+    \r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708174599798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,6 @@\n     height:auto;\r\n     \r\n } */\r\n img{\r\n-    \r\n+    width\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708174605159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,6 @@\n     height:auto;\r\n     \r\n } */\r\n img{\r\n-    width\r\n+    width:50\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708174614432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,8 @@\n+/* homepage-image{\r\n+    width:20%;\r\n+    height:auto;\r\n+    \r\n+} */\r\n+img{\r\n+    width:100px;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708174643051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,14 +3,6 @@\n     height:auto;\r\n     \r\n } */\r\n img{\r\n-    width:100px;\r\n-}\n-/* homepage-image{\r\n-    width:20%;\r\n-    height:auto;\r\n-    \r\n-} */\r\n-img{\r\n-    width:50\r\n+    width:70px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708174663055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,8 @@\n+/* homepage-image{\r\n+    width:20%;\r\n+    height:auto;\r\n+    \r\n+} */\r\n+img{\r\n+    width:50px;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708174688776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,4 @@\n-/* homepage-image{\r\n-    width:20%;\r\n-    height:auto;\r\n-    \r\n-} */\r\n+\r\n img{\r\n     width:50px;\r\n-}\n-/* homepage-image{\r\n-    width:20%;\r\n-    height:auto;\r\n-    \r\n-} */\r\n-img{\r\n-    width:70px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708174696098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n-\r\n+/** */\r\n img{\r\n     width:50px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708174706139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n-/** */\r\n+/** temporary */\r\n img{\r\n     width:50px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708174711290,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n-/** temporary */\r\n+/** temporary css*/\r\n img{\r\n     width:50px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708208650072,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n /** temporary css*/\r\n img{\r\n-    width:50px;\r\n+    width:150px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708208665263,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n /** temporary css*/\r\n img{\r\n-    width:150px;\r\n+    width:250px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708208691376,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n /** temporary css*/\r\n img{\r\n-    width:250px;\r\n+    width:300px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708208865156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n /** temporary css*/\r\n-img{\r\n+.thinking{\r\n     width:300px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708275605167,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n /** temporary css*/\r\n .thinking{\r\n     width:300px;\r\n-}\n\\ No newline at end of file\n+}\r\n+.\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708275611450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n /** temporary css*/\r\n .thinking{\r\n     width:300px;\r\n }\r\n-.\n\\ No newline at end of file\n+.thinking{\r\n+    \r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708275618804,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n /** temporary css*/\r\n .thinking{\r\n     width:300px;\r\n }\r\n-.thinking{\r\n-    \r\n+.addBook{\r\n+    color: ;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708275637215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,7 @@\n .thinking{\r\n     width:300px;\r\n }\r\n .addBook{\r\n-    color: ;\r\n+    color: blue;\r\n+    background-color: ;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708277114267,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,6 @@\n }\r\n .addBook{\r\n     color: blue;\r\n     background-color: blueviolet;\r\n-}\n\\ No newline at end of file\n+}\r\n+bo\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708277128621,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,11 @@\n+/** temporary css*/\r\n+.thinking{\r\n+    width:300px;\r\n+}\r\n+.addBook{\r\n+    color: blue;\r\n+    background-color: blueviolet;\r\n+}\r\n+body{\r\n+    background-color:green\r\n+}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1708166420715,
+            "name": "Commit-0",
+            "content": "homepage-image"
+        }
+    ]
+}

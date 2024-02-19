@@ -1,0 +1,474 @@
+{
+    "sourceFile": "src/pages/HomePage.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 114,
+            "patches": [
+                {
+                    "date": 1708124974528,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1708166181710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,10 @@\n const HomePage = () => {\r\n   return (\r\n     <div>\r\n        <section className=\"FrontImage\">\r\n-         <img src=\"src/assets/illustrations/Home_01.jpg\"></img> \r\n-      </section> */}\r\n+         <img  src=\"src/assets/illustrations/Home_01.jpg\"></img> \r\n+      </section> \r\n     </div>\r\n   );\r\n };\r\n \r\n"
+                },
+                {
+                    "date": 1708166189354,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n const HomePage = () => {\r\n   return (\r\n     <div>\r\n        <section className=\"FrontImage\">\r\n-         <img  src=\"src/assets/illustrations/Home_01.jpg\"></img> \r\n+         <img className=\"hom\" src=\"src/assets/illustrations/Home_01.jpg\"></img> \r\n       </section> \r\n     </div>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1708166199197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n const HomePage = () => {\r\n   return (\r\n     <div>\r\n        <section className=\"FrontImage\">\r\n-         <img className=\"hom\" src=\"src/assets/illustrations/Home_01.jpg\"></img> \r\n+         <img className=\"homepage-image\" src=\"src/assets/illustrations/Home_01.jpg\"></img> \r\n       </section> \r\n     </div>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1708166336719,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import React from \"react\";\r\n+import \r\n \r\n const HomePage = () => {\r\n   return (\r\n     <div>\r\n"
+                },
+                {
+                    "date": 1708166342093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from \"react\";\r\n-import \r\n+import 'index'\r\n \r\n const HomePage = () => {\r\n   return (\r\n     <div>\r\n"
+                },
+                {
+                    "date": 1708166348907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from \"react\";\r\n-import 'index'\r\n+import './index.css'\r\n \r\n const HomePage = () => {\r\n   return (\r\n     <div>\r\n"
+                },
+                {
+                    "date": 1708166355108,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from \"react\";\r\n-import './index.css'\r\n+import 'index.css'\r\n \r\n const HomePage = () => {\r\n   return (\r\n     <div>\r\n"
+                },
+                {
+                    "date": 1708166371783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from \"react\";\r\n-import 'index.css'\r\n+import 'src/index.css'\r\n \r\n const HomePage = () => {\r\n   return (\r\n     <div>\r\n"
+                },
+                {
+                    "date": 1708166386119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from \"react\";\r\n-import 'src/index.css'\r\n+import '../index.css'\r\n \r\n const HomePage = () => {\r\n   return (\r\n     <div>\r\n"
+                },
+                {
+                    "date": 1708166495515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n const HomePage = () => {\r\n   return (\r\n     <div>\r\n        <section className=\"FrontImage\">\r\n-         <img className=\"homepage-image\" src=\"src/assets/illustrations/Home_01.jpg\"></img> \r\n+         img className=\"homepage-image\" src=\"src/assets/illus<trations/Home_01.jpg\"></img> \r\n       </section> \r\n     </div>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1708173508760,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n const HomePage = () => {\r\n   return (\r\n     <div>\r\n        <section className=\"FrontImage\">\r\n-         img className=\"homepage-image\" src=\"src/assets/illus<trations/Home_01.jpg\"></img> \r\n+         {/* <img className=\"homepage-image\" src=\"src/assets/illustrations/Home_01.jpg\"></img>  */}\r\n       </section> \r\n     </div>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1708173515456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n   return (\r\n     <div>\r\n        <section className=\"FrontImage\">\r\n          {/* <img className=\"homepage-image\" src=\"src/assets/illustrations/Home_01.jpg\"></img>  */}\r\n+    \r\n       </section> \r\n     </div>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1708173521674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   return (\r\n     <div>\r\n        <section className=\"FrontImage\">\r\n          {/* <img className=\"homepage-image\" src=\"src/assets/illustrations/Home_01.jpg\"></img>  */}\r\n-    \r\n+          \r\n       </section> \r\n     </div>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1708173526805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,15 @@\n+import React from \"react\";\r\n+import '../index.css'\r\n+\r\n+const HomePage = () => {\r\n+  return (\r\n+    <div>\r\n+       <section className=\"FrontImage\">\r\n+         {/* <img className=\"homepage-image\" src=\"src/assets/illustrations/Home_01.jpg\"></img>  */}\r\n+          Boo\r\n+      </section> \r\n+    </div>\r\n+  );\r\n+};\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708173534660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,30 +1,16 @@\n import React from \"react\";\r\n import '../index.css'\r\n+import BookListPage from './BookListPage';\r\n \r\n const HomePage = () => {\r\n   return (\r\n     <div>\r\n        <section className=\"FrontImage\">\r\n          {/* <img className=\"homepage-image\" src=\"src/assets/illustrations/Home_01.jpg\"></img>  */}\r\n-          Boo\r\n+          <BookListPage />\r\n       </section> \r\n     </div>\r\n   );\r\n };\r\n \r\n export default HomePage;\r\n-import React from \"react\";\r\n-import '../index.css'\r\n-\r\n-const HomePage = () => {\r\n-  return (\r\n-    <div>\r\n-       <section className=\"FrontImage\">\r\n-         {/* <img className=\"homepage-image\" src=\"src/assets/illustrations/Home_01.jpg\"></img>  */}\r\n-          \r\n-      </section> \r\n-    </div>\r\n-  );\r\n-};\r\n-\r\n-export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708174870850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from \"react\";\r\n import '../index.css'\r\n-import BookListPage from './BookListPage';\r\n+import BookListPage from '../components/BookListPage';\r\n \r\n const HomePage = () => {\r\n   return (\r\n     <div>\r\n"
+                },
+                {
+                    "date": 1708261632449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n     <div>\r\n        <section className=\"FrontImage\">\r\n          {/* <img className=\"homepage-image\" src=\"src/assets/illustrations/Home_01.jpg\"></img>  */}\r\n           <BookListPage />\r\n+          \r\n       </section> \r\n     </div>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1708261638201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n   return (\r\n     <div>\r\n        <section className=\"FrontImage\">\r\n          {/* <img className=\"homepage-image\" src=\"src/assets/illustrations/Home_01.jpg\"></img>  */}\r\n-          <BookListPage />\r\n-          \r\n+          /\r\n+\r\n       </section> \r\n     </div>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1708261646106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+import React from \"react\";\r\n+import '../index.css'\r\n+import BookListPage from '../components/BookListPage';\r\n+\r\n+const HomePage = () => {\r\n+  return (\r\n+    <div>\r\n+       <section className=\"FrontImage\">\r\n+         {/* <img className=\"homepage-image\" src=\"src/assets/illustrations/Home_01.jpg\"></img>  */}\r\n+          {/* <BookListPage /> */}\r\n+          \r\n+      </section> \r\n+    </div>\r\n+  );\r\n+};\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708261660750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,28 +7,11 @@\n     <div>\r\n        <section className=\"FrontImage\">\r\n          {/* <img className=\"homepage-image\" src=\"src/assets/illustrations/Home_01.jpg\"></img>  */}\r\n           {/* <BookListPage /> */}\r\n-          \r\n+          <\r\n       </section> \r\n     </div>\r\n   );\r\n };\r\n \r\n export default HomePage;\r\n-import React from \"react\";\r\n-import '../index.css'\r\n-import BookListPage from '../components/BookListPage';\r\n-\r\n-const HomePage = () => {\r\n-  return (\r\n-    <div>\r\n-       <section className=\"FrontImage\">\r\n-         {/* <img className=\"homepage-image\" src=\"src/assets/illustrations/Home_01.jpg\"></img>  */}\r\n-          /\r\n-\r\n-      </section> \r\n-    </div>\r\n-  );\r\n-};\r\n-\r\n-export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708261666060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     <div>\r\n        <section className=\"FrontImage\">\r\n          {/* <img className=\"homepage-image\" src=\"src/assets/illustrations/Home_01.jpg\"></img>  */}\r\n           {/* <BookListPage /> */}\r\n-          <\r\n+          <BookD\r\n       </section> \r\n     </div>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1708261676217,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     <div>\r\n        <section className=\"FrontImage\">\r\n          {/* <img className=\"homepage-image\" src=\"src/assets/illustrations/Home_01.jpg\"></img>  */}\r\n           {/* <BookListPage /> */}\r\n-          <BookD\r\n+          <BookDetails\r\n       </section> \r\n     </div>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1708261692933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,16 @@\n import React from \"react\";\r\n import '../index.css'\r\n import BookListPage from '../components/BookListPage';\r\n+import \r\n \r\n const HomePage = () => {\r\n   return (\r\n     <div>\r\n        <section className=\"FrontImage\">\r\n          {/* <img className=\"homepage-image\" src=\"src/assets/illustrations/Home_01.jpg\"></img>  */}\r\n           {/* <BookListPage /> */}\r\n-          <BookDetails\r\n+          <BookDetails />\r\n       </section> \r\n     </div>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1708261698951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from \"react\";\r\n import '../index.css'\r\n import BookListPage from '../components/BookListPage';\r\n-import \r\n+import BookDetails from ''\r\n \r\n const HomePage = () => {\r\n   return (\r\n     <div>\r\n"
+                },
+                {
+                    "date": 1708261715439,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from \"react\";\r\n import '../index.css'\r\n import BookListPage from '../components/BookListPage';\r\n-import BookDetails from ''\r\n+import BookDetails from './'\r\n \r\n const HomePage = () => {\r\n   return (\r\n     <div>\r\n"
+                },
+                {
+                    "date": 1708262276201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n import React from \"react\";\r\n import '../index.css'\r\n import BookListPage from '../components/BookListPage';\r\n-import BookDetails from './'\r\n+import BookDetails from './BookDetails'\r\n \r\n const HomePage = () => {\r\n   return (\r\n     <div>\r\n        <section className=\"FrontImage\">\r\n          {/* <img className=\"homepage-image\" src=\"src/assets/illustrations/Home_01.jpg\"></img>  */}\r\n-          {/* <BookListPage /> */}\r\n+           <BookListPage /> */}\r\n           <BookDetails />\r\n       </section> \r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708270897306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n const HomePage = () => {\r\n   return (\r\n     <div>\r\n        <section className=\"FrontImage\">\r\n-         {/* <img className=\"homepage-image\" src=\"src/assets/illustrations/Home_01.jpg\"></img>  */}\r\n-           <BookListPage /> */}\r\n+          <img className=\"homepage-image\" src=\"src/assets/illustrations/Home_01.jpg\"></img>  */}\r\n+           <BookListPage /> \r\n           <BookDetails />\r\n       </section> \r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708270902453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+import React from \"react\";\r\n+import '../index.css'\r\n+import BookListPage from '../components/BookListPage';\r\n+import BookDetails from './BookDetails'\r\n+\r\n+const HomePage = () => {\r\n+  return (\r\n+    <div>\r\n+       <section className=\"FrontImage\">\r\n+          <img className=\"homepage-image\" src=\"src/assets/illustrations/Home_01.jpg\"></img>  \r\n+           <BookListPage /> \r\n+          <BookDetails />\r\n+      </section> \r\n+    </div>\r\n+  );\r\n+};\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708270937936,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,31 +6,14 @@\n const HomePage = () => {\r\n   return (\r\n     <div>\r\n        <section className=\"FrontImage\">\r\n-          <img className=\"homepage-image\" src=\"src/assets/illustrations/Home_01.jpg\"></img>  \r\n+          <img className=\"homepage-image\" src=\"src/assets/illustrations/Home_01.jpg\"></img> \r\n+           \r\n            <BookListPage /> \r\n           <BookDetails />\r\n       </section> \r\n     </div>\r\n   );\r\n };\r\n \r\n export default HomePage;\r\n-import React from \"react\";\r\n-import '../index.css'\r\n-import BookListPage from '../components/BookListPage';\r\n-import BookDetails from './BookDetails'\r\n-\r\n-const HomePage = () => {\r\n-  return (\r\n-    <div>\r\n-       <section className=\"FrontImage\">\r\n-          <img className=\"homepage-image\" src=\"src/assets/illustrations/Home_01.jpg\"></img>  */}\r\n-           <BookListPage /> \r\n-          <BookDetails />\r\n-      </section> \r\n-    </div>\r\n-  );\r\n-};\r\n-\r\n-export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708270957997,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,11 +7,11 @@\n   return (\r\n     <div>\r\n        <section className=\"FrontImage\">\r\n           <img className=\"homepage-image\" src=\"src/assets/illustrations/Home_01.jpg\"></img> \r\n-           \r\n-           <BookListPage /> \r\n-          <BookDetails />\r\n+          <NewArrivals books={books} /> \r\n+           {/* <BookListPage /> \r\n+          <BookDetails /> */}\r\n       </section> \r\n     </div>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1708273191353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,22 @@\n+import React, { useState } from \"react\";\r\n+import \"../index.css\";\r\n+import NewArrivals from \"../components/NewArrivals\";\r\n+\r\n+const HomePage = () => {\r\n+  const [books, setBooks] = useState([]);\r\n+\r\n+  return (\r\n+    <div>\r\n+      <section className=\"FrontImage\">\r\n+        <img\r\n+          className=\"homepage-image\"\r\n+          src=\"src/assets/illustrations/Home_01.jpg\"\r\n+        ></img>\r\n+        \r\n+        <NewArrivals books={books} />\r\n+      </section>\r\n+    </div>\r\n+  );\r\n+};\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708273212124,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,31 +11,12 @@\n         <img\r\n           className=\"homepage-image\"\r\n           src=\"src/assets/illustrations/Home_01.jpg\"\r\n         ></img>\r\n-        \r\n+        <\r\n         <NewArrivals books={books} />\r\n       </section>\r\n     </div>\r\n   );\r\n };\r\n \r\n export default HomePage;\r\n-import React from \"react\";\r\n-import '../index.css'\r\n-import BookListPage from '../components/BookListPage';\r\n-import BookDetails from './BookDetails'\r\n-\r\n-const HomePage = () => {\r\n-  return (\r\n-    <div>\r\n-       <section className=\"FrontImage\">\r\n-          <img className=\"homepage-image\" src=\"src/assets/illustrations/Home_01.jpg\"></img> \r\n-          <NewArrivals books={books} /> \r\n-           {/* <BookListPage /> \r\n-          <BookDetails /> */}\r\n-      </section> \r\n-    </div>\r\n-  );\r\n-};\r\n-\r\n-export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708273221536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,22 @@\n+import React, { useState } from \"react\";\r\n+import \"../index.css\";\r\n+import NewArrivals from \"../components/NewArrivals\";\r\n+\r\n+const HomePage = () => {\r\n+  const [books, setBooks] = useState([]);\r\n+\r\n+  return (\r\n+    <div>\r\n+      <section className=\"FrontImage\">\r\n+        <img\r\n+          className=\"homepage-image\"\r\n+          src=\"src/assets/illustrations/Home_01.jpg\"\r\n+        ></img>\r\n+        <AddBook\r\n+        <NewArrivals books={books} />\r\n+      </section>\r\n+    </div>\r\n+  );\r\n+};\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708273292588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import React, { useState } from \"react\";\r\n import \"../index.css\";\r\n import NewArrivals from \"../components/NewArrivals\";\r\n+import AddBooks from './../components/AddBooks';\r\n \r\n const HomePage = () => {\r\n   const [books, setBooks] = useState([]);\r\n \r\n@@ -9,36 +10,13 @@\n     <div>\r\n       <section className=\"FrontImage\">\r\n         <img\r\n           className=\"homepage-image\"\r\n-          src=\"src/assets/illustrations/Home_01.jpg\"\r\n-        ></img>\r\n-        <AddBook\r\n+          src=\"src/assets/illustrations/Home_01.jpg\"></img>\r\n+        <AddBooks />\r\n         <NewArrivals books={books} />\r\n       </section>\r\n     </div>\r\n   );\r\n };\r\n \r\n export default HomePage;\r\n-import React, { useState } from \"react\";\r\n-import \"../index.css\";\r\n-import NewArrivals from \"../components/NewArrivals\";\r\n-\r\n-const HomePage = () => {\r\n-  const [books, setBooks] = useState([]);\r\n-\r\n-  return (\r\n-    <div>\r\n-      <section className=\"FrontImage\">\r\n-        <img\r\n-          className=\"homepage-image\"\r\n-          src=\"src/assets/illustrations/Home_01.jpg\"\r\n-        ></img>\r\n-        <\r\n-        <NewArrivals books={books} />\r\n-      </section>\r\n-    </div>\r\n-  );\r\n-};\r\n-\r\n-export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708273301269,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,22 @@\n+import React, { useState } from \"react\";\r\n+import \"../index.css\";\r\n+import NewArrivals from \"../components/NewArrivals\";\r\n+import AddBooks from './../components/AddBooks';\r\n+\r\n+const HomePage = () => {\r\n+  const [books, setBooks] = useState([]);\r\n+\r\n+  return (\r\n+    <div>\r\n+      <section className=\"FrontImage\">\r\n+        <img\r\n+          className=\"homepage-image\"\r\n+          src=\"src/assets/illustrations/Home_01.jpg\">\r\n+        <AddBooks />\r\n+        <NewArrivals books={books} />\r\n+      </section>\r\n+    </div>\r\n+  );\r\n+};\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708274263898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,35 +10,13 @@\n     <div>\r\n       <section className=\"FrontImage\">\r\n         <img\r\n           className=\"homepage-image\"\r\n-          src=\"src/assets/illustrations/Home_01.jpg\">\r\n-        <AddBooks />\r\n+          src=\"src/assets/illustrations/Home_01.jpg\" />\r\n+        Add a <AddBooks />\r\n         <NewArrivals books={books} />\r\n       </section>\r\n     </div>\r\n   );\r\n };\r\n \r\n export default HomePage;\r\n-import React, { useState } from \"react\";\r\n-import \"../index.css\";\r\n-import NewArrivals from \"../components/NewArrivals\";\r\n-import AddBooks from './../components/AddBooks';\r\n-\r\n-const HomePage = () => {\r\n-  const [books, setBooks] = useState([]);\r\n-\r\n-  return (\r\n-    <div>\r\n-      <section className=\"FrontImage\">\r\n-        <img\r\n-          className=\"homepage-image\"\r\n-          src=\"src/assets/illustrations/Home_01.jpg\"></img>\r\n-        <AddBooks />\r\n-        <NewArrivals books={books} />\r\n-      </section>\r\n-    </div>\r\n-  );\r\n-};\r\n-\r\n-export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708275566021,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n       <section className=\"FrontImage\">\r\n         <img\r\n           className=\"homepage-image\"\r\n           src=\"src/assets/illustrations/Home_01.jpg\" />\r\n-        Add a <AddBooks />\r\n+       <h1></h1> Add a book : <AddBooks />\r\n         <NewArrivals books={books} />\r\n       </section>\r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708275571969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n       <section className=\"FrontImage\">\r\n         <img\r\n           className=\"homepage-image\"\r\n           src=\"src/assets/illustrations/Home_01.jpg\" />\r\n-       <h1></h1> Add a book : <AddBooks />\r\n+       <h1>Add a book :</h1>  <AddBooks />\r\n         <NewArrivals books={books} />\r\n       </section>\r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708275587215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,22 @@\n+import React, { useState } from \"react\";\r\n+import \"../index.css\";\r\n+import NewArrivals from \"../components/NewArrivals\";\r\n+import AddBooks from './../components/AddBooks';\r\n+\r\n+const HomePage = () => {\r\n+  const [books, setBooks] = useState([]);\r\n+\r\n+  return (\r\n+    <div>\r\n+      <section className=\"FrontImage\">\r\n+        <img\r\n+          className=\"homepage-image\"\r\n+          src=\"src/assets/illustrations/Home_01.jpg\" />\r\n+       <h1 >Add a book :</h1>  <AddBooks />\r\n+        <NewArrivals books={books} />\r\n+      </section>\r\n+    </div>\r\n+  );\r\n+};\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708275592268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,34 +11,12 @@\n       <section className=\"FrontImage\">\r\n         <img\r\n           className=\"homepage-image\"\r\n           src=\"src/assets/illustrations/Home_01.jpg\" />\r\n-       <h1 >Add a book :</h1>  <AddBooks />\r\n+       <h1 className=\"add\">Add a book :</h1>  <AddBooks />\r\n         <NewArrivals books={books} />\r\n       </section>\r\n     </div>\r\n   );\r\n };\r\n \r\n export default HomePage;\r\n-import React, { useState } from \"react\";\r\n-import \"../index.css\";\r\n-import NewArrivals from \"../components/NewArrivals\";\r\n-import AddBooks from './../components/AddBooks';\r\n-\r\n-const HomePage = () => {\r\n-  const [books, setBooks] = useState([]);\r\n-\r\n-  return (\r\n-    <div>\r\n-      <section className=\"FrontImage\">\r\n-        <img\r\n-          className=\"homepage-image\"\r\n-          src=\"src/assets/illustrations/Home_01.jpg\" />\r\n-       <h1>Add a book :</h1>  <AddBooks />\r\n-        <NewArrivals books={books} />\r\n-      </section>\r\n-    </div>\r\n-  );\r\n-};\r\n-\r\n-export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708275669381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,10 @@\n       <section className=\"FrontImage\">\r\n         <img\r\n           className=\"homepage-image\"\r\n           src=\"src/assets/illustrations/Home_01.jpg\" />\r\n-       <h1 className=\"add\">Add a book :</h1>  <AddBooks />\r\n+       <h1 className=\"addBook\">Add a book :</h1>  \r\n+       <AddBooks />\r\n         <NewArrivals books={books} />\r\n       </section>\r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708275788925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,24 @@\n+import React, { useState } from \"react\";\r\n+import \"../index.css\";\r\n+import NewArrivals from \"../components/NewArrivals\";\r\n+import AddBooks from './../components/AddBooks';\r\n+\r\n+const HomePage = () => {\r\n+  const [books, setBooks] = useState([]);\r\n+\r\n+  return (\r\n+    <div>\r\n+      <section className=\"FrontImage\">\r\n+        <img\r\n+          className=\"homepage-image\"\r\n+          src=\"src/assets/illustrations/Home_01.jpg\" />\r\n+          \r\n+       <h1 className=\"addBook\">Add a book :</h1>  \r\n+       <AddBooks />\r\n+        <NewArrivals books={books} />\r\n+      </section>\r\n+    </div>\r\n+  );\r\n+};\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708275794370,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n       <section className=\"FrontImage\">\r\n         <img\r\n           className=\"homepage-image\"\r\n           src=\"src/assets/illustrations/Home_01.jpg\" />\r\n-          \r\n+          Textzeeedeede\r\n        <h1 className=\"addBook\">Add a book :</h1>  \r\n        <AddBooks />\r\n         <NewArrivals books={books} />\r\n       </section>\r\n@@ -21,27 +21,4 @@\n   );\r\n };\r\n \r\n export default HomePage;\r\n-import React, { useState } from \"react\";\r\n-import \"../index.css\";\r\n-import NewArrivals from \"../components/NewArrivals\";\r\n-import AddBooks from './../components/AddBooks';\r\n-\r\n-const HomePage = () => {\r\n-  const [books, setBooks] = useState([]);\r\n-\r\n-  return (\r\n-    <div>\r\n-      <section className=\"FrontImage\">\r\n-        <img\r\n-          className=\"homepage-image\"\r\n-          src=\"src/assets/illustrations/Home_01.jpg\" />\r\n-       <h1 className=\"addBook\">Add a book :</h1>  \r\n-       <AddBooks />\r\n-        <NewArrivals books={books} />\r\n-      </section>\r\n-    </div>\r\n-  );\r\n-};\r\n-\r\n-export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708277013708,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n   const [books, setBooks] = useState([]);\r\n \r\n   return (\r\n     <div>\r\n+      \r\n       <section className=\"FrontImage\">\r\n         <img\r\n           className=\"homepage-image\"\r\n           src=\"src/assets/illustrations/Home_01.jpg\" />\r\n"
+                },
+                {
+                    "date": 1708277019705,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   const [books, setBooks] = useState([]);\r\n \r\n   return (\r\n     <div>\r\n-      \r\n+      My home page !!!\r\n       <section className=\"FrontImage\">\r\n         <img\r\n           className=\"homepage-image\"\r\n           src=\"src/assets/illustrations/Home_01.jpg\" />\r\n"
+                },
+                {
+                    "date": 1708278068417,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n           src=\"src/assets/illustrations/Home_01.jpg\" />\r\n           Textzeeedeede\r\n        <h1 className=\"addBook\">Add a book :</h1>  \r\n        <AddBooks />\r\n-        <NewArrivals books={books} />\r\n+        <NewArrivals books={setBooks} />\r\n       </section>\r\n     </div>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1708278074915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n           src=\"src/assets/illustrations/Home_01.jpg\" />\r\n           Textzeeedeede\r\n        <h1 className=\"addBook\">Add a book :</h1>  \r\n        <AddBooks />\r\n-        <NewArrivals books={setBooks} />\r\n+        <NewArrivals books={books} />\r\n       </section>\r\n     </div>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1708278082396,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n           Textzeeedeede\r\n        <h1 className=\"addBook\">Add a book :</h1>  \r\n        <AddBooks />\r\n         <NewArrivals books={books} />\r\n+        <NewArrivals books={books} />\r\n       </section>\r\n     </div>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1708278090600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,10 @@\n           src=\"src/assets/illustrations/Home_01.jpg\" />\r\n           Textzeeedeede\r\n        <h1 className=\"addBook\">Add a book :</h1>  \r\n        <AddBooks />\r\n-        <NewArrivals books={books} />\r\n-        <NewArrivals books={books} />\r\n+        {/* <NewArrivals books={books} /> */}\r\n+        <NewArrivals books={setBooks} />\r\n       </section>\r\n     </div>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1708278211565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,26 @@\n+import React, { useState } from \"react\";\r\n+import \"../index.css\";\r\n+import NewArrivals from \"../components/NewArrivals\";\r\n+import AddBooks from './../components/AddBooks';\r\n+\r\n+const HomePage = () => {\r\n+  const [books, setBooks] = useState([]);\r\n+\r\n+  return (\r\n+    <div>\r\n+      My home page !!!\r\n+      <section className=\"FrontImage\">\r\n+        <img\r\n+          className=\"homepage-image\"\r\n+          src=\"src/assets/illustrations/Home_01.jpg\" />\r\n+          Textzeeedeede\r\n+       <h1 className=\"addBook\">Add a book :</h1>  \r\n+       <AddBooks />\r\n+        {/* <NewArrivals books={books} /> */}\r\n+        {/* <NewArrivals books={setBooks} /> */}\r\n+      </section>\r\n+    </div>\r\n+  );\r\n+};\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708278310592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n const HomePage = () => {\r\n   const [books, setBooks] = useState([]);\r\n \r\n   return (\r\n-    <div>\r\n+    <>\r\n       My home page !!!\r\n       <section className=\"FrontImage\">\r\n         <img\r\n           className=\"homepage-image\"\r\n@@ -23,30 +23,4 @@\n   );\r\n };\r\n \r\n export default HomePage;\r\n-import React, { useState } from \"react\";\r\n-import \"../index.css\";\r\n-import NewArrivals from \"../components/NewArrivals\";\r\n-import AddBooks from './../components/AddBooks';\r\n-\r\n-const HomePage = () => {\r\n-  const [books, setBooks] = useState([]);\r\n-\r\n-  return (\r\n-    <div>\r\n-      My home page !!!\r\n-      <section className=\"FrontImage\">\r\n-        <img\r\n-          className=\"homepage-image\"\r\n-          src=\"src/assets/illustrations/Home_01.jpg\" />\r\n-          Textzeeedeede\r\n-       <h1 className=\"addBook\">Add a book :</h1>  \r\n-       <AddBooks />\r\n-        {/* <NewArrivals books={books} /> */}\r\n-        <NewArrivals books={setBooks} />\r\n-      </section>\r\n-    </div>\r\n-  );\r\n-};\r\n-\r\n-export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708278378530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,18 +9,18 @@\n   return (\r\n     <>\r\n       My home page !!!\r\n       <section className=\"FrontImage\">\r\n-        <img\r\n+        {/* <img\r\n           className=\"homepage-image\"\r\n-          src=\"src/assets/illustrations/Home_01.jpg\" />\r\n+          src=\"src/assets/illustrations/Home_01.jpg\" /> */}\r\n           Textzeeedeede\r\n        <h1 className=\"addBook\">Add a book :</h1>  \r\n        <AddBooks />\r\n         {/* <NewArrivals books={books} /> */}\r\n         {/* <NewArrivals books={setBooks} /> */}\r\n       </section>\r\n-    </div>\r\n+    </>\r\n   );\r\n };\r\n \r\n export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708278450321,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n           className=\"homepage-image\"\r\n           src=\"src/assets/illustrations/Home_01.jpg\" /> */}\r\n           Textzeeedeede\r\n        <h1 className=\"addBook\">Add a book :</h1>  \r\n-       <AddBooks />\r\n+       {/* <AddBooks /> */}\r\n         {/* <NewArrivals books={books} /> */}\r\n         {/* <NewArrivals books={setBooks} /> */}\r\n       </section>\r\n     </>\r\n"
+                },
+                {
+                    "date": 1708278612555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n           className=\"homepage-image\"\r\n           src=\"src/assets/illustrations/Home_01.jpg\" /> */}\r\n           Textzeeedeede\r\n        <h1 className=\"addBook\">Add a book :</h1>  \r\n-       {/* <AddBooks /> */}\r\n+        <AddBooks /> */}\r\n         {/* <NewArrivals books={books} /> */}\r\n         {/* <NewArrivals books={setBooks} /> */}\r\n       </section>\r\n     </>\r\n"
+                },
+                {
+                    "date": 1708278757704,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,26 @@\n+import React, { useState } from \"react\";\r\n+import \"../index.css\";\r\n+import NewArrivals from \"../components/NewArrivals\";\r\n+import AddBooks from './../components/AddBooks';\r\n+\r\n+const HomePage = () => {\r\n+  const [books, setBooks] = useState([]);\r\n+\r\n+  return (\r\n+    <>\r\n+      My home page !!!\r\n+      <section className=\"FrontImage\">\r\n+        {/* <img\r\n+          className=\"homepage-image\"\r\n+          src=\"src/assets/illustrations/Home_01.jpg\" /> */}\r\n+          Textzeeedeede\r\n+       <h1 className=\"addBook\">Add a book :</h1>  \r\n+        {/* <AddBooks />  */}\r\n+        {/* <NewArrivals books={books} /> */}\r\n+        {/* <NewArrivals books={setBooks} /> */}\r\n+      </section>\r\n+    </>\r\n+  );\r\n+};\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708278775645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n       <section className=\"FrontImage\">\r\n         {/* <img\r\n           className=\"homepage-image\"\r\n           src=\"src/assets/illustrations/Home_01.jpg\" /> */}\r\n-          Textzeeedeede\r\n+          \r\n        <h1 className=\"addBook\">Add a book :</h1>  \r\n         {/* <AddBooks />  */}\r\n         {/* <NewArrivals books={books} /> */}\r\n         {/* <NewArrivals books={setBooks} /> */}\r\n@@ -23,30 +23,4 @@\n   );\r\n };\r\n \r\n export default HomePage;\r\n-import React, { useState } from \"react\";\r\n-import \"../index.css\";\r\n-import NewArrivals from \"../components/NewArrivals\";\r\n-import AddBooks from './../components/AddBooks';\r\n-\r\n-const HomePage = () => {\r\n-  const [books, setBooks] = useState([]);\r\n-\r\n-  return (\r\n-    <>\r\n-      My home page !!!\r\n-      <section className=\"FrontImage\">\r\n-        {/* <img\r\n-          className=\"homepage-image\"\r\n-          src=\"src/assets/illustrations/Home_01.jpg\" /> */}\r\n-          Textzeeedeede\r\n-       <h1 className=\"addBook\">Add a book :</h1>  \r\n-        <AddBooks /> */}\r\n-        {/* <NewArrivals books={books} /> */}\r\n-        {/* <NewArrivals books={setBooks} /> */}\r\n-      </section>\r\n-    </>\r\n-  );\r\n-};\r\n-\r\n-export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708278790559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,17 +7,17 @@\n   const [books, setBooks] = useState([]);\r\n \r\n   return (\r\n     <>\r\n-      My home page !!!\r\n+      My home page \r\n       <section className=\"FrontImage\">\r\n         {/* <img\r\n           className=\"homepage-image\"\r\n           src=\"src/assets/illustrations/Home_01.jpg\" /> */}\r\n           \r\n        <h1 className=\"addBook\">Add a book :</h1>  \r\n         {/* <AddBooks />  */}\r\n-        {/* <NewArrivals books={books} /> */}\r\n+         <NewArrivals books={books} /> */}\r\n         {/* <NewArrivals books={setBooks} /> */}\r\n       </section>\r\n     </>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708278820247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n           src=\"src/assets/illustrations/Home_01.jpg\" /> */}\r\n           \r\n        <h1 className=\"addBook\">Add a book :</h1>  \r\n         {/* <AddBooks />  */}\r\n-         <NewArrivals books={books} /> */}\r\n+         {/* <NewArrivals books={books} />  */}\r\n         {/* <NewArrivals books={setBooks} /> */}\r\n       </section>\r\n     </>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708278836450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,8 @@\n           \r\n        <h1 className=\"addBook\">Add a book :</h1>  \r\n         {/* <AddBooks />  */}\r\n          {/* <NewArrivals books={books} />  */}\r\n-        {/* <NewArrivals books={setBooks} /> */}\r\n       </section>\r\n     </>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1708278842111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,25 @@\n+import React, { useState } from \"react\";\r\n+import \"../index.css\";\r\n+import NewArrivals from \"../components/NewArrivals\";\r\n+import AddBooks from './../components/AddBooks';\r\n+\r\n+const HomePage = () => {\r\n+  const [books, setBooks] = useState([]);\r\n+\r\n+  return (\r\n+    <>\r\n+      My home page \r\n+      <section className=\"FrontImage\">\r\n+        {/* <img\r\n+          className=\"homepage-image\"\r\n+          src=\"src/assets/illustrations/Home_01.jpg\" /> */}\r\n+          \r\n+       <h1 className=\"addBook\">Add a book :</h1>  \r\n+         <AddBooks />  \r\n+         {/* <NewArrivals books={books} />  */}\r\n+      </section>\r\n+    </>\r\n+  );\r\n+};\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708279068247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,36 +15,12 @@\n           src=\"src/assets/illustrations/Home_01.jpg\" /> */}\r\n           \r\n        <h1 className=\"addBook\">Add a book :</h1>  \r\n          <AddBooks />  \r\n+         \r\n          {/* <NewArrivals books={books} />  */}\r\n       </section>\r\n     </>\r\n   );\r\n };\r\n \r\n export default HomePage;\r\n-import React, { useState } from \"react\";\r\n-import \"../index.css\";\r\n-import NewArrivals from \"../components/NewArrivals\";\r\n-import AddBooks from './../components/AddBooks';\r\n-\r\n-const HomePage = () => {\r\n-  const [books, setBooks] = useState([]);\r\n-\r\n-  return (\r\n-    <>\r\n-      My home page \r\n-      <section className=\"FrontImage\">\r\n-        {/* <img\r\n-          className=\"homepage-image\"\r\n-          src=\"src/assets/illustrations/Home_01.jpg\" /> */}\r\n-          \r\n-       <h1 className=\"addBook\">Add a book :</h1>  \r\n-        {/* <AddBooks />  */}\r\n-         {/* <NewArrivals books={books} />  */}\r\n-      </section>\r\n-    </>\r\n-  );\r\n-};\r\n-\r\n-export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708279089778,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import React, { useState } from \"react\";\r\n import \"../index.css\";\r\n import NewArrivals from \"../components/NewArrivals\";\r\n import AddBooks from './../components/AddBooks';\r\n+import Books from \r\n \r\n const HomePage = () => {\r\n   const [books, setBooks] = useState([]);\r\n \r\n@@ -15,9 +16,9 @@\n           src=\"src/assets/illustrations/Home_01.jpg\" /> */}\r\n           \r\n        <h1 className=\"addBook\">Add a book :</h1>  \r\n          <AddBooks />  \r\n-         \r\n+         <Books />\r\n          {/* <NewArrivals books={books} />  */}\r\n       </section>\r\n     </>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708279094952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React, { useState } from \"react\";\r\n import \"../index.css\";\r\n import NewArrivals from \"../components/NewArrivals\";\r\n import AddBooks from './../components/AddBooks';\r\n-import Books from \r\n+import Books from './Books'\r\n \r\n const HomePage = () => {\r\n   const [books, setBooks] = useState([]);\r\n \r\n"
+                },
+                {
+                    "date": 1708279573352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         {/* <img\r\n           className=\"homepage-image\"\r\n           src=\"src/assets/illustrations/Home_01.jpg\" /> */}\r\n           \r\n-       <h1 className=\"addBook\">Add a book :</h1>  \r\n+         \r\n          <AddBooks />  \r\n          <Books />\r\n          {/* <NewArrivals books={books} />  */}\r\n       </section>\r\n"
+                },
+                {
+                    "date": 1708279584326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         {/* <img\r\n           className=\"homepage-image\"\r\n           src=\"src/assets/illustrations/Home_01.jpg\" /> */}\r\n           \r\n-         \r\n+          <h1 className=\"addBook\">Add a book :</h1>\r\n          <AddBooks />  \r\n          <Books />\r\n          {/* <NewArrivals books={books} />  */}\r\n       </section>\r\n"
+                },
+                {
+                    "date": 1708279595030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n           className=\"homepage-image\"\r\n           src=\"src/assets/illustrations/Home_01.jpg\" /> */}\r\n           \r\n           <h1 className=\"addBook\">Add a book :</h1>\r\n-         <AddBooks />  \r\n+          \r\n          <Books />\r\n          {/* <NewArrivals books={books} />  */}\r\n       </section>\r\n     </>\r\n"
+                },
+                {
+                    "date": 1708279601919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,9 @@\n           \r\n           <h1 className=\"addBook\">Add a book :</h1>\r\n           \r\n          <Books />\r\n+         <AddBooks /> \r\n          {/* <NewArrivals books={books} />  */}\r\n       </section>\r\n     </>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708279619594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,28 @@\n+import React, { useState } from \"react\";\r\n+import \"../index.css\";\r\n+import NewArrivals from \"../components/NewArrivals\";\r\n+import AddBooks from './../components/AddBooks';\r\n+import Books from './Books'\r\n+\r\n+const HomePage = () => {\r\n+  const [books, setBooks] = useState([]);\r\n+\r\n+  return (\r\n+    <>\r\n+      My home page \r\n+      <section className=\"FrontImage\">\r\n+        {/* <img\r\n+          className=\"homepage-image\"\r\n+          src=\"src/assets/illustrations/Home_01.jpg\" /> */}\r\n+          \r\n+          <h1 className=\"addBook\">Add a book :</h1>\r\n+          \r\n+         <Books />\r\n+         \r\n+         {/* <NewArrivals books={books} />  */}\r\n+      </section>\r\n+    </>\r\n+  );\r\n+};\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708280176535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,25 @@\n+import React, { useState } from \"react\";\r\n+import \"../index.css\";\r\n+import NewArrivals from \"../components/NewArrivals\";\r\n+import AddBooks from './../components/AddBooks';\r\n+import Books from './Books'\r\n+\r\n+const HomePage = () => {\r\n+  const [books, setBooks] = useState([]);\r\n+\r\n+  return (\r\n+    <>\r\n+      My home page \r\n+      <section className=\"FrontImage\">\r\n+          \r\n+          <h1 className=\"addBook\">Add a book :</h1>\r\n+          <AddBooks /> \r\n+         <Books />\r\n+         \r\n+         {/* <NewArrivals books={books} />  */}\r\n+      </section>\r\n+    </>\r\n+  );\r\n+};\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708280189208,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,24 @@\n+import React, { useState } from \"react\";\r\n+import \"../index.css\";\r\n+import NewArrivals from \"../components/NewArrivals\";\r\n+import AddBooks from './../components/AddBooks';\r\n+import Books from './Books'\r\n+\r\n+const HomePage = () => {\r\n+  const [books, setBooks] = useState([]);\r\n+\r\n+  return (\r\n+    <>\r\n+      My home page \r\n+      <section className=\"FrontImage\">\r\n+          \r\n+          <h1 className=\"addBook\">Add a book :</h1>\r\n+          <AddBooks /> \r\n+         <Books />\r\n+         \r\n+      </section>\r\n+    </>\r\n+  );\r\n+};\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708280196051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,24 @@\n+import React, { useState } from \"react\";\r\n+import \"../index.css\";\r\n+import NewArrivals from \"../components/NewArrivals\";\r\n+import AddBooks from './../components/AddBooks';\r\n+import Books from './Books'\r\n+\r\n+const HomePage = () => {\r\n+  const [books, setBooks] = useState([]);\r\n+\r\n+  return (\r\n+    <>\r\n+      My home page\r\n+      <section className=\"FrontImage\">\r\n+\r\n+        <h1 className=\"addBook\">Add a book :</h1>\r\n+        <AddBooks />\r\n+        <Books />\r\n+\r\n+      </section>\r\n+    </>\r\n+  );\r\n+};\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708280212403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n import React, { useState } from \"react\";\r\n import \"../index.css\";\r\n-import NewArrivals from \"../components/NewArrivals\";\r\n import AddBooks from './../components/AddBooks';\r\n import Books from './Books'\r\n \r\n const HomePage = () => {\r\n@@ -21,109 +20,4 @@\n   );\r\n };\r\n \r\n export default HomePage;\r\n-import React, { useState } from \"react\";\r\n-import \"../index.css\";\r\n-import NewArrivals from \"../components/NewArrivals\";\r\n-import AddBooks from './../components/AddBooks';\r\n-import Books from './Books'\r\n-\r\n-const HomePage = () => {\r\n-  const [books, setBooks] = useState([]);\r\n-\r\n-  return (\r\n-    <>\r\n-      My home page \r\n-      <section className=\"FrontImage\">\r\n-          \r\n-          <h1 className=\"addBook\">Add a book :</h1>\r\n-          <AddBooks /> \r\n-         <Books />\r\n-         \r\n-      </section>\r\n-    </>\r\n-  );\r\n-};\r\n-\r\n-export default HomePage;\r\n-import React, { useState } from \"react\";\r\n-import \"../index.css\";\r\n-import NewArrivals from \"../components/NewArrivals\";\r\n-import AddBooks from './../components/AddBooks';\r\n-import Books from './Books'\r\n-\r\n-const HomePage = () => {\r\n-  const [books, setBooks] = useState([]);\r\n-\r\n-  return (\r\n-    <>\r\n-      My home page \r\n-      <section className=\"FrontImage\">\r\n-          \r\n-          <h1 className=\"addBook\">Add a book :</h1>\r\n-          <AddBooks /> \r\n-         <Books />\r\n-         \r\n-         {/* <NewArrivals books={books} />  */}\r\n-      </section>\r\n-    </>\r\n-  );\r\n-};\r\n-\r\n-export default HomePage;\r\n-import React, { useState } from \"react\";\r\n-import \"../index.css\";\r\n-import NewArrivals from \"../components/NewArrivals\";\r\n-import AddBooks from './../components/AddBooks';\r\n-import Books from './Books'\r\n-\r\n-const HomePage = () => {\r\n-  const [books, setBooks] = useState([]);\r\n-\r\n-  return (\r\n-    <>\r\n-      My home page \r\n-      <section className=\"FrontImage\">\r\n-        {/* <img\r\n-          className=\"homepage-image\"\r\n-          src=\"src/assets/illustrations/Home_01.jpg\" /> */}\r\n-          \r\n-          <h1 className=\"addBook\">Add a book :</h1>\r\n-          \r\n-         <Books />\r\n-         \r\n-         {/* <NewArrivals books={books} />  */}\r\n-      </section>\r\n-    </>\r\n-  );\r\n-};\r\n-\r\n-export default HomePage;\r\n-import React, { useState } from \"react\";\r\n-import \"../index.css\";\r\n-import NewArrivals from \"../components/NewArrivals\";\r\n-import AddBooks from './../components/AddBooks';\r\n-import Books from './Books'\r\n-\r\n-const HomePage = () => {\r\n-  const [books, setBooks] = useState([]);\r\n-\r\n-  return (\r\n-    <>\r\n-      My home page \r\n-      <section className=\"FrontImage\">\r\n-        {/* <img\r\n-          className=\"homepage-image\"\r\n-          src=\"src/assets/illustrations/Home_01.jpg\" /> */}\r\n-          \r\n-          <h1 className=\"addBook\">Add a book :</h1>\r\n-          \r\n-         <Books />\r\n-         <AddBooks /> \r\n-         {/* <NewArrivals books={books} />  */}\r\n-      </section>\r\n-    </>\r\n-  );\r\n-};\r\n-\r\n-export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708280231444,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,8 @@\n \r\n         <h1 className=\"addBook\">Add a book :</h1>\r\n         <AddBooks />\r\n         <Books />\r\n-\r\n       </section>\r\n     </>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1708281201958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,11 +9,10 @@\n   return (\r\n     <>\r\n       My home page\r\n       <section className=\"FrontImage\">\r\n-\r\n         <h1 className=\"addBook\">Add a book :</h1>\r\n-        <AddBooks />\r\n+        {/* <AddBooks /> */}\r\n         <Books />\r\n       </section>\r\n     </>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708281436901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     <>\r\n       My home page\r\n       <section className=\"FrontImage\">\r\n         <h1 className=\"addBook\">Add a book :</h1>\r\n-        {/* <AddBooks /> */}\r\n+         <AddBooks /> */}\r\n         <Books />\r\n       </section>\r\n     </>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708281567920,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     <>\r\n       My home page\r\n       <section className=\"FrontImage\">\r\n         <h1 className=\"addBook\">Add a book :</h1>\r\n-         <AddBooks /> */}\r\n+         {/* <AddBooks />  */}\r\n         <Books />\r\n       </section>\r\n     </>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708281779480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n       My home page\r\n       <section className=\"FrontImage\">\r\n         <h1 className=\"addBook\">Add a book :</h1>\r\n          {/* <AddBooks />  */}\r\n-        <Books />\r\n+        {/* <Books /> */}\r\n       </section>\r\n     </>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1708281790511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n       My home page\r\n       <section className=\"FrontImage\">\r\n         <h1 className=\"addBook\">Add a book :</h1>\r\n          {/* <AddBooks />  */}\r\n-        {/* <Books /> */}\r\n+         <Books /> */}\r\n       </section>\r\n     </>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1708283202295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n       My home page\r\n       <section className=\"FrontImage\">\r\n         <h1 className=\"addBook\">Add a book :</h1>\r\n          {/* <AddBooks />  */}\r\n-         <Books /> */}\r\n+         {/* <Books />  */}\r\n       </section>\r\n     </>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1708283220038,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,10 @@\n     <>\r\n       My home page\r\n       <section className=\"FrontImage\">\r\n         <h1 className=\"addBook\">Add a book :</h1>\r\n-         {/* <AddBooks />  */}\r\n-         {/* <Books />  */}\r\n+         <AddBooks /> \r\n+          <Books />  \r\n       </section>\r\n     </>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1708284197079,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n import Books from './Books'\r\n \r\n const HomePage = () => {\r\n   const [books, setBooks] = useState([]);\r\n+  const [newBooks, setNewBooks] = useState([]);\r\n \r\n   return (\r\n     <>\r\n       My home page\r\n"
+                },
+                {
+                    "date": 1708284220411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,13 @@\n const HomePage = () => {\r\n   const [books, setBooks] = useState([]);\r\n   const [newBooks, setNewBooks] = useState([]);\r\n \r\n+  // Handler for adding new books to the main list\r\n+  const handleAddBook = (newBook) => {\r\n+    setNewBooks([...newBooks, newBook]); // Add the new book to the new books list\r\n+  };\r\n+\r\n   return (\r\n     <>\r\n       My home page\r\n       <section className=\"FrontImage\">\r\n"
+                },
+                {
+                    "date": 1708284242557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,15 @@\n   const handleAddBook = (newBook) => {\r\n     setNewBooks([...newBooks, newBook]); // Add the new book to the new books list\r\n   };\r\n \r\n+  // Effect to merge new books with the main list when newBooks changes\r\n+  useEffect(() => {\r\n+    setBooks([...books, ...newBooks]); // Merge new books with the main list when newBooks changes\r\n+    setNewBooks([]); // Clear the new books list after the addition\r\n+  }, [newBooks]);\r\n+\r\n+\r\n   return (\r\n     <>\r\n       My home page\r\n       <section className=\"FrontImage\">\r\n"
+                },
+                {
+                    "date": 1708284273017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,17 +18,17 @@\n     setNewBooks([]); // Clear the new books list after the addition\r\n   }, [newBooks]);\r\n \r\n \r\n-  return (\r\n-    <>\r\n-      My home page\r\n-      <section className=\"FrontImage\">\r\n-        <h1 className=\"addBook\">Add a book :</h1>\r\n-         <AddBooks /> \r\n-          <Books />  \r\n-      </section>\r\n-    </>\r\n-  );\r\n+  // return (\r\n+  //   <>\r\n+  //     My home page\r\n+  //     <section className=\"FrontImage\">\r\n+  //       <h1 className=\"addBook\">Add a book :</h1>\r\n+  //        <AddBooks /> \r\n+  //         <Books />  \r\n+  //     </section>\r\n+  //   </>\r\n+  // );\r\n };\r\n \r\n export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708284280979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,9 @@\n     setBooks([...books, ...newBooks]); // Merge new books with the main list when newBooks changes\r\n     setNewBooks([]); // Clear the new books list after the addition\r\n   }, [newBooks]);\r\n \r\n+  \r\n \r\n   // return (\r\n   //   <>\r\n   //     My home page\r\n"
+                },
+                {
+                    "date": 1708284312565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import React, { useState } from \"react\";\r\n+import React, { useState,use } from \"react\";\r\n import \"../index.css\";\r\n import AddBooks from './../components/AddBooks';\r\n import Books from './Books'\r\n \r\n@@ -17,9 +17,18 @@\n     setBooks([...books, ...newBooks]); // Merge new books with the main list when newBooks changes\r\n     setNewBooks([]); // Clear the new books list after the addition\r\n   }, [newBooks]);\r\n \r\n-  \r\n+  return (\r\n+    <>\r\n+      My home page\r\n+      <section className=\"FrontImage\">\r\n+        <h1 className=\"addBook\">Add a book :</h1>\r\n+        <AddBooks onAddBook={handleAddBook} /> \r\n+        <Books books={books} />  \r\n+      </section>\r\n+    </>\r\n+  );\r\n \r\n   // return (\r\n   //   <>\r\n   //     My home page\r\n"
+                },
+                {
+                    "date": 1708284814064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,44 @@\n+import React, { useState } from \"react\";\r\n+import \"../index.css\";\r\n+import AddBooks from './../components/AddBooks';\r\n+import Books from './Books'\r\n+\r\n+const HomePage = () => {\r\n+  const [books, setBooks] = useState([]);\r\n+  const [newBooks, setNewBooks] = useState([]);\r\n+\r\n+  // Handler for adding new books to the main list\r\n+  const handleAddBook = (newBook) => {\r\n+    setNewBooks([...newBooks, newBook]); // Add the new book to the new books list\r\n+  };\r\n+\r\n+  // Effect to merge new books with the main list when newBooks changes\r\n+  useEffect(() => {\r\n+    setBooks([...books, ...newBooks]); // Merge new books with the main list when newBooks changes\r\n+    setNewBooks([]); // Clear the new books list after the addition\r\n+  }, [newBooks]);\r\n+\r\n+   return (\r\n+    <>\r\n+      My home page\r\n+      <section className=\"FrontImage\">\r\n+        <h1 className=\"addBook\">Add a book :</h1>\r\n+        <AddBooks onAddBook={handleAddBook} /> \r\n+        <Books books={books} />  \r\n+      </section>\r\n+    </>\r\n+  );\r\n+\r\n+  // return (\r\n+  //   <>\r\n+  //     My home page\r\n+  //     <section className=\"FrontImage\">\r\n+  //       <h1 className=\"addBook\">Add a book :</h1>\r\n+  //        <AddBooks /> \r\n+  //         <Books />  \r\n+  //     </section>\r\n+  //   </>\r\n+  // );\r\n+};\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708284819116,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,72 +17,18 @@\n     setBooks([...books, ...newBooks]); // Merge new books with the main list when newBooks changes\r\n     setNewBooks([]); // Clear the new books list after the addition\r\n   }, [newBooks]);\r\n \r\n-   return (\r\n-    <>\r\n-      My home page\r\n-      <section className=\"FrontImage\">\r\n-        <h1 className=\"addBook\">Add a book :</h1>\r\n-        <AddBooks onAddBook={handleAddBook} /> \r\n-        <Books books={books} />  \r\n-      </section>\r\n-    </>\r\n-  );\r\n \r\n-  // return (\r\n-  //   <>\r\n-  //     My home page\r\n-  //     <section className=\"FrontImage\">\r\n-  //       <h1 className=\"addBook\">Add a book :</h1>\r\n-  //        <AddBooks /> \r\n-  //         <Books />  \r\n-  //     </section>\r\n-  //   </>\r\n-  // );\r\n-};\r\n-\r\n-export default HomePage;\r\n-import React, { useState,use } from \"react\";\r\n-import \"../index.css\";\r\n-import AddBooks from './../components/AddBooks';\r\n-import Books from './Books'\r\n-\r\n-const HomePage = () => {\r\n-  const [books, setBooks] = useState([]);\r\n-  const [newBooks, setNewBooks] = useState([]);\r\n-\r\n-  // Handler for adding new books to the main list\r\n-  const handleAddBook = (newBook) => {\r\n-    setNewBooks([...newBooks, newBook]); // Add the new book to the new books list\r\n-  };\r\n-\r\n-  // Effect to merge new books with the main list when newBooks changes\r\n-  useEffect(() => {\r\n-    setBooks([...books, ...newBooks]); // Merge new books with the main list when newBooks changes\r\n-    setNewBooks([]); // Clear the new books list after the addition\r\n-  }, [newBooks]);\r\n-\r\n   return (\r\n     <>\r\n       My home page\r\n       <section className=\"FrontImage\">\r\n         <h1 className=\"addBook\">Add a book :</h1>\r\n-        <AddBooks onAddBook={handleAddBook} /> \r\n-        <Books books={books} />  \r\n+         <AddBooks /> \r\n+          <Books />  \r\n       </section>\r\n     </>\r\n   );\r\n-\r\n-  // return (\r\n-  //   <>\r\n-  //     My home page\r\n-  //     <section className=\"FrontImage\">\r\n-  //       <h1 className=\"addBook\">Add a book :</h1>\r\n-  //        <AddBooks /> \r\n-  //         <Books />  \r\n-  //     </section>\r\n-  //   </>\r\n-  // );\r\n };\r\n \r\n export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708284835026,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,15 +11,10 @@\n   const handleAddBook = (newBook) => {\r\n     setNewBooks([...newBooks, newBook]); // Add the new book to the new books list\r\n   };\r\n \r\n-  // Effect to merge new books with the main list when newBooks changes\r\n-  useEffect(() => {\r\n-    setBooks([...books, ...newBooks]); // Merge new books with the main list when newBooks changes\r\n-    setNewBooks([]); // Clear the new books list after the addition\r\n-  }, [newBooks]);\r\n+  \r\n \r\n-\r\n   return (\r\n     <>\r\n       My home page\r\n       <section className=\"FrontImage\">\r\n"
+                },
+                {
+                    "date": 1708284885665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     <>\r\n       My home page\r\n       <section className=\"FrontImage\">\r\n         <h1 className=\"addBook\">Add a book :</h1>\r\n-         <AddBooks /> \r\n+         {/* <AddBooks />  */}\r\n           <Books />  \r\n       </section>\r\n     </>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708285260552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,29 @@\n+import React, { useState } from \"react\";\r\n+import \"../index.css\";\r\n+//import AddBooks from './../components/AddBooks';\r\n+import Books from './Books'\r\n+\r\n+const HomePage = () => {\r\n+  const [books, setBooks] = useState([]);\r\n+  const [newBooks, setNewBooks] = useState([]);\r\n+\r\n+  // Handler for adding new books to the main list\r\n+  const handleAddBook = (newBook) => {\r\n+    setNewBooks([...newBooks, newBook]); // Add the new book to the new books list\r\n+  };\r\n+\r\n+  \r\n+\r\n+  return (\r\n+    <>\r\n+      My home page\r\n+      <section className=\"FrontImage\">\r\n+        <h1 className=\"addBook\">Add a book :</h1>\r\n+         {/* <AddBooks />  */}\r\n+          <Books />  \r\n+      </section>\r\n+    </>\r\n+  );\r\n+};\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708285923225,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,52 +7,23 @@\n   const [books, setBooks] = useState([]);\r\n   const [newBooks, setNewBooks] = useState([]);\r\n \r\n   // Handler for adding new books to the main list\r\n-  const handleAddBook = (newBook) => {\r\n-    setNewBooks([...newBooks, newBook]); // Add the new book to the new books list\r\n-  };\r\n+  // const handleAddBook = (newBook) => {\r\n+  //   setNewBooks([...newBooks, newBook]); // Add the new book to the new books list\r\n+  // };\r\n \r\n   \r\n \r\n   return (\r\n     <>\r\n       My home page\r\n       <section className=\"FrontImage\">\r\n         <h1 className=\"addBook\">Add a book :</h1>\r\n-         {/* <AddBooks />  */}\r\n+         <AddBooks />  */}\r\n           <Books />  \r\n       </section>\r\n     </>\r\n   );\r\n };\r\n \r\n export default HomePage;\r\n-import React, { useState } from \"react\";\r\n-import \"../index.css\";\r\n-import AddBooks from './../components/AddBooks';\r\n-import Books from './Books'\r\n-\r\n-const HomePage = () => {\r\n-  const [books, setBooks] = useState([]);\r\n-  const [newBooks, setNewBooks] = useState([]);\r\n-\r\n-  // Handler for adding new books to the main list\r\n-  const handleAddBook = (newBook) => {\r\n-    setNewBooks([...newBooks, newBook]); // Add the new book to the new books list\r\n-  };\r\n-\r\n-  \r\n-\r\n-  return (\r\n-    <>\r\n-      My home page\r\n-      <section className=\"FrontImage\">\r\n-        <h1 className=\"addBook\">Add a book :</h1>\r\n-         {/* <AddBooks />  */}\r\n-          <Books />  \r\n-      </section>\r\n-    </>\r\n-  );\r\n-};\r\n-\r\n-export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708285940905,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React, { useState } from \"react\";\r\n import \"../index.css\";\r\n-//import AddBooks from './../components/AddBooks';\r\n+import AddBooks from './../components/AddBooks';\r\n import Books from './Books'\r\n \r\n const HomePage = () => {\r\n   const [books, setBooks] = useState([]);\r\n@@ -18,9 +18,9 @@\n     <>\r\n       My home page\r\n       <section className=\"FrontImage\">\r\n         <h1 className=\"addBook\">Add a book :</h1>\r\n-         <AddBooks />  */}\r\n+         <AddBooks />  \r\n           <Books />  \r\n       </section>\r\n     </>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708286336154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     <>\r\n       My home page\r\n       <section className=\"FrontImage\">\r\n         <h1 className=\"addBook\">Add a book :</h1>\r\n-         <AddBooks />  \r\n+         {/* <AddBooks />   */}\r\n           <Books />  \r\n       </section>\r\n     </>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708286579273,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,29 @@\n+import React, { useState } from \"react\";\r\n+import \"../index.css\";\r\n+import AddBooks from './../components/AddBooks';\r\n+import Books from './Books'\r\n+\r\n+const HomePage = () => {\r\n+  const [books, setBooks] = useState([]);\r\n+  const [newBooks, setNewBooks] = useState([]);\r\n+\r\n+  // Handler for adding new books to the main list\r\n+  // const handleAddBook = (newBook) => {\r\n+  //   setNewBooks([...newBooks, newBook]); // Add the new book to the new books list\r\n+  // };\r\n+\r\n+  \r\n+\r\n+  return (\r\n+    <>\r\n+      My home page\r\n+      <section className=\"FrontImage\">\r\n+        <h1 className=\"addBook\">Add a book :</h1>\r\n+          <AddBooks />   */}\r\n+          <Books />  \r\n+      </section>\r\n+    </>\r\n+  );\r\n+};\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708287423723,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,41 +18,12 @@\n     <>\r\n       My home page\r\n       <section className=\"FrontImage\">\r\n         <h1 className=\"addBook\">Add a book :</h1>\r\n-          <AddBooks />   */}\r\n+          {/* <AddBooks />    */}\r\n           <Books />  \r\n       </section>\r\n     </>\r\n   );\r\n };\r\n \r\n export default HomePage;\r\n-import React, { useState } from \"react\";\r\n-import \"../index.css\";\r\n-import AddBooks from './../components/AddBooks';\r\n-import Books from './Books'\r\n-\r\n-const HomePage = () => {\r\n-  const [books, setBooks] = useState([]);\r\n-  const [newBooks, setNewBooks] = useState([]);\r\n-\r\n-  // Handler for adding new books to the main list\r\n-  // const handleAddBook = (newBook) => {\r\n-  //   setNewBooks([...newBooks, newBook]); // Add the new book to the new books list\r\n-  // };\r\n-\r\n-  \r\n-\r\n-  return (\r\n-    <>\r\n-      My home page\r\n-      <section className=\"FrontImage\">\r\n-        <h1 className=\"addBook\">Add a book :</h1>\r\n-         {/* <AddBooks />   */}\r\n-          <Books />  \r\n-      </section>\r\n-    </>\r\n-  );\r\n-};\r\n-\r\n-export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708287731309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import Books from './Books'\r\n \r\n const HomePage = () => {\r\n   const [books, setBooks] = useState([]);\r\n-  const [newBooks, setNewBooks] = useState([]);\r\n+ // const [newBooks, setNewBooks] = useState([]);\r\n \r\n   // Handler for adding new books to the main list\r\n   // const handleAddBook = (newBook) => {\r\n   //   setNewBooks([...newBooks, newBook]); // Add the new book to the new books list\r\n"
+                },
+                {
+                    "date": 1708289122074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     <>\r\n       My home page\r\n       <section className=\"FrontImage\">\r\n         <h1 className=\"addBook\">Add a book :</h1>\r\n-          {/* <AddBooks />    */}\r\n+           <AddBooks />    */}\r\n           <Books />  \r\n       </section>\r\n     </>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708289894037,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,29 @@\n+import React, { useState } from \"react\";\r\n+import \"../index.css\";\r\n+import AddBooks from './../components/AddBooks';\r\n+import Books from './Books'\r\n+\r\n+const HomePage = () => {\r\n+  const [books, setBooks] = useState([]);\r\n+ // const [newBooks, setNewBooks] = useState([]);\r\n+\r\n+  // Handler for adding new books to the main list\r\n+  // const handleAddBook = (newBook) => {\r\n+  //   setNewBooks([...newBooks, newBook]); // Add the new book to the new books list\r\n+  // };\r\n+\r\n+  \r\n+\r\n+  return (\r\n+    <>\r\n+      My home page\r\n+      <section className=\"FrontImage\">\r\n+        <h1 className=\"addBook\">Add a book :</h1>\r\n+           {/* <AddBooks />     */}\r\n+          <Books />  \r\n+      </section>\r\n+    </>\r\n+  );\r\n+};\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708289902662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,41 +18,12 @@\n     <>\r\n       My home page\r\n       <section className=\"FrontImage\">\r\n         <h1 className=\"addBook\">Add a book :</h1>\r\n-           {/* <AddBooks />     */}\r\n+           <AddBooks />    \r\n           <Books />  \r\n       </section>\r\n     </>\r\n   );\r\n };\r\n \r\n export default HomePage;\r\n-import React, { useState } from \"react\";\r\n-import \"../index.css\";\r\n-import AddBooks from './../components/AddBooks';\r\n-import Books from './Books'\r\n-\r\n-const HomePage = () => {\r\n-  const [books, setBooks] = useState([]);\r\n- // const [newBooks, setNewBooks] = useState([]);\r\n-\r\n-  // Handler for adding new books to the main list\r\n-  // const handleAddBook = (newBook) => {\r\n-  //   setNewBooks([...newBooks, newBook]); // Add the new book to the new books list\r\n-  // };\r\n-\r\n-  \r\n-\r\n-  return (\r\n-    <>\r\n-      My home page\r\n-      <section className=\"FrontImage\">\r\n-        <h1 className=\"addBook\">Add a book :</h1>\r\n-           <AddBooks />    */}\r\n-          <Books />  \r\n-      </section>\r\n-    </>\r\n-  );\r\n-};\r\n-\r\n-export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708289908900,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n       My home page\r\n       <section className=\"FrontImage\">\r\n         <h1 className=\"addBook\">Add a book :</h1>\r\n            <AddBooks />    \r\n-          <Books />  \r\n+          {/* <Books />   */}\r\n       </section>\r\n     </>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1708289923490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     <>\r\n       My home page\r\n       <section className=\"FrontImage\">\r\n         <h1 className=\"addBook\">Add a book :</h1>\r\n-           <AddBooks />    \r\n+           {/* <AddBooks />     */}\r\n           {/* <Books />   */}\r\n       </section>\r\n     </>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708289950319,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     <>\r\n       My home page\r\n       <section className=\"FrontImage\">\r\n         <h1 className=\"addBook\">Add a book :</h1>\r\n-           {/* <AddBooks />     */}\r\n+            <AddBooks />     */}\r\n           {/* <Books />   */}\r\n       </section>\r\n     </>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708289955865,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,10 +18,10 @@\n     <>\r\n       My home page\r\n       <section className=\"FrontImage\">\r\n         <h1 className=\"addBook\">Add a book :</h1>\r\n-            <AddBooks />     */}\r\n-          {/* <Books />   */}\r\n+            <AddBooks />     \r\n+           <Books />   \r\n       </section>\r\n     </>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1708290584805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,29 @@\n+import React, { useState } from \"react\";\r\n+import \"../index.css\";\r\n+import AddBooks from './../components/AddBooks';\r\n+import Books from './Books'\r\n+\r\n+const HomePage = () => {\r\n+  const [books, setBooks] = useState([]);\r\n+ // const [newBooks, setNewBooks] = useState([]);\r\n+\r\n+  // Handler for adding new books to the main list\r\n+  // const handleAddBook = (newBook) => {\r\n+  //   setNewBooks([...newBooks, newBook]); // Add the new book to the new books list\r\n+  // };\r\n+\r\n+  \r\n+\r\n+  return (\r\n+    <>\r\n+      My home page\r\n+      <section className=\"FrontImage\">\r\n+        <h1 className=\"addBook\">Add a book :</h1>\r\n+            {/* <AddBooks />      */}\r\n+           <Books />   \r\n+      </section>\r\n+    </>\r\n+  );\r\n+};\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708290597213,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,41 +18,12 @@\n     <>\r\n       My home page\r\n       <section className=\"FrontImage\">\r\n         <h1 className=\"addBook\">Add a book :</h1>\r\n-            {/* <AddBooks />      */}\r\n+             <AddBooks />      */}\r\n            <Books />   \r\n       </section>\r\n     </>\r\n   );\r\n };\r\n \r\n export default HomePage;\r\n-import React, { useState } from \"react\";\r\n-import \"../index.css\";\r\n-import AddBooks from './../components/AddBooks';\r\n-import Books from './Books'\r\n-\r\n-const HomePage = () => {\r\n-  const [books, setBooks] = useState([]);\r\n- // const [newBooks, setNewBooks] = useState([]);\r\n-\r\n-  // Handler for adding new books to the main list\r\n-  // const handleAddBook = (newBook) => {\r\n-  //   setNewBooks([...newBooks, newBook]); // Add the new book to the new books list\r\n-  // };\r\n-\r\n-  \r\n-\r\n-  return (\r\n-    <>\r\n-      My home page\r\n-      <section className=\"FrontImage\">\r\n-        <h1 className=\"addBook\">Add a book :</h1>\r\n-            <AddBooks />     \r\n-           <Books />   \r\n-      </section>\r\n-    </>\r\n-  );\r\n-};\r\n-\r\n-export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708337206369,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,29 +1,22 @@\n import React, { useState } from \"react\";\r\n import \"../index.css\";\r\n-import AddBooks from './../components/AddBooks';\r\n-import Books from './Books'\r\n+import NewArrivals from \"../components/NewArrivals\";\r\n \r\n const HomePage = () => {\r\n   const [books, setBooks] = useState([]);\r\n- // const [newBooks, setNewBooks] = useState([]);\r\n \r\n-  // Handler for adding new books to the main list\r\n-  // const handleAddBook = (newBook) => {\r\n-  //   setNewBooks([...newBooks, newBook]); // Add the new book to the new books list\r\n-  // };\r\n-\r\n-  \r\n-\r\n   return (\r\n-    <>\r\n-      My home page\r\n+    <div>\r\n       <section className=\"FrontImage\">\r\n-        <h1 className=\"addBook\">Add a book :</h1>\r\n-             <AddBooks />      */}\r\n-           <Books />   \r\n+        <img\r\n+          className=\"homepage-image\"\r\n+          src=\"src/assets/illustrations/Home_01.jpg\"\r\n+        ></img>\r\n+        \r\n+        <NewArrivals books={books} />\r\n       </section>\r\n-    </>\r\n+    </div>\r\n   );\r\n };\r\n \r\n export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708337228186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,22 @@\n+import React, { useState } from \"react\";\r\n+import \"../index.css\";\r\n+import NewArrivals from \"../components/NewArrivals\";\r\n+\r\n+const HomePage = () => {\r\n+  const [books, setBooks] = useState([]);\r\n+\r\n+  return (\r\n+    <div>\r\n+      <section className=\"FrontImage\">\r\n+        <img\r\n+          className=\"homepage-image\"\r\n+          src=\"src/assets/illustrations/Home_01.jpg\"\r\n+        ></img>\r\n+\r\n+        <NewArrivals books={books} /><\r\n+      </section>\r\n+    </div>\r\n+  );\r\n+};\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708337235297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,30 +11,8 @@\n         <img\r\n           className=\"homepage-image\"\r\n           src=\"src/assets/illustrations/Home_01.jpg\"\r\n         ></img>\r\n-\r\n-        <NewArrivals books={books} /><\r\n-      </section>\r\n-    </div>\r\n-  );\r\n-};\r\n-\r\n-export default HomePage;\r\n-import React, { useState } from \"react\";\r\n-import \"../index.css\";\r\n-import NewArrivals from \"../components/NewArrivals\";\r\n-\r\n-const HomePage = () => {\r\n-  const [books, setBooks] = useState([]);\r\n-\r\n-  return (\r\n-    <div>\r\n-      <section className=\"FrontImage\">\r\n-        <img\r\n-          className=\"homepage-image\"\r\n-          src=\"src/assets/illustrations/Home_01.jpg\"\r\n-        ></img>\r\n         \r\n         <NewArrivals books={books} />\r\n       </section>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708337258178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n         <img\r\n           className=\"homepage-image\"\r\n           src=\"src/assets/illustrations/Home_01.jpg\"\r\n         ></img>\r\n-        \r\n+        <\r\n         <NewArrivals books={books} />\r\n       </section>\r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708337268692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import React, { useState } from \"react\";\r\n import \"../index.css\";\r\n import NewArrivals from \"../components/NewArrivals\";\r\n+import AddBooks from \"../components/AddBooks\";\r\n \r\n const HomePage = () => {\r\n   const [books, setBooks] = useState([]);\r\n \r\n@@ -11,9 +12,9 @@\n         <img\r\n           className=\"homepage-image\"\r\n           src=\"src/assets/illustrations/Home_01.jpg\"\r\n         ></img>\r\n-        <\r\n+        <AddBooks />\r\n         <NewArrivals books={books} />\r\n       </section>\r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708338472973,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         <img\r\n           className=\"homepage-image\"\r\n           src=\"src/assets/illustrations/Home_01.jpg\"\r\n         ></img>\r\n-        <AddBooks />\r\n+        \r\n         <NewArrivals books={books} />\r\n       </section>\r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708354452169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React, { useState } from \"react\";\r\n import \"../index.css\";\r\n import NewArrivals from \"../components/NewArrivals\";\r\n-import AddBooks from \"../components/AddBooks\";\r\n \r\n+\r\n const HomePage = () => {\r\n   const [books, setBooks] = useState([]);\r\n \r\n   return (\r\n"
+                },
+                {
+                    "date": 1708354723793,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,23 @@\n+import React, { useState } from \"react\";\r\n+import \"../index.css\";\r\n+import NewArrivals from \"../components/NewArrivals\";\r\n+\r\n+\r\n+const HomePage = () => {\r\n+  const [books, setBooks] = useState([]);\r\n+\r\n+  return (\r\n+    <div>\r\n+      <section className=\"FrontImage\">\r\n+        <img\r\n+          className=\"homepage-image\"\r\n+          src=\"src/assets/illustrations/Home_01.jpg\"\r\n+        ></img>\r\n+        \r\n+        {/* <NewArrivals books={books} /> */}\r\n+      </section>\r\n+    </div>\r\n+  );\r\n+};\r\n+\r\n+export default HomePage;\r\n"
+                }
+            ],
+            "date": 1708124974528,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\n\r\nconst HomePage = () => {\r\n  return (\r\n    <div>\r\n       <section className=\"FrontImage\">\r\n         <img src=\"src/assets/illustrations/Home_01.jpg\"></img> \r\n      </section> */}\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default HomePage;\r\n"
+        }
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "sourceFile": "deleteBooks.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 18,
+            "patches": [
+                {
+                    "date": 1708292816197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1708292828678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,5 +21,5 @@\n // Appeler la fonction deleteExtraBooks\r\n deleteExtraBooks();\r\n \r\n // Vous pouvez également exporter la fonction pour l'utiliser ailleurs si nécessaire\r\n-export { deleteExtraBooks };\n\\ No newline at end of file\n+export { deleteExtraBooks };\r\n"
+                },
+                {
+                    "date": 1708292839740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,10 @@\n // Importer Axios\r\n import axios from 'axios';\r\n \r\n-// Définir l'URL de l'API\r\n+\r\n+//execute \r\n+// Définir l'URL de l'API \r\n const API_URL = \"https://books.adaptable.app\";\r\n \r\n // Définir la fonction pour supprimer les livres supplémentaires\r\n const deleteExtraBooks = () => {\r\n"
+                },
+                {
+                    "date": 1708292847700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,27 @@\n+// Importer Axios\r\n+import axios from 'axios';\r\n+\r\n+\r\n+//execute the program: \r\n+// Définir l'URL de l'API \r\n+const API_URL = \"https://books.adaptable.app\";\r\n+\r\n+// Définir la fonction pour supprimer les livres supplémentaires\r\n+const deleteExtraBooks = () => {\r\n+  axios\r\n+    .delete(`${API_URL}/books?id_gte=0004`)\r\n+    .then((response) => {\r\n+      console.log(\"Extra books deleted successfully\");\r\n+      // Mettre à jour l'état local ou recharger la liste des livres après la suppression\r\n+    })\r\n+    .catch((error) => {\r\n+      console.log(\"Error deleting the extra books.\");\r\n+      console.error(error);\r\n+    });\r\n+};\r\n+\r\n+// Appeler la fonction deleteExtraBooks\r\n+deleteExtraBooks();\r\n+\r\n+// Vous pouvez également exporter la fonction pour l'utiliser ailleurs si nécessaire\r\n+export { deleteExtraBooks };\r\n"
+                },
+                {
+                    "date": 1708292854072,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n // Importer Axios\r\n import axios from 'axios';\r\n \r\n \r\n-//execute the program: \r\n+//execute the program: node deleteBooks.js\r\n // Définir l'URL de l'API \r\n const API_URL = \"https://books.adaptable.app\";\r\n \r\n // Définir la fonction pour supprimer les livres supplémentaires\r\n@@ -24,31 +24,4 @@\n deleteExtraBooks();\r\n \r\n // Vous pouvez également exporter la fonction pour l'utiliser ailleurs si nécessaire\r\n export { deleteExtraBooks };\r\n-// Importer Axios\r\n-import axios from 'axios';\r\n-\r\n-\r\n-//execute \r\n-// Définir l'URL de l'API \r\n-const API_URL = \"https://books.adaptable.app\";\r\n-\r\n-// Définir la fonction pour supprimer les livres supplémentaires\r\n-const deleteExtraBooks = () => {\r\n-  axios\r\n-    .delete(`${API_URL}/books?id_gte=0004`)\r\n-    .then((response) => {\r\n-      console.log(\"Extra books deleted successfully\");\r\n-      // Mettre à jour l'état local ou recharger la liste des livres après la suppression\r\n-    })\r\n-    .catch((error) => {\r\n-      console.log(\"Error deleting the extra books.\");\r\n-      console.error(error);\r\n-    });\r\n-};\r\n-\r\n-// Appeler la fonction deleteExtraBooks\r\n-deleteExtraBooks();\r\n-\r\n-// Vous pouvez également exporter la fonction pour l'utiliser ailleurs si nécessaire\r\n-export { deleteExtraBooks };\r\n"
+                },
+                {
+                    "date": 1708293195896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,23 +5,25 @@\n //execute the program: node deleteBooks.js\r\n // Définir l'URL de l'API \r\n const API_URL = \"https://books.adaptable.app\";\r\n \r\n-// Définir la fonction pour supprimer les livres supplémentaires\r\n-const deleteExtraBooks = () => {\r\n-  axios\r\n-    .delete(`${API_URL}/books?id_gte=0004`)\r\n-    .then((response) => {\r\n-      console.log(\"Extra books deleted successfully\");\r\n-      // Mettre à jour l'état local ou recharger la liste des livres après la suppression\r\n-    })\r\n-    .catch((error) => {\r\n-      console.log(\"Error deleting the extra books.\");\r\n-      console.error(error);\r\n-    });\r\n+const deleteSpecificBooks = (bookIds) => {\r\n+  bookIds.forEach((bookId) => {\r\n+    axios\r\n+      .delete(`${API_URL}/books/${bookId}`)\r\n+      .then((response) => {\r\n+        console.log(\"Book deleted successfully\");\r\n+        // Mettre à jour l'état local ou recharger la liste des livres après la suppression\r\n+      })\r\n+      .catch((error) => {\r\n+        console.log(\"Error deleting the book with id: \" + bookId);\r\n+        console.error(error);\r\n+      });\r\n+  });\r\n };\r\n \r\n-// Appeler la fonction deleteExtraBooks\r\n-deleteExtraBooks();\r\n+// Utilisation de la fonction pour supprimer les livres spécifiques\r\n+const bookIdsToDelete = [\"id1\", \"id2\", \"id3\"]; // Remplacez par les véritables identifiants des livres à supprimer\r\n+deleteSpecificBooks(bookIdsToDelete);\r\n \r\n // Vous pouvez également exporter la fonction pour l'utiliser ailleurs si nécessaire\r\n export { deleteExtraBooks };\r\n"
+                },
+                {
+                    "date": 1708339637755,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,9 @@\n // Importer Axios\r\n import axios from 'axios';\r\n \r\n \r\n-//execute the program: node deleteBooks.js\r\n-// Définir l'URL de l'API \r\n+//execute the program: node deleteBooks.js \r\n const API_URL = \"https://books.adaptable.app\";\r\n \r\n const deleteSpecificBooks = (bookIds) => {\r\n   bookIds.forEach((bookId) => {\r\n"
+                },
+                {
+                    "date": 1708339643245,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n // Importer Axios\r\n import axios from 'axios';\r\n \r\n \r\n-//execute the program: node deleteBooks.js \r\n+//execute the program: node deleteBooks.js\r\n+// Définir l'URL de l'API \r\n const API_URL = \"https://books.adaptable.app\";\r\n \r\n const deleteSpecificBooks = (bookIds) => {\r\n   bookIds.forEach((bookId) => {\r\n"
+                },
+                {
+                    "date": 1708339649616,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,8 @@\n // Importer Axios\r\n import axios from 'axios';\r\n \r\n-\r\n //execute the program: node deleteBooks.js\r\n-// Définir l'URL de l'API \r\n const API_URL = \"https://books.adaptable.app\";\r\n \r\n const deleteSpecificBooks = (bookIds) => {\r\n   bookIds.forEach((bookId) => {\r\n"
+                },
+                {
+                    "date": 1708339661333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-// Importer Axios\r\n+\r\n import axios from 'axios';\r\n \r\n //execute the program: node deleteBooks.js\r\n const API_URL = \"https://books.adaptable.app\";\r\n@@ -9,9 +9,8 @@\n     axios\r\n       .delete(`${API_URL}/books/${bookId}`)\r\n       .then((response) => {\r\n         console.log(\"Book deleted successfully\");\r\n-        // Mettre à jour l'état local ou recharger la liste des livres après la suppression\r\n       })\r\n       .catch((error) => {\r\n         console.log(\"Error deleting the book with id: \" + bookId);\r\n         console.error(error);\r\n"
+                },
+                {
+                    "date": 1708339671662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n     axios\r\n       .delete(`${API_URL}/books/${bookId}`)\r\n       .then((response) => {\r\n         console.log(\"Book deleted successfully\");\r\n+      \r\n       })\r\n       .catch((error) => {\r\n         console.log(\"Error deleting the book with id: \" + bookId);\r\n         console.error(error);\r\n"
+                },
+                {
+                    "date": 1708339678466,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     axios\r\n       .delete(`${API_URL}/books/${bookId}`)\r\n       .then((response) => {\r\n         console.log(\"Book deleted successfully\");\r\n-      \r\n+        cl\r\n       })\r\n       .catch((error) => {\r\n         console.log(\"Error deleting the book with id: \" + bookId);\r\n         console.error(error);\r\n"
+                },
+                {
+                    "date": 1708339692072,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,27 @@\n+\r\n+import axios from 'axios';\r\n+\r\n+//execute the program: node deleteBooks.js\r\n+const API_URL = \"https://books.adaptable.app\";\r\n+\r\n+const deleteSpecificBooks = (bookIds) => {\r\n+  bookIds.forEach((bookId) => {\r\n+    axios\r\n+      .delete(`${API_URL}/books/${bookId}`)\r\n+      .then((response) => {\r\n+        console.log(\"Book deleted successfully\",response.data);\r\n+        console.log(object)\r\n+      })\r\n+      .catch((error) => {\r\n+        console.log(\"Error deleting the book with id: \" + bookId);\r\n+        console.error(error);\r\n+      });\r\n+  });\r\n+};\r\n+\r\n+// Utilisation de la fonction pour supprimer les livres spécifiques\r\n+const bookIdsToDelete = [\"id1\", \"id2\", \"id3\"]; // Remplacez par les véritables identifiants des livres à supprimer\r\n+deleteSpecificBooks(bookIdsToDelete);\r\n+\r\n+// Vous pouvez également exporter la fonction pour l'utiliser ailleurs si nécessaire\r\n+export { deleteExtraBooks };\r\n"
+                },
+                {
+                    "date": 1708339699364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,8 @@\n     axios\r\n       .delete(`${API_URL}/books/${bookId}`)\r\n       .then((response) => {\r\n         console.log(\"Book deleted successfully\",response.data);\r\n-        console.log(object)\r\n       })\r\n       .catch((error) => {\r\n         console.log(\"Error deleting the book with id: \" + bookId);\r\n         console.error(error);\r\n@@ -24,31 +23,4 @@\n deleteSpecificBooks(bookIdsToDelete);\r\n \r\n // Vous pouvez également exporter la fonction pour l'utiliser ailleurs si nécessaire\r\n export { deleteExtraBooks };\r\n-\r\n-import axios from 'axios';\r\n-\r\n-//execute the program: node deleteBooks.js\r\n-const API_URL = \"https://books.adaptable.app\";\r\n-\r\n-const deleteSpecificBooks = (bookIds) => {\r\n-  bookIds.forEach((bookId) => {\r\n-    axios\r\n-      .delete(`${API_URL}/books/${bookId}`)\r\n-      .then((response) => {\r\n-        console.log(\"Book deleted successfully\");\r\n-        cl\r\n-      })\r\n-      .catch((error) => {\r\n-        console.log(\"Error deleting the book with id: \" + bookId);\r\n-        console.error(error);\r\n-      });\r\n-  });\r\n-};\r\n-\r\n-// Utilisation de la fonction pour supprimer les livres spécifiques\r\n-const bookIdsToDelete = [\"id1\", \"id2\", \"id3\"]; // Remplacez par les véritables identifiants des livres à supprimer\r\n-deleteSpecificBooks(bookIdsToDelete);\r\n-\r\n-// Vous pouvez également exporter la fonction pour l'utiliser ailleurs si nécessaire\r\n-export { deleteExtraBooks };\r\n"
+                },
+                {
+                    "date": 1708339714132,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n       });\r\n   });\r\n };\r\n \r\n-// Utilisation de la fonction pour supprimer les livres spécifiques\r\n+// Delete \r\n const bookIdsToDelete = [\"id1\", \"id2\", \"id3\"]; // Remplacez par les véritables identifiants des livres à supprimer\r\n deleteSpecificBooks(bookIdsToDelete);\r\n \r\n // Vous pouvez également exporter la fonction pour l'utiliser ailleurs si nécessaire\r\n"
+                },
+                {
+                    "date": 1708339729566,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,10 +17,10 @@\n       });\r\n   });\r\n };\r\n \r\n-// Delete \r\n-const bookIdsToDelete = [\"id1\", \"id2\", \"id3\"]; // Remplacez par les véritables identifiants des livres à supprimer\r\n+// Delete specifics books\r\n+const bookIdsToDelete = [\"id1\", \"id2\", \"id3\"]; // Replace by identifiants des livres à supprimer\r\n deleteSpecificBooks(bookIdsToDelete);\r\n \r\n // Vous pouvez également exporter la fonction pour l'utiliser ailleurs si nécessaire\r\n export { deleteExtraBooks };\r\n"
+                },
+                {
+                    "date": 1708339735889,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n   });\r\n };\r\n \r\n // Delete specifics books\r\n-const bookIdsToDelete = [\"id1\", \"id2\", \"id3\"]; // Replace by identifiants des livres à supprimer\r\n+const bookIdsToDelete = [\"id1\", \"id2\", \"id3\"]; // Replace by real id  des livres à supprimer\r\n deleteSpecificBooks(bookIdsToDelete);\r\n \r\n // Vous pouvez également exporter la fonction pour l'utiliser ailleurs si nécessaire\r\n export { deleteExtraBooks };\r\n"
+                },
+                {
+                    "date": 1708339743072,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n   });\r\n };\r\n \r\n // Delete specifics books\r\n-const bookIdsToDelete = [\"id1\", \"id2\", \"id3\"]; // Replace by real id  des livres à supprimer\r\n+const bookIdsToDelete = [\"id1\", \"id2\", \"id3\"]; // Replace by real id  of books to delete\r\n deleteSpecificBooks(bookIdsToDelete);\r\n \r\n // Vous pouvez également exporter la fonction pour l'utiliser ailleurs si nécessaire\r\n export { deleteExtraBooks };\r\n"
+                },
+                {
+                    "date": 1708339752725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,6 +21,5 @@\n // Delete specifics books\r\n const bookIdsToDelete = [\"id1\", \"id2\", \"id3\"]; // Replace by real id  of books to delete\r\n deleteSpecificBooks(bookIdsToDelete);\r\n \r\n-// Vous pouvez également exporter la fonction pour l'utiliser ailleurs si nécessaire\r\n export { deleteExtraBooks };\r\n"
+                }
+            ],
+            "date": 1708292816197,
+            "name": "Commit-0",
+            "content": "// Importer Axios\r\nimport axios from 'axios';\r\n\r\n// Définir l'URL de l'API\r\nconst API_URL = \"https://books.adaptable.app\";\r\n\r\n// Définir la fonction pour supprimer les livres supplémentaires\r\nconst deleteExtraBooks = () => {\r\n  axios\r\n    .delete(`${API_URL}/books?id_gte=0004`)\r\n    .then((response) => {\r\n      console.log(\"Extra books deleted successfully\");\r\n      // Mettre à jour l'état local ou recharger la liste des livres après la suppression\r\n    })\r\n    .catch((error) => {\r\n      console.log(\"Error deleting the extra books.\");\r\n      console.error(error);\r\n    });\r\n};\r\n\r\n// Appeler la fonction deleteExtraBooks\r\ndeleteExtraBooks();\r\n\r\n// Vous pouvez également exporter la fonction pour l'utiliser ailleurs si nécessaire\r\nexport { deleteExtraBooks };"
+        }
+    ]
+}

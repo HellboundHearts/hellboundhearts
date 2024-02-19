@@ -1,0 +1,90 @@
+{
+    "sourceFile": "src/pages/BookListPage.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 18,
+            "patches": [
+                {
+                    "date": 1708163400414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1708163412260,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,9 @@\n-ra\n\\ No newline at end of file\n+import React from 'react'\r\n+\r\n+const BookListPage = () => {\r\n+  return (\r\n+    <div>BookListPage</div>\r\n+  )\r\n+}\r\n+\r\n+export default BookListPage\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708163440982,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,49 @@\n-import React from 'react'\r\n+import React from 'react';\r\n \r\n-const BookListPage = () => {\r\n-  return (\r\n-    <div>BookListPage</div>\r\n-  )\r\n+import axios from \"axios\";\r\n+import { useEffect, useState } from \"react\";\r\n\\ No newline at end of file\n+import { Link } from \"react-router-dom\";\r\n+\r\n+function BookListPage() {\r\n+\r\n+    //const API_URL = \"https://project-management-api-4641927fee65.herokuapp.com\"\r\n+    // const API_URL = \"http://localhost:3000/\"\r\n+    const API_URL = \"books.json\"  //set an http first ?\r\n+\r\n+    const [books, setBooks] = useState(null);\r\n+\r\n+    const getAllBooks = () => {\r\n+        axios.get(`${API_URL}/books?_embed=tasks`)\r\n+            .then((response) => {\r\n+                setProjects(response.data);\r\n+            })\r\n+            .catch((error) => {\r\n+                console.log(\"Error getting books from the API...\");\r\n+                console.log(error);\r\n+            });\r\n+    }\r\n+\r\n+    useEffect(() => {\r\n+        getAllBooks()\r\n+    }, []);\r\n+\r\n+\r\n+    return (\r\n+        <div className=\"ProjectListPage\">\r\n+\r\n+            {books === null\r\n+                ? <p>Loading...</p>\r\n+                : books.map((bookDetails) => {\r\n+                    return (\r\n+                        <div className=\"ProjectCard card\" key={bookDetails.id} >\r\n+                            <Link to={`/books/${bookDetails.id}`}>\r\n+                                <h3>{bookDetails.title}</h3>\r\n+                            </Link>\r\n+                        </div>\r\n+                    )\r\n+                })}\r\n+        </div>\r\n+    );\r\n }\r\n \r\n-export default BookListPage\n+export default BookListPage;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708163463507,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,49 @@\n+import React from 'react';\r\n+\r\n+import axios from \"axios\";\r\n+import { useEffect, useState } from \"react\";\r\n+import { Link } from \"react-router-dom\";\r\n+\r\n+function BookListPage() {\r\n+\r\n+    const API_URL = \"https://project-management-api-4641927fee65.herokuapp.com\"\r\n+    // const API_URL = \"http://localhost:3000/\"\r\n+    const API_URL = \"books.json\"  //set an http first ?\r\n+\r\n+    const [books, setBooks] = useState(null);\r\n+\r\n+    const getAllBooks = () => {\r\n+        axios.get(`${API_URL}/books?_embed=tasks`)\r\n+            .then((response) => {\r\n+                setProjects(response.data);\r\n+            })\r\n+            .catch((error) => {\r\n+                console.log(\"Error getting books from the API...\");\r\n+                console.log(error);\r\n+            });\r\n+    }\r\n+\r\n+    useEffect(() => {\r\n+        getAllBooks()\r\n+    }, []);\r\n+\r\n+\r\n+    return (\r\n+        <div className=\"ProjectListPage\">\r\n+\r\n+            {books === null\r\n+                ? <p>Loading...</p>\r\n+                : books.map((bookDetails) => {\r\n+                    return (\r\n+                        <div className=\"ProjectCard card\" key={bookDetails.id} >\r\n+                            <Link to={`/books/${bookDetails.id}`}>\r\n+                                <h3>{bookDetails.title}</h3>\r\n+                            </Link>\r\n+                        </div>\r\n+                    )\r\n+                })}\r\n+        </div>\r\n+    );\r\n+}\r\n+\r\n+export default BookListPage;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708163472078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,57 +5,8 @@\n import { Link } from \"react-router-dom\";\r\n \r\n function BookListPage() {\r\n \r\n-    const API_URL = \"https://project-management-api-4641927fee65.herokuapp.com\"\r\n-    // const API_URL = \"http://localhost:3000/\"\r\n-    const API_URL = \"books.json\"  //set an http first ?\r\n-\r\n-    const [books, setBooks] = useState(null);\r\n-\r\n-    const getAllBooks = () => {\r\n-        axios.get(`${API_URL}/books?_embed=tasks`)\r\n-            .then((response) => {\r\n-                setProjects(response.data);\r\n-            })\r\n-            .catch((error) => {\r\n-                console.log(\"Error getting books from the API...\");\r\n-                console.log(error);\r\n-            });\r\n-    }\r\n-\r\n-    useEffect(() => {\r\n-        getAllBooks()\r\n-    }, []);\r\n-\r\n-\r\n-    return (\r\n-        <div className=\"ProjectListPage\">\r\n-\r\n-            {books === null\r\n-                ? <p>Loading...</p>\r\n-                : books.map((bookDetails) => {\r\n-                    return (\r\n-                        <div className=\"ProjectCard card\" key={bookDetails.id} >\r\n-                            <Link to={`/books/${bookDetails.id}`}>\r\n-                                <h3>{bookDetails.title}</h3>\r\n-                            </Link>\r\n-                        </div>\r\n-                    )\r\n-                })}\r\n-        </div>\r\n-    );\r\n-}\r\n-\r\n-export default BookListPage;\n-import React from 'react';\r\n-\r\n-import axios from \"axios\";\r\n-import { useEffect, useState } from \"react\";\r\n-import { Link } from \"react-router-dom\";\r\n-\r\n-function BookListPage() {\r\n-\r\n     //const API_URL = \"https://project-management-api-4641927fee65.herokuapp.com\"\r\n     // const API_URL = \"http://localhost:3000/\"\r\n     const API_URL = \"books.json\"  //set an http first ?\r\n \r\n"
+                },
+                {
+                    "date": 1708163481792,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n function BookListPage() {\r\n \r\n     //const API_URL = \"https://project-management-api-4641927fee65.herokuapp.com\"\r\n     // const API_URL = \"http://localhost:3000/\"\r\n-    const API_URL = \"books.json\"  //set an http first ?\r\n+    const API_URL = \"http://localhost:5000/books\"  //set an http first ?\r\n \r\n     const [books, setBooks] = useState(null);\r\n \r\n     const getAllBooks = () => {\r\n"
+                },
+                {
+                    "date": 1708163487474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n function BookListPage() {\r\n \r\n     //const API_URL = \"https://project-management-api-4641927fee65.herokuapp.com\"\r\n     // const API_URL = \"http://localhost:3000/\"\r\n-    const API_URL = \"http://localhost:5000/books\"  //set an http first ?\r\n+    const API_URL = \"http://localhost:5000/books\" /\r\n \r\n     const [books, setBooks] = useState(null);\r\n \r\n     const getAllBooks = () => {\r\n"
+                },
+                {
+                    "date": 1708163493779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n function BookListPage() {\r\n \r\n     //const API_URL = \"https://project-management-api-4641927fee65.herokuapp.com\"\r\n     // const API_URL = \"http://localhost:3000/\"\r\n-    const API_URL = \"http://localhost:5000/books\" /\r\n+    const API_URL = \"http://localhost:5000/books\" //i need to yo\r\n \r\n     const [books, setBooks] = useState(null);\r\n \r\n     const getAllBooks = () => {\r\n"
+                },
+                {
+                    "date": 1708163499284,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n function BookListPage() {\r\n \r\n     //const API_URL = \"https://project-management-api-4641927fee65.herokuapp.com\"\r\n     // const API_URL = \"http://localhost:3000/\"\r\n-    const API_URL = \"http://localhost:5000/books\" //i need to yo\r\n+    const API_URL = \"http://localhost:5000/books\" //i need to use your link\r\n \r\n     const [books, setBooks] = useState(null);\r\n \r\n     const getAllBooks = () => {\r\n"
+                },
+                {
+                    "date": 1708163540801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n function BookListPage() {\r\n \r\n     //const API_URL = \"https://project-management-api-4641927fee65.herokuapp.com\"\r\n     // const API_URL = \"http://localhost:3000/\"\r\n-    const API_URL = \"http://localhost:5000/books\" //i need to use your link\r\n+    const API_URL = \"http://localhost:5000/\" //i need to use your link\r\n \r\n     const [books, setBooks] = useState(null);\r\n \r\n     const getAllBooks = () => {\r\n"
+                },
+                {
+                    "date": 1708163566479,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,11 +5,9 @@\n import { Link } from \"react-router-dom\";\r\n \r\n function BookListPage() {\r\n \r\n-    //const API_URL = \"https://project-management-api-4641927fee65.herokuapp.com\"\r\n-    // const API_URL = \"http://localhost:3000/\"\r\n-    const API_URL = \"http://localhost:5000/\" //i need to use your link\r\n+    const API_URL = \"http://localhost:5000\" //i need to use your link\r\n \r\n     const [books, setBooks] = useState(null);\r\n \r\n     const getAllBooks = () => {\r\n"
+                },
+                {
+                    "date": 1708164276001,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n \r\n     const getAllBooks = () => {\r\n         axios.get(`${API_URL}/books?_embed=tasks`)\r\n             .then((response) => {\r\n-                setProjects(response.data);\r\n+                setBooks(response.data);\r\n             })\r\n             .catch((error) => {\r\n                 console.log(\"Error getting books from the API...\");\r\n                 console.log(error);\r\n"
+                },
+                {
+                    "date": 1708173274285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n import { Link } from \"react-router-dom\";\r\n \r\n function BookListPage() {\r\n \r\n+    \r\n     const API_URL = \"http://localhost:5000\" //i need to use your link\r\n \r\n     const [books, setBooks] = useState(null);\r\n \r\n"
+                },
+                {
+                    "date": 1708173293036,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,10 @@\n import { Link } from \"react-router-dom\";\r\n \r\n function BookListPage() {\r\n \r\n-    \r\n-    const API_URL = \"http://localhost:5000\" //i need to use your link\r\n+    https://books.adaptable.app/books\r\n+    const API_URL = \"https://books.adaptable.app\" //i need to use your link\r\n \r\n     const [books, setBooks] = useState(null);\r\n \r\n     const getAllBooks = () => {\r\n"
+                },
+                {
+                    "date": 1708173299890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \r\n function BookListPage() {\r\n \r\n     https://books.adaptable.app/books\r\n-    const API_URL = \"https://books.adaptable.app\" //i need to use your link\r\n+    const API_URL = \"https://books.adaptable.app\"\r\n \r\n     const [books, setBooks] = useState(null);\r\n \r\n     const getAllBooks = () => {\r\n"
+                },
+                {
+                    "date": 1708173310241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n import { Link } from \"react-router-dom\";\r\n \r\n function BookListPage() {\r\n \r\n-    https://books.adaptable.app/books\r\n+    \r\n     const API_URL = \"https://books.adaptable.app\"\r\n \r\n     const [books, setBooks] = useState(null);\r\n \r\n"
+                },
+                {
+                    "date": 1708173987395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n \r\n     const getAllBooks = () => {\r\n         axios.get(`${API_URL}/books?_embed=tasks`)\r\n             .then((response) => {\r\n+                \r\n                 setBooks(response.data);\r\n             })\r\n             .catch((error) => {\r\n                 console.log(\"Error getting books from the API...\");\r\n"
+                },
+                {
+                    "date": 1708173995959,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n \r\n     const getAllBooks = () => {\r\n         axios.get(`${API_URL}/books?_embed=tasks`)\r\n             .then((response) => {\r\n-                console.log(object)\r\n+                console.log(response.data)\r\n                 setBooks(response.data);\r\n             })\r\n             .catch((error) => {\r\n                 console.log(\"Error getting books from the API...\");\r\n"
+                },
+                {
+                    "date": 1708174353082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,50 @@\n+import React from 'react';\r\n+\r\n+import axios from \"axios\";\r\n+import { useEffect, useState } from \"react\";\r\n+import { Link } from \"react-router-dom\";\r\n+\r\n+function BookListPage() {\r\n+\r\n+    \r\n+    const API_URL = \"https://books.adaptable.app\"\r\n+\r\n+    const [books, setBooks] = useState(null);\r\n+\r\n+    const getAllBooks = () => {\r\n+        axios.get(`${API_URL}/books?_embed=tasks`)\r\n+            .then((response) => {\r\n+                console.log(response.data)\r\n+                setBooks(response.data);\r\n+            })\r\n+            .catch((error) => {\r\n+                console.log(\"Error getting books from the API...\");\r\n+                console.log(error);\r\n+            });\r\n+    }\r\n+\r\n+    useEffect(() => {\r\n+        getAllBooks()\r\n+    }, []);\r\n+\r\n+\r\n+    return (\r\n+        <div className=\"ProjectListPage\">\r\n+\r\n+            {books === null\r\n+                ? <p>Loading...</p>\r\n+                : books.map((bookDetails) => {\r\n+                    return (\r\n+                        <div className=\"ProjectCard card\" key={bookDetails.id} >\r\n+                            <Link to={`/books/${bookDetails.id}`}>\r\n+                                <h3>{bookDetails.title}</h3>\r\n+                                <h3>{bookDetails.title}</h3>\r\n+                            </Link>\r\n+                        </div>\r\n+                    )\r\n+                })}\r\n+        </div>\r\n+    );\r\n+}\r\n+\r\n+export default BookListPage;\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1708163400414,
+            "name": "Commit-0",
+            "content": "ra"
+        }
+    ]
+}
