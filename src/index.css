@@ -7,10 +7,13 @@
 .FrontImage{
     display: flex;
     justify-content: center;
-    
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
 }
 
 .homepage-image{
     width:70vw;
     height: 50vh;
+    max-height: 50vh;
 }
