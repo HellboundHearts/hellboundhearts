@@ -1,0 +1,66 @@
+{
+    "sourceFile": "src/components/Header.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 12,
+            "patches": [
+                {
+                    "date": 1708277455912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1708277462837,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   const [searchResults, setSearchResults] = useState([]);\r\n \r\n   return (\r\n     <div>\r\n-      <img className=\"Logo\" src=\"src/assets/illustrations/Logo_01.jpg\"  />\r\n+      <img className=\"Logo\" src=\"src/assets/illustrations/Logo_01.jpg\" alt=\"The\" />\r\n       <div>\r\n         <SearchBar setSearchResults={setSearchResults} />\r\n         {searchResults && searchResults.length > 0}\r\n       </div>\r\n"
+                },
+                {
+                    "date": 1708335782706,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,21 @@\n import React, { useState } from \"react\";\r\n+import { Link } from \"react-router-dom\";\r\n import SearchBar from \"./SearchBar\";\r\n+import SearchResultsList from \"./SearchResultsList\";\r\n \r\n function Header() {\r\n   const [searchResults, setSearchResults] = useState([]);\r\n \r\n   return (\r\n     <div>\r\n-      <img className=\"Logo\" src=\"src/assets/illustrations/Logo_01.jpg\" alt=\"The\" />\r\n+      <Link to=\"/\">\r\n+        <img className=\"Logo\" src=\"src/assets/illustrations/Logo_01.jpg\" />\r\n+      </Link>\r\n       <div>\r\n-        <SearchBar setSearchResults={setSearchResults} />\r\n+        {/* <SearchBar setSearchResults={setSearchResults} />\r\n         {searchResults && searchResults.length > 0}\r\n+        <SearchResultsList searchResults={searchResults} /> */}\r\n       </div>\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1708355644927,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n import { Link } from \"react-router-dom\";\r\n import SearchBar from \"./SearchBar\";\r\n import SearchResultsList from \"./SearchResultsList\";\r\n \r\n+\r\n function Header() {\r\n   const [searchResults, setSearchResults] = useState([]);\r\n \r\n   return (\r\n"
+                },
+                {
+                    "date": 1708355660055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n import React, { useState } from \"react\";\r\n import { Link } from \"react-router-dom\";\r\n import SearchBar from \"./SearchBar\";\r\n import SearchResultsList from \"./SearchResultsList\";\r\n+import \r\n \r\n-\r\n function Header() {\r\n   const [searchResults, setSearchResults] = useState([]);\r\n \r\n   return (\r\n"
+                },
+                {
+                    "date": 1708355667855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React, { useState } from \"react\";\r\n import { Link } from \"react-router-dom\";\r\n import SearchBar from \"./SearchBar\";\r\n import SearchResultsList from \"./SearchResultsList\";\r\n-import \r\n+import './css'\r\n \r\n function Header() {\r\n   const [searchResults, setSearchResults] = useState([]);\r\n \r\n"
+                },
+                {
+                    "date": 1708355674088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,24 @@\n+import React, { useState } from \"react\";\r\n+import { Link } from \"react-router-dom\";\r\n+import SearchBar from \"./SearchBar\";\r\n+import SearchResultsList from \"./SearchResultsList\";\r\n+\r\n+\r\n+function Header() {\r\n+  const [searchResults, setSearchResults] = useState([]);\r\n+\r\n+  return (\r\n+    <div>\r\n+      <Link to=\"/\">\r\n+        <img className=\"Logo\" src=\"src/assets/illustrations/Logo_01.jpg\" />\r\n+      </Link>\r\n+      <div>\r\n+        {/* <SearchBar setSearchResults={setSearchResults} />\r\n+        {searchResults && searchResults.length > 0}\r\n+        <SearchResultsList searchResults={searchResults} /> */}\r\n+      </div>\r\n+    </div>\r\n+  );\r\n+}\r\n+\r\n+export default Header;\r\n"
+                },
+                {
+                    "date": 1708355708830,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n import React, { useState } from \"react\";\r\n import { Link } from \"react-router-dom\";\r\n import SearchBar from \"./SearchBar\";\r\n import SearchResultsList from \"./SearchResultsList\";\r\n+import \r\n \r\n-\r\n function Header() {\r\n   const [searchResults, setSearchResults] = useState([]);\r\n \r\n   return (\r\n@@ -21,28 +21,4 @@\n   );\r\n }\r\n \r\n export default Header;\r\n-import React, { useState } from \"react\";\r\n-import { Link } from \"react-router-dom\";\r\n-import SearchBar from \"./SearchBar\";\r\n-import SearchResultsList from \"./SearchResultsList\";\r\n-import './css'\r\n-\r\n-function Header() {\r\n-  const [searchResults, setSearchResults] = useState([]);\r\n-\r\n-  return (\r\n-    <div>\r\n-      <Link to=\"/\">\r\n-        <img className=\"Logo\" src=\"src/assets/illustrations/Logo_01.jpg\" />\r\n-      </Link>\r\n-      <div>\r\n-        {/* <SearchBar setSearchResults={setSearchResults} />\r\n-        {searchResults && searchResults.length > 0}\r\n-        <SearchResultsList searchResults={searchResults} /> */}\r\n-      </div>\r\n-    </div>\r\n-  );\r\n-}\r\n-\r\n-export default Header;\r\n"
+                },
+                {
+                    "date": 1708355714448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React, { useState } from \"react\";\r\n import { Link } from \"react-router-dom\";\r\n import SearchBar from \"./SearchBar\";\r\n import SearchResultsList from \"./SearchResultsList\";\r\n-import \r\n+import '.'\r\n \r\n function Header() {\r\n   const [searchResults, setSearchResults] = useState([]);\r\n \r\n"
+                },
+                {
+                    "date": 1708355720172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React, { useState } from \"react\";\r\n import { Link } from \"react-router-dom\";\r\n import SearchBar from \"./SearchBar\";\r\n import SearchResultsList from \"./SearchResultsList\";\r\n-import '.'\r\n+import '../c'\r\n \r\n function Header() {\r\n   const [searchResults, setSearchResults] = useState([]);\r\n \r\n"
+                },
+                {
+                    "date": 1708355734334,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n import React, { useState } from \"react\";\r\n import { Link } from \"react-router-dom\";\r\n import SearchBar from \"./SearchBar\";\r\n import SearchResultsList from \"./SearchResultsList\";\r\n-import '../c'\r\n+import '../css/Header'\r\n+import Header from './Header';\r\n \r\n function Header() {\r\n   const [searchResults, setSearchResults] = useState([]);\r\n \r\n"
+                },
+                {
+                    "date": 1708355745984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React, { useState } from \"react\";\r\n import { Link } from \"react-router-dom\";\r\n import SearchBar from \"./SearchBar\";\r\n import SearchResultsList from \"./SearchResultsList\";\r\n-import '../css/Header'\r\n+import '../css/header.css'\r\n import Header from './Header';\r\n \r\n function Header() {\r\n   const [searchResults, setSearchResults] = useState([]);\r\n"
+                },
+                {
+                    "date": 1708355818606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import { Link } from \"react-router-dom\";\r\n import SearchBar from \"./SearchBar\";\r\n import SearchResultsList from \"./SearchResultsList\";\r\n import '../css/header.css'\r\n-import Header from './Header';\r\n+//import Header from './Header';\r\n \r\n function Header() {\r\n   const [searchResults, setSearchResults] = useState([]);\r\n \r\n"
+                }
+            ],
+            "date": 1708277455912,
+            "name": "Commit-0",
+            "content": "import React, { useState } from \"react\";\r\nimport SearchBar from \"./SearchBar\";\r\n\r\nfunction Header() {\r\n  const [searchResults, setSearchResults] = useState([]);\r\n\r\n  return (\r\n    <div>\r\n      <img className=\"Logo\" src=\"src/assets/illustrations/Logo_01.jpg\"  />\r\n      <div>\r\n        <SearchBar setSearchResults={setSearchResults} />\r\n        {searchResults && searchResults.length > 0}\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n\r\nexport default Header;\r\n"
+        }
+    ]
+}

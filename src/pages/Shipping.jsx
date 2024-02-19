@@ -1,11 +1,11 @@
 
 function Shipping() {
     return (
-        <div>
+        <div className="ship-container">
+            <section className="ship-left">
             <div>
                 <p>
-
-                    Final prices for shipping will be calculated at checkout depending on weight.
+                    Final prices for shipping will be calculated at checkout depending on weight.<br/>
                     Orders will normally be dispatched within 1-2 working days.
                     Standard delivery on your own risk. We do not cover lost parcels.
                 </p>
@@ -47,12 +47,15 @@ function Shipping() {
                     Tracked - 47,99€ up to 5kg<br />
                 </p>
             </div>
+            </section>
+            <section className="ship-right">
             <div>
                 <h2>Returns</h2>
                 <p>
                     Returns are accepted for all purchases once the item has been returned in the same condition sent a full refund will be issued. Buyer will pay returned postage.
                 </p>
             </div>
+            </section>
 
 
 

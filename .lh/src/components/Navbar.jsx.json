@@ -1,0 +1,78 @@
+{
+    "sourceFile": "src/components/Navbar.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 15,
+            "patches": [
+                {
+                    "date": 1708176778167,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1708176785593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \r\n function Navbar() {\r\n   return (\r\n     <>\r\n-      <ul >\r\n+      <ul className=\"Na\">\r\n         <li>\r\n           <Link to=\"/genres\">Genres</Link>\r\n         </li>\r\n         <li>\r\n"
+                },
+                {
+                    "date": 1708176790800,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \r\n function Navbar() {\r\n   return (\r\n     <>\r\n-      <ul className=\"Na\">\r\n+      <ul className=\"Navbar\">\r\n         <li>\r\n           <Link to=\"/genres\">Genres</Link>\r\n         </li>\r\n         <li>\r\n"
+                },
+                {
+                    "date": 1708177352403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n import React from \"react\";\r\n import { Link } from \"react-router-dom\";\r\n+import \r\n \r\n function Navbar() {\r\n   return (\r\n     <>\r\n"
+                },
+                {
+                    "date": 1708177363420,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from \"react\";\r\n import { Link } from \"react-router-dom\";\r\n-import \r\n+import './na'\r\n \r\n function Navbar() {\r\n   return (\r\n     <>\r\n"
+                },
+                {
+                    "date": 1708177370667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from \"react\";\r\n import { Link } from \"react-router-dom\";\r\n-import './na'\r\n+import '../css'\r\n \r\n function Navbar() {\r\n   return (\r\n     <>\r\n"
+                },
+                {
+                    "date": 1708177376119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,27 @@\n+import React from \"react\";\r\n+import { Link } from \"react-router-dom\";\r\n+import '../css/Navbar'\r\n+import Navbar from './Navbar';\r\n+\r\n+function Navbar() {\r\n+  return (\r\n+    <>\r\n+      <ul className=\"Navbar\">\r\n+        <li>\r\n+          <Link to=\"/genres\">Genres</Link>\r\n+        </li>\r\n+        <li>\r\n+          <Link to=\"/about\">About</Link>\r\n+        </li>\r\n+        <li>\r\n+          <Link to=\"/contact\">Contact</Link>\r\n+        </li>\r\n+        <li>\r\n+          <Link to=\"/shipping\">Shipping</Link>\r\n+        </li>\r\n+      </ul>\r\n+    </>\r\n+  );\r\n+}\r\n+\r\n+export default Navbar;\r\n"
+                },
+                {
+                    "date": 1708177482252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,35 +1,9 @@\n import React from \"react\";\r\n import { Link } from \"react-router-dom\";\r\n-import '../css/Navbar'\r\n-import Navbar from './Navbar';\r\n+import '../css/Navbar.css'\r\n \r\n-function Navbar() {\r\n-  return (\r\n-    <>\r\n-      <ul className=\"Navbar\">\r\n-        <li>\r\n-          <Link to=\"/genres\">Genres</Link>\r\n-        </li>\r\n-        <li>\r\n-          <Link to=\"/about\">About</Link>\r\n-        </li>\r\n-        <li>\r\n-          <Link to=\"/contact\">Contact</Link>\r\n-        </li>\r\n-        <li>\r\n-          <Link to=\"/shipping\">Shipping</Link>\r\n-        </li>\r\n-      </ul>\r\n-    </>\r\n-  );\r\n-}\r\n \r\n-export default Navbar;\r\n-import React from \"react\";\r\n-import { Link } from \"react-router-dom\";\r\n-import '../css'\r\n-\r\n function Navbar() {\r\n   return (\r\n     <>\r\n       <ul className=\"Navbar\">\r\n"
+                },
+                {
+                    "date": 1708177504612,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from \"react\";\r\n import { Link } from \"react-router-dom\";\r\n-import '../css/Navbar.css'\r\n+import '../css/navbar.css'\r\n \r\n \r\n function Navbar() {\r\n   return (\r\n"
+                },
+                {
+                    "date": 1708177689098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n function Navbar() {\r\n   return (\r\n     <>\r\n       <ul className=\"Navbar\">\r\n-        <li>\r\n+        <li >\r\n           <Link to=\"/genres\">Genres</Link>\r\n         </li>\r\n         <li>\r\n           <Link to=\"/about\">About</Link>\r\n"
+                },
+                {
+                    "date": 1708177696018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n function Navbar() {\r\n   return (\r\n     <>\r\n       <ul className=\"Navbar\">\r\n-        <li >\r\n+        <li className=\"Box\">\r\n           <Link to=\"/genres\">Genres</Link>\r\n         </li>\r\n         <li>\r\n           <Link to=\"/about\">About</Link>\r\n"
+                },
+                {
+                    "date": 1708177705192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n       <ul className=\"Navbar\">\r\n         <li className=\"Box\">\r\n           <Link to=\"/genres\">Genres</Link>\r\n         </li>\r\n-        <li>\r\n+        <li >\r\n           <Link to=\"/about\">About</Link>\r\n         </li>\r\n         <li>\r\n           <Link to=\"/contact\">Contact</Link>\r\n"
+                },
+                {
+                    "date": 1708177711430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,12 +9,12 @@\n       <ul className=\"Navbar\">\r\n         <li className=\"Box\">\r\n           <Link to=\"/genres\">Genres</Link>\r\n         </li>\r\n-        <li >\r\n+        <li className=\"Box\">\r\n           <Link to=\"/about\">About</Link>\r\n         </li>\r\n-        <li>\r\n+        <li className=\"Box\">\r\n           <Link to=\"/contact\">Contact</Link>\r\n         </li>\r\n         <li>\r\n           <Link to=\"/shipping\">Shipping</Link>\r\n"
+                },
+                {
+                    "date": 1708281485934,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,25 +1,28 @@\n import React from \"react\";\r\n import { Link } from \"react-router-dom\";\r\n-import '../css/navbar.css'\r\n+import \"../css/navbar.css\";\r\n+import Books from \"../pages/Books\";\r\n \r\n-\r\n function Navbar() {\r\n   return (\r\n     <>\r\n       <ul className=\"Navbar\">\r\n         <li className=\"Box\">\r\n-          <Link to=\"/genres\">Genres</Link>\r\n+          <Link to=\"/books\">Books</Link>\r\n         </li>\r\n         <li className=\"Box\">\r\n           <Link to=\"/about\">About</Link>\r\n         </li>\r\n         <li className=\"Box\">\r\n           <Link to=\"/contact\">Contact</Link>\r\n         </li>\r\n-        <li>\r\n+        <li className=\"Box\">\r\n           <Link to=\"/shipping\">Shipping</Link>\r\n         </li>\r\n+        <li className=\"Box\">\r\n+          <Link to=\"/shipping\">Shipping</Link>\r\n+        </li>\r\n       </ul>\r\n     </>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1708281494124,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,30 @@\n+import React from \"react\";\r\n+import { Link } from \"react-router-dom\";\r\n+import \"../css/navbar.css\";\r\n+import Books from \"../pages/Books\";\r\n+\r\n+function Navbar() {\r\n+  return (\r\n+    <>\r\n+      <ul className=\"Navbar\">\r\n+        <li className=\"Box\">\r\n+          <Link to=\"/books\">Books</Link>\r\n+        </li>\r\n+        <li className=\"Box\">\r\n+          <Link to=\"/about\">About</Link>\r\n+        </li>\r\n+        <li className=\"Box\">\r\n+          <Link to=\"/contact\">Contact</Link>\r\n+        </li>\r\n+        <li className=\"Box\">\r\n+          <Link to=\"/shipping\">Shipping</Link>\r\n+        </li>\r\n+        <li className=\"Box\">\r\n+          <Link to=\"/shipping\">Add a book</Link>\r\n+        </li>\r\n+      </ul>\r\n+    </>\r\n+  );\r\n+}\r\n+\r\n+export default Navbar;\r\n"
+                },
+                {
+                    "date": 1708281543893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,42 +19,12 @@\n         <li className=\"Box\">\r\n           <Link to=\"/shipping\">Shipping</Link>\r\n         </li>\r\n         <li className=\"Box\">\r\n-          <Link to=\"/shipping\">Add a book</Link>\r\n+          <Link to=\"/add\">Add a book</Link>\r\n         </li>\r\n       </ul>\r\n     </>\r\n   );\r\n }\r\n \r\n export default Navbar;\r\n-import React from \"react\";\r\n-import { Link } from \"react-router-dom\";\r\n-import \"../css/navbar.css\";\r\n-import Books from \"../pages/Books\";\r\n-\r\n-function Navbar() {\r\n-  return (\r\n-    <>\r\n-      <ul className=\"Navbar\">\r\n-        <li className=\"Box\">\r\n-          <Link to=\"/books\">Books</Link>\r\n-        </li>\r\n-        <li className=\"Box\">\r\n-          <Link to=\"/about\">About</Link>\r\n-        </li>\r\n-        <li className=\"Box\">\r\n-          <Link to=\"/contact\">Contact</Link>\r\n-        </li>\r\n-        <li className=\"Box\">\r\n-          <Link to=\"/shipping\">Shipping</Link>\r\n-        </li>\r\n-        <li className=\"Box\">\r\n-          <Link to=\"/shipping\">Shipping</Link>\r\n-        </li>\r\n-      </ul>\r\n-    </>\r\n-  );\r\n-}\r\n-\r\n-export default Navbar;\r\n"
+                }
+            ],
+            "date": 1708176778167,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\nimport { Link } from \"react-router-dom\";\r\n\r\nfunction Navbar() {\r\n  return (\r\n    <>\r\n      <ul >\r\n        <li>\r\n          <Link to=\"/genres\">Genres</Link>\r\n        </li>\r\n        <li>\r\n          <Link to=\"/about\">About</Link>\r\n        </li>\r\n        <li>\r\n          <Link to=\"/contact\">Contact</Link>\r\n        </li>\r\n        <li>\r\n          <Link to=\"/shipping\">Shipping</Link>\r\n        </li>\r\n      </ul>\r\n    </>\r\n  );\r\n}\r\n\r\nexport default Navbar;\r\n"
+        }
+    ]
+}

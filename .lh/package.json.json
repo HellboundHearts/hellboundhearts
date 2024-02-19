@@ -1,0 +1,30 @@
+{
+    "sourceFile": "package.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1708168197809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1708168286191,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   \"private\": true,\r\n   \"version\": \"0.0.0\",\r\n   \"type\": \"module\",\r\n   \"scripts\": {\r\n-    \"dev\": \"BROWSER=chrome vite\",\r\n+    \"dev\": \"vite\",\r\n     \"build\": \"vite build\",\r\n     \"lint\": \"eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0\",\r\n     \"preview\": \"vite preview\"\r\n   },\r\n"
+                },
+                {
+                    "date": 1708168295279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   \"private\": true,\r\n   \"version\": \"0.0.0\",\r\n   \"type\": \"module\",\r\n   \"scripts\": {\r\n-    \"dev\": \"vite\",\r\n+    \"dev\": \"vite \",\r\n     \"build\": \"vite build\",\r\n     \"lint\": \"eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0\",\r\n     \"preview\": \"vite preview\"\r\n   },\r\n"
+                },
+                {
+                    "date": 1708168330126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   \"private\": true,\r\n   \"version\": \"0.0.0\",\r\n   \"type\": \"module\",\r\n   \"scripts\": {\r\n-    \"dev\": \"vite \",\r\n+    \"dev\": \"vite\",\r\n     \"build\": \"vite build\",\r\n     \"lint\": \"eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0\",\r\n     \"preview\": \"vite preview\"\r\n   },\r\n"
+                }
+            ],
+            "date": 1708168197809,
+            "name": "Commit-0",
+            "content": "{\r\n  \"name\": \"hellboundhearts\",\r\n  \"private\": true,\r\n  \"version\": \"0.0.0\",\r\n  \"type\": \"module\",\r\n  \"scripts\": {\r\n    \"dev\": \"BROWSER=chrome vite\",\r\n    \"build\": \"vite build\",\r\n    \"lint\": \"eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0\",\r\n    \"preview\": \"vite preview\"\r\n  },\r\n  \"dependencies\": {\r\n    \"axios\": \"^1.6.7\",\r\n    \"json-server\": \"^1.0.0-alpha.23\",\r\n    \"react\": \"^18.2.0\",\r\n    \"react-dom\": \"^18.2.0\",\r\n    \"react-router-dom\": \"^6.22.0\"\r\n  },\r\n  \"devDependencies\": {\r\n    \"@types/react\": \"^18.2.55\",\r\n    \"@types/react-dom\": \"^18.2.19\",\r\n    \"@vitejs/plugin-react\": \"^4.2.1\",\r\n    \"eslint\": \"^8.56.0\",\r\n    \"eslint-plugin-react\": \"^7.33.2\",\r\n    \"eslint-plugin-react-hooks\": \"^4.6.0\",\r\n    \"eslint-plugin-react-refresh\": \"^0.4.5\",\r\n    \"vite\": \"^5.1.0\"\r\n  }\r\n}\r\n"
+        }
+    ]
+}

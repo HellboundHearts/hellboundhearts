@@ -1,0 +1,62 @@
+{
+    "sourceFile": "src/pages/NotFound.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 11,
+            "patches": [
+                {
+                    "date": 1708164634245,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1708164639929,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,9 @@\n-ra\n\\ No newline at end of file\n+import React from 'react'\r\n+\r\n+const NotFound = () => {\r\n+  return (\r\n+    <div>NotFound</div>\r\n+  )\r\n+}\r\n+\r\n+export default NotFound\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708164646684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from 'react'\r\n \r\n const NotFound = () => {\r\n   return (\r\n-    <div>NotFound</div>\r\n+    <div>Page NotFound</div>\r\n   )\r\n }\r\n \r\n export default NotFound\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708164666224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from 'react'\r\n \r\n const NotFound = () => {\r\n   return (\r\n-    <div>Page NotFound</div>\r\n+    <div>SorryPage Not Found</div>\r\n   )\r\n }\r\n \r\n export default NotFound\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708164672134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from 'react'\r\n \r\n const NotFound = () => {\r\n   return (\r\n-    <div>SorryPage Not Found</div>\r\n+    <div>Sorry, the age Not Found</div>\r\n   )\r\n }\r\n \r\n export default NotFound\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708164682693,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from 'react'\r\n \r\n const NotFound = () => {\r\n   return (\r\n-    <div>Sorry, the age Not Found</div>\r\n+    <div>Sorry, the page you are Not Found</div>\r\n   )\r\n }\r\n \r\n export default NotFound\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708164688641,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from 'react'\r\n \r\n const NotFound = () => {\r\n   return (\r\n-    <div>Sorry, the page you are Not Found</div>\r\n+    <div>Sorry, the page you are looking is Not Found</div>\r\n   )\r\n }\r\n \r\n export default NotFound\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708164695667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from 'react'\r\n \r\n const NotFound = () => {\r\n   return (\r\n-    <div>Sorry, the page you are looking is Not Found</div>\r\n+    <div>Sorry, the page you are looking is not ound</div>\r\n   )\r\n }\r\n \r\n export default NotFound\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708164731638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n import React from 'react'\r\n \r\n const NotFound = () => {\r\n   return (\r\n-    <div>Sorry, the page you are looking is not ound</div>\r\n+    \r\n+    <div>Sorry, the page you are looking is not found</div>\r\n   )\r\n }\r\n \r\n export default NotFound\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708164738443,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from 'react'\r\n \r\n const NotFound = () => {\r\n   return (\r\n-    \r\n+    <>\r\n     <div>Sorry, the page you are looking is not found</div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708164746100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,10 @@\n \r\n const NotFound = () => {\r\n   return (\r\n     <>\r\n-    <div>Sorry, the page you are looking is not found</div>\r\n+        <div>Sorry, the page you are looking is not found</div>\r\n+    </>\r\n   )\r\n }\r\n \r\n export default NotFound\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708164830860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,11 @@\n+import React from 'react'\r\n+\r\n+const NotFound = () => {\r\n+  return (\r\n+    <>\r\n+        <h2>Sorry, the page you are looking is not found</div>\r\n+    </>\r\n+  )\r\n+}\r\n+\r\n+export default NotFound\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1708164634245,
+            "name": "Commit-0",
+            "content": "ra"
+        }
+    ]
+}

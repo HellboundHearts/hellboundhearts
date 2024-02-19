@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/components/BookListPage.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1708261992544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1708262010591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n     }, []);\r\n \r\n \r\n     return (\r\n-        <div className=\"BookListPage\">\r\n+        <div className=\"ProjectListPage\">\r\n \r\n             {books === null\r\n                 ? <p>Loading...</p>\r\n                 : books.map((bookDetails) => {\r\n"
+                },
+                {
+                    "date": 1708262441075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n \r\n     const getAllBooks = () => {\r\n         axios.get(`${API_URL}/books?_embed=tasks`)\r\n             .then((response) => {\r\n-                console.log(response.data)\r\n+                \r\n                 setBooks(response.data);\r\n             })\r\n             .catch((error) => {\r\n                 console.log(\"Error getting books from the API...\");\r\n"
+                },
+                {
+                    "date": 1708263860287,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,13 +37,13 @@\n                     return (\r\n                         <div className=\"ProjectCard card\" key={bookDetails.id} >\r\n                             <Link to={`/books/${bookDetails.id}`}>\r\n                                 <h3>{bookDetails.title}</h3>\r\n-                                <h3>{bookDetails.author}</h3>\r\n+                                {/* <h3>{bookDetails.author}</h3>\r\n                                 <h3>{bookDetails.year}</h3>\r\n                                 <h3>{bookDetails.genre}</h3>\r\n                                 <h3>{bookDetails.price}</h3>\r\n-                                <h3><img src={bookDetails.image_url}></img></h3>\r\n+                                <h3><img src={bookDetails.image_url}></img></h3> */}\r\n                             </Link>\r\n                         </div>\r\n                     )\r\n                 })}\r\n"
+                }
+            ],
+            "date": 1708261992544,
+            "name": "Commit-0",
+            "content": "import React from 'react';\r\n\r\nimport axios from \"axios\";\r\nimport { useEffect, useState } from \"react\";\r\nimport { Link } from \"react-router-dom\";\r\n\r\nfunction BookListPage() {\r\n\r\n    \r\n    const API_URL = \"https://books.adaptable.app\"\r\n\r\n    const [books, setBooks] = useState(null);\r\n\r\n    const getAllBooks = () => {\r\n        axios.get(`${API_URL}/books?_embed=tasks`)\r\n            .then((response) => {\r\n                console.log(response.data)\r\n                setBooks(response.data);\r\n            })\r\n            .catch((error) => {\r\n                console.log(\"Error getting books from the API...\");\r\n                console.log(error);\r\n            });\r\n    }\r\n\r\n    useEffect(() => {\r\n        getAllBooks()\r\n    }, []);\r\n\r\n\r\n    return (\r\n        <div className=\"BookListPage\">\r\n\r\n            {books === null\r\n                ? <p>Loading...</p>\r\n                : books.map((bookDetails) => {\r\n                    return (\r\n                        <div className=\"ProjectCard card\" key={bookDetails.id} >\r\n                            <Link to={`/books/${bookDetails.id}`}>\r\n                                <h3>{bookDetails.title}</h3>\r\n                                <h3>{bookDetails.author}</h3>\r\n                                <h3>{bookDetails.year}</h3>\r\n                                <h3>{bookDetails.genre}</h3>\r\n                                <h3>{bookDetails.price}</h3>\r\n                                <h3><img src={bookDetails.image_url}></img></h3>\r\n                            </Link>\r\n                        </div>\r\n                    )\r\n                })}\r\n        </div>\r\n    );\r\n}\r\n\r\nexport default BookListPage;"
+        }
+    ]
+}

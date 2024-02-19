@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/pages/About.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1708208826402,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1708208833511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n             <p>Appreciation and sales of handpicked paperbacks from Hell.\r\n                 Horror Sci-fi, Fantasy and occasionally Roleplaying Games. Shipping from Berlin to the World.\r\n             </p>\r\n             <p>Illustrations by Philipp Simon</p>\r\n-            <img  src=\"src\\assets\\illustrations\\Contact_01.jpg\" alt=\"Contact_01_image\" />\r\n+            <img className=\"think\" src=\"src\\assets\\illustrations\\Contact_01.jpg\" alt=\"Contact_01_image\" />\r\n         </div>\r\n     );\r\n }\r\n \r\n"
+                }
+            ],
+            "date": 1708208826402,
+            "name": "Commit-0",
+            "content": "\r\nfunction About() {\r\n    return (\r\n        <div>\r\n            <p>Appreciation and sales of handpicked paperbacks from Hell.\r\n                Horror Sci-fi, Fantasy and occasionally Roleplaying Games. Shipping from Berlin to the World.\r\n            </p>\r\n            <p>Illustrations by Philipp Simon</p>\r\n            <img  src=\"src\\assets\\illustrations\\Contact_01.jpg\" alt=\"Contact_01_image\" />\r\n        </div>\r\n    );\r\n}\r\n\r\nexport default About;"
+        }
+    ]
+}

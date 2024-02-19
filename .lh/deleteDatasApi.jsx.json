@@ -1,0 +1,30 @@
+{
+    "sourceFile": "deleteDatasApi.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1708292592211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1708292597274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,14 @@\n \r\n \r\n+const deleteExtraBooks = () => {\r\n+    axios\r\n+      .delete(`${API_URL}/books?id_gte=0004`)\r\n+      .then((response) => {\r\n+        console.log(\"Extra books deleted successfully\");\r\n+        // Mettre à jour l'état local ou recharger la liste des livres après la suppression\r\n+      })\r\n+      .catch((error) => {\r\n+        console.log(\"Error deleting the extra books.\");\r\n+        console.error(error);\r\n+      });\r\n+  };\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708292611125,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n+const API_URL = \"https://books.adaptable.app\";\r\n \r\n-\r\n const deleteExtraBooks = () => {\r\n     axios\r\n       .delete(`${API_URL}/books?id_gte=0004`)\r\n       .then((response) => {\r\n"
+                },
+                {
+                    "date": 1708292693909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,25 @@\n+// Importer Axios\r\n+import axios from 'axios';\r\n+\r\n+// Définir l'URL de l'API\r\n const API_URL = \"https://books.adaptable.app\";\r\n \r\n+// Définir la fonction pour supprimer les livres supplémentaires\r\n const deleteExtraBooks = () => {\r\n-    axios\r\n-      .delete(`${API_URL}/books?id_gte=0004`)\r\n-      .then((response) => {\r\n-        console.log(\"Extra books deleted successfully\");\r\n-        // Mettre à jour l'état local ou recharger la liste des livres après la suppression\r\n-      })\r\n\\ No newline at end of file\n-      .catch((error) => {\r\n-        console.log(\"Error deleting the extra books.\");\r\n-        console.error(error);\r\n-      });\r\n-  };\n+  axios\r\n+    .delete(`${API_URL}/books?id_gte=0004`)\r\n+    .then((response) => {\r\n+      console.log(\"Extra books deleted successfully\");\r\n+      // Mettre à jour l'état local ou recharger la liste des livres après la suppression\r\n+    })\r\n+    .catch((error) => {\r\n+      console.log(\"Error deleting the extra books.\");\r\n+      console.error(error);\r\n+    });\r\n+};\r\n+\r\n+// Appeler la fonction deleteExtraBooks\r\n+deleteExtraBooks();\r\n+\r\n+// Vous pouvez également exporter la fonction pour l'utiliser ailleurs si nécessaire\r\n+export { deleteExtraBooks };\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1708292592211,
+            "name": "Commit-0",
+            "content": "\r\n\r\n"
+        }
+    ]
+}
