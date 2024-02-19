@@ -27,3 +27,7 @@ input:focus {
   color: black;
   margin-left: 5px;
 }
+
+.AddBooks {
+  display: flex;
+}

@@ -1,4 +1,4 @@
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
@@ -30,7 +30,6 @@ function AddBooks() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
   };
 
   const newBook = {
@@ -45,107 +44,100 @@ function AddBooks() {
   };
 
   useEffect(() => {
-  axios
-    .post(`${apiURL}/books`, newBook)
-    .then((response) => {
-      console.log(response.data);
-      navigate("/books");
-    })
-    .catch((error) => {
-      console.log("Error adding new book:", error);
-      console.log("Error adding new book:", error);
-    });
-  },[]);
+    axios
+      .post(`${apiURL}/books`, newBook)
+      .then((response) => {
+        console.log(response.data);
+        navigate("/books");
+      })
+      .catch((error) => {
+        console.log("Error adding new book:", error);
+        console.log("Error adding new book:", error);
+      });
+  }, []);
 
   return (
     <>
-      <div className="d-inline-flex flex-column w-100 p-4">
-        <form onSubmit={handleSubmit}>
-
-        <label>Book ID</label>
-          <input
-            className="form-control mb-4"
-            type="text"
-            name="bookId"
-            placeholder="Book ID"
-            value={bookId}
-            onChange={handleBookId}
-          />
-
-          <label>Title</label>
-          <input
-            className="form-control mb-4"
-            type="text"
-            name="title"
-            placeholder="Book Title"
-            value={title}
-            onChange={handleTitle}
-          />
-
-          <label>Author</label>
-          <input
-            className="form-control mb-4"
-            type="text"
-            name="author"
-            placeholder="Books Author"
-            value={author}
-            onChange={handleAuthor}
-          />
-
-          <label>Year</label>
-          <input
-            className="form-control mb-4"
-            type="text"
-            name="year"
-            placeholder="Year"
-            value={year}
-            onChange={handleYear}
-          />
-
-          <label>Genre</label>
-          <input
-            className="form-control mb-4"
-            type="text"
-            name="genre"
-            placeholder="Books Genre"
-            value={genre}
-            onChange={handleGenre}
-          />
-
-          <label>Condition</label>
-          <input
-            className="form-control mb-4"
-            type="text"
-            name="condition"
-            placeholder="Books Condition"
-            value={condition}
-            onChange={handleCondition}
-          />
-
-          <label>Price</label>
-          <input
-            className="form-control mb-4"
-            type="number"
-            name="price"
-            placeholder="Books Price"
-            value={price}
-            onChange={handlePrice}
-            min={0}
-            max={100}
-          />
-
-          <label>Image</label>
-          <input
-            className="form-control mb-4"
-            type="text"
-            name="imageUrl"
-            placeholder="Image URL"
-            value={imageUrl}
-            onChange={handleImageUrl}
-          />
-
-          <button className="btn btn-primary btn-round">Add Book</button>
-        </form>
+      <div className="AddBooks">
+        <div className="d-inline-flex flex-column w-100 p-4">
+          <form onSubmit={handleSubmit}>
+            <label>Book ID</label>
+            <input
+              className="form-control mb-4"
+              type="text"
+              name="bookId"
+              placeholder="Book ID"
+              value={bookId}
+              onChange={handleBookId}
+            />
+            <label>Title</label>
+            <input
+              className="form-control mb-4"
+              type="text"
+              name="title"
+              placeholder="Book Title"
+              value={title}
+              onChange={handleTitle}
+            />
+            <label>Author</label>
+            <input
+              className="form-control mb-4"
+              type="text"
+              name="author"
+              placeholder="Books Author"
+              value={author}
+              onChange={handleAuthor}
+            />
+            <label>Year</label>
+            <input
+              className="form-control mb-4"
+              type="text"
+              name="year"
+              placeholder="Year"
+              value={year}
+              onChange={handleYear}
+            />
+            <label>Genre</label>
+            <input
+              className="form-control mb-4"
+              type="text"
+              name="genre"
+              placeholder="Books Genre"
+              value={genre}
+              onChange={handleGenre}
+            />
+            <label>Condition</label>
+            <input
+              className="form-control mb-4"
+              type="text"
+              name="condition"
+              placeholder="Books Condition"
+              value={condition}
+              onChange={handleCondition}
+            />
+            <label>Price</label>
+            <input
+              className="form-control mb-4"
+              type="number"
+              name="price"
+              placeholder="Books Price"
+              value={price}
+              onChange={handlePrice}
+              min={0}
+              max={100}
+            />
+            <label>Image</label>
+            <input
+              className="form-control mb-4"
+              type="text"
+              name="imageUrl"
+              placeholder="Image URL"
+              value={imageUrl}
+              onChange={handleImageUrl}
+            />
+            <button className="btn btn-primary btn-round">Add Book</button>
+          </form>
+        </div>
       </div>
     </>
   );
