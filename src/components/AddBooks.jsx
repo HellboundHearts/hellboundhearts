@@ -44,13 +44,13 @@ function AddBooks() {
   };
 
   axios
-    .post(`${apiURL}/new`, newBeer)
+    .post(`${apiURL}/new`, newBook)
     .then((response) => {
       console.log(response);
       navigate("/books");
     })
     .catch((error) => {
-      console.log("Error adding new beer:", error);
+      console.log("Error adding new book:", error);
     });
 
   return (

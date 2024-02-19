@@ -1,20 +1,26 @@
 import React from "react";
 import { useState } from "react";
+import { FaSearch } from "react-icons/fa";
+
+const API_URL = "https://books.adaptable.app/books";
 
 function SearchBar({ setSearchResults }) {
   const [searchInput, setSearchInput] = useState("");
 
   const fetchData = (value) => {
-    fetch("src/assets/books.json")
+    fetch(API_URL)
       .then((response) => response.json())
-      .then((books) => {
-        const results = books.filter((book) => {
+      .then((json) => {
+        const results = json.filter((book) => {
           return (
             value &&
-            (book.title.toLowerCase().includes(value.toLowerCase()) ||
-              book.author.toLowerCase().includes(value.toLowerCase()) ||
-              book.year.toString().includes(value) ||
-              book.genre.toLowerCase().includes(value.toLowerCase()))
+            book &&
+            book.title &&
+            book.title.toLowerCase().includes(value) &&
+            book.author &&
+            book.author.toLowerCase().includes(value) &&
+            book.genre &&
+            book.genre.toLowerCase().includes(value)
           );
         });
         setSearchResults(results);
@@ -31,6 +37,7 @@ function SearchBar({ setSearchResults }) {
 
   return (
     <div className="input-wrapper">
+      <FaSearch id="search-icon" />
       <input
         placeholder="Search..."
         value={searchInput}
