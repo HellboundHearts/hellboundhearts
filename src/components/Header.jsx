@@ -13,8 +13,9 @@ function Header() {
       </Link>
       <div>
         <SearchBar setSearchResults={setSearchResults} />
-        {searchResults && searchResults.length > 0}
-        <SearchResultsList searchResults={searchResults} />
+        {searchResults && searchResults.length > 0 && (
+          <SearchResultsList searchResults={searchResults} />
+        )}
       </div>
     </div>
   );

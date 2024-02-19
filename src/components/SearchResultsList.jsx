@@ -1,6 +1,6 @@
-import { SearchResult } from "./SearchResult";
+import SearchResult from "./SearchResult";
 
-function SearchResultsList({ results }) {
+function SearchResultsList({ results = [] }) {
   return (
     <div className="results-list">
       {results.map((result, id) => (
