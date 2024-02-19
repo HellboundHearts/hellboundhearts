@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../index.css";
 import NewArrivals from "../components/NewArrivals";
+import AddBooks from "../components/AddBooks";
 
 const HomePage = () => {
   const [books, setBooks] = useState([]);
@@ -12,6 +13,7 @@ const HomePage = () => {
           className="homepage-image"
           src="src/assets/illustrations/Home_01.jpg"
         ></img>
+        
         <NewArrivals books={books} />
       </section>
     </div>

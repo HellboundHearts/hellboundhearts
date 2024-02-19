@@ -48,7 +48,7 @@ function AddBooks() {
   axios
     .post(`${apiURL}/books`, newBook)
     .then((response) => {
-      console.log(response);
+      console.log(response.data);
       navigate("/books");
     })
     .catch((error) => {
