@@ -1,11 +1,12 @@
 import React from "react";
 import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
+import "../css/SearchBar.css";
 
 const API_URL = "https://books.adaptable.app/books";
 
-function SearchBar({ setSearchResults }) {
-  const [searchInput, setSearchInput] = useState("");
+function SearchBar({ setResults }) {
+  const [input, setInput] = useState("");
 
   const fetchData = (value) => {
     fetch(API_URL)
@@ -23,7 +24,7 @@ function SearchBar({ setSearchResults }) {
             book.genre.toLowerCase().includes(value)
           );
         });
-        setSearchResults(results);
+        setResults(results);
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
@@ -31,7 +32,7 @@ function SearchBar({ setSearchResults }) {
   };
 
   const handleChange = (value) => {
-    setSearchInput(value);
+    setInput(value);
     fetchData(value);
   };
 
@@ -40,7 +41,7 @@ function SearchBar({ setSearchResults }) {
       <FaSearch id="search-icon" />
       <input
         placeholder="Search..."
-        value={searchInput}
+        value={input}
         onChange={(e) => handleChange(e.target.value)}
       />
     </div>

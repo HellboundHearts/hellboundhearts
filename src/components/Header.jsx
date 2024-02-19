@@ -4,7 +4,7 @@ import SearchBar from "./SearchBar";
 import SearchResultsList from "./SearchResultsList";
 
 function Header() {
-  const [searchResults, setSearchResults] = useState([]);
+  const [results, setResults] = useState([]);
 
   return (
     <div>
@@ -12,9 +12,9 @@ function Header() {
         <img className="Logo" src="src/assets/illustrations/Logo_01.jpg" />
       </Link>
       <div>
-        <SearchBar setSearchResults={setSearchResults} />
-        {searchResults && searchResults.length > 0 && (
-          <SearchResultsList searchResults={searchResults} />
+        <SearchBar setResults={setResults} />
+        {results && results.length > 0 && (
+          <SearchResultsList results={results} />
         )}
       </div>
     </div>
