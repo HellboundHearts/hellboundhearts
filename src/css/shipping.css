@@ -1,21 +1,12 @@
-.ship-container{
+
+.container {
     display: flex;
-  /* justify-content: flex-start; */
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 20px;
-}
-.ship-left{
-    max-width: 40vw;
-    flex: 1 0 50%; 
+    justify-content: space-between;
+     }
+.left {
     padding: 20px;
-}
-.ship-right{
-    max-width: 40vw;
-    flex: 1 0 50%; 
+  }
+
+  .right {
     padding: 20px;
-}
-div p{
-    max-width: 30vw;
-    word-wrap: break-word;/* To go in a new line if more than max-width  */
-}
+  }
