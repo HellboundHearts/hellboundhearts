@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../index.css";
+import "../css/homepage.css";
 import NewArrivals from "../components/NewArrivals";
 
 const HomePage = () => {

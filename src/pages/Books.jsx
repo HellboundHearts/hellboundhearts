@@ -2,14 +2,18 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AddBooks from "../components/AddBooks";
+import { FaSearch } from "react-icons/fa";
 
 const SearchBar = ({ searchTerm, handleSearch }) => (
-  <input
-    type="text"
-    placeholder="Search by title..."
-    value={searchTerm}
-    onChange={handleSearch}
-  />
+  <div className="input-wrapper">
+    <FaSearch id="search-icon" />
+    <input
+      type="text"
+      placeholder="Search..."
+      value={searchTerm}
+      onChange={handleSearch}
+    />
+  </div>
 );
 
 function Books() {

@@ -6,19 +6,27 @@ function Navbar() {
   return (
     <>
       <ul className="Navbar">
-        <li className="Box">
+        <li>
           <Link to="/books">Books</Link>
         </li>
-        <li className="Box">
+        <li>
           <Link to="/about">About</Link>
         </li>
-        <li className="Box">
+        <li>
           <Link to="/contact">Contact</Link>
         </li>
-        <li className="Box">
+        <li>
           <Link to="/shipping">Shipping</Link>
         </li>
       </ul>
+      <hr
+        style={{
+          border: "none",
+          height: "2px", // Set the height of the line
+          backgroundColor: "#ccc", // Set the color of the line
+          margin: "10px 0", // Add margin for spacing
+        }}
+      />
     </>
   );
 }

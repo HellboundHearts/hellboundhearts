@@ -10,12 +10,13 @@ import Shipping from "./pages/Shipping.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import BookDetailsPage from "./pages/BookDetails.jsx";
+import "./App.css";
 
 function App() {
   const [books, setBooks] = useState([]);
 
   return (
-    <div>
+    <div className="app-container">
       <Header />
       <Navbar />
 
