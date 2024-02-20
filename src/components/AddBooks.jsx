@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import '../css/addBooks.css'
 
 const apiURL = "https://books.adaptable.app";
 
@@ -51,7 +52,6 @@ function AddBooks() {
         navigate("/books");
       })
       .catch((error) => {
-        console.log("Error adding new book:", error);
         console.log("Error adding new book:", error);
       });
   }, []);
@@ -126,10 +126,10 @@ function AddBooks() {
               min={0}
               max={100}
             />
-            <label>Image</label>
+            <label htmlFor="fileInput">Image file</label>
             <input
               className="form-control mb-4"
-              type="text"
+              type="file"
               name="imageUrl"
               placeholder="Image URL"
               value={imageUrl}
