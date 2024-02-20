@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AddBooks from "../components/AddBooks";
 import { FaSearch } from "react-icons/fa";
+import ShoppingCart from "./ShoppingCart";
 
 const SearchBar = ({ searchTerm, handleSearch }) => (
   <div className="input-wrapper">
@@ -21,6 +22,7 @@ function Books() {
 
   const [books, setBooks] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
+  const [selectedBooks, setSelectedBooks] = useState([]);
 
   const getAllBooks = () => {
     axios
@@ -51,6 +53,15 @@ function Books() {
       });
   };
 
+  const handleBuy = (bookDetails) => {
+    setSelectedBooks([...selectedBooks, bookDetails]);
+    console.log("Selected Books:", selectedBooks);
+  };
+
+  useEffect(() => {
+    console.log("Selected Books updated:", selectedBooks);
+  }, [selectedBooks]);
+
   const handleSearch = (event) => {
     const searchValue = event.target.value;
     setSearchTerm(searchValue);
@@ -78,6 +89,7 @@ function Books() {
                 <button onClick={() => handleDelete(bookDetails.id)}>
                   Delete
                 </button>{" "}
+                <button onClick={() => handleBuy(bookDetails)}>Buy</button>{" "}
               </h2>
               <h3>{bookDetails.author}</h3>
               <h3>{bookDetails.price}</h3>
@@ -89,6 +101,7 @@ function Books() {
             </div>
           ))
         )}
+        <ShoppingCart selectedBooks={selectedBooks} />
       </div>
     </>
   );

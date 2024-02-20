@@ -6,6 +6,7 @@ import Books from "./pages/Books.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import Shipping from "./pages/Shipping.jsx";
+import ShoppingCart from "./pages/ShoppingCart.jsx";
 
 import NotFound from "./pages/NotFound.jsx";
 import HomePage from "./pages/HomePage.jsx";
@@ -14,10 +15,11 @@ import "./App.css";
 
 function App() {
   const [books, setBooks] = useState([]);
+  const [selectedBooks, setSelectedBooks] = useState([]);
 
   return (
     <div className="app-container">
-      <Header />
+      <Header selectedBooks={selectedBooks} />
       <Navbar />
 
       <Routes>
@@ -26,6 +28,10 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/shipping" element={<Shipping />} />
         <Route path="/books" element={<Books />} />
+        <Route
+          path="/shoppingCart"
+          element={<ShoppingCart selectedBooks={selectedBooks} />}
+        />
         <Route path="/books/:bookId" element={<BookDetailsPage />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
