@@ -6,15 +6,18 @@
      }
 .left {
     padding: 20px;
-    
+    margin-bottom: 40px;
   }
 
   .right {
     padding: 20px;
-    
+    margin-bottom: 40px;
   }
   .uk-overseas-right{
     display: none;
+  }
+  p{
+    text-align:justify;
   }
   @media (max-width: 480px) {
     .uk-overseas-right{
@@ -22,5 +25,8 @@
     }
     .uk-overseas{
       display: none;
+    }
+    p{
+      text-align:left;
     }
   }
