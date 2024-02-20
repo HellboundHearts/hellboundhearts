@@ -2,11 +2,25 @@
 .container {
     display: flex;
     justify-content: space-between;
+    
      }
 .left {
     padding: 20px;
+    
   }
 
   .right {
     padding: 20px;
+    
+  }
+  .uk-overseas-right{
+    display: none;
+  }
+  @media (max-width: 480px) {
+    .uk-overseas-right{
+      display: block;
+    }
+    .uk-overseas{
+      display: none;
+    }
   }

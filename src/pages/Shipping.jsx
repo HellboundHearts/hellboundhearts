@@ -31,7 +31,7 @@ function Shipping() {
             Tracked - 26,99€ up to 5kg<br />
           </p>
         </div>
-        <div>
+        <div className="uk-overseas">
           <h2>Shipping to the U.K.</h2>
           <p>
             We have no influence on extra costs through custom duties<br />
@@ -39,7 +39,7 @@ function Shipping() {
             Tracked - 26,99€ up to 5kg<br />
           </p>
         </div>
-        <div>
+        <div className="uk-overseas">
           <h2>Shipping Overseas</h2>
           <p>
             We have no influence on extra costs through custom duties<br />
@@ -49,6 +49,22 @@ function Shipping() {
         </div>
       </div>
       <div className="right">
+      <div className="uk-overseas-right">
+          <h2>Shipping to the U.K.</h2>
+          <p>
+            We have no influence on extra costs through custom duties<br />
+            Standard - 8,99€ up to 2kg<br />
+            Tracked - 26,99€ up to 5kg<br />
+          </p>
+        </div>
+        <div className="uk-overseas-right">
+          <h2>Shipping Overseas</h2>
+          <p>
+            We have no influence on extra costs through custom duties<br />
+            Standard - 18,49€ up to 2kg<br />
+            Tracked - 47,99€ up to 5kg<br />
+          </p>
+        </div>
         <div>
           <h2>Returns</h2>
           <p>
