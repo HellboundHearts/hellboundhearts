@@ -31,6 +31,10 @@ function AddBooks() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    console.log("Form submitted");
+    console.log("ID:", bookId);
+  console.log("Title:", title);
+  console.log("Author:", author);
   };
 
   const newBook = {
@@ -63,7 +67,7 @@ function AddBooks() {
           <form onSubmit={handleSubmit}>
             
             <input
-              className="form-control mb-4"
+              
               type="text"
               name="bookId"
               placeholder="Book ID"
@@ -71,7 +75,7 @@ function AddBooks() {
               onChange={handleBookId}
             />
             <input
-              className="form-control mb-4"
+              
               type="text"
               name="title"
               placeholder="Book Title"
@@ -79,7 +83,7 @@ function AddBooks() {
               onChange={handleTitle}
             /> 
             <input
-              className="form-control mb-4"
+              
               type="text"
               name="author"
               placeholder="Books Author"
@@ -87,7 +91,7 @@ function AddBooks() {
               onChange={handleAuthor}
             />
             <input
-              className="form-control mb-4"
+              
               type="text"
               name="year"
               placeholder="Year"
@@ -95,7 +99,7 @@ function AddBooks() {
               onChange={handleYear}
             />
             <input
-              className="form-control mb-4"
+              
               type="text"
               name="genre"
               placeholder="Books Genre"
@@ -103,7 +107,7 @@ function AddBooks() {
               onChange={handleGenre}
             />
             <input
-              className="form-control mb-4"
+              
               type="text"
               name="condition"
               placeholder="Books Condition"
@@ -112,7 +116,7 @@ function AddBooks() {
             />
            
             <input
-              className="form-control mb-4"
+             
               type="text"
               pattern="\d*"
               name="price"
@@ -123,14 +127,14 @@ function AddBooks() {
             />
             
             <input
-              className="form-control mb-4"
-              type="file"
+              
+              type="text"
               name="imageUrl"
               placeholder="Image URL"
               value={imageUrl}
               onChange={handleImageUrl}
             />
-            <button className="btn btn-primary btn-round">Add Book</button>
+            <button>Add Book</button>
           </form>
         </div>
       </div>

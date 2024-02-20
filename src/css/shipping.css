@@ -30,12 +30,16 @@
     p{
       text-align:justify;
       width:33vw;
+     
     }
     .right{
       margin-bottom: 50px;
     }
   }
-  /** Media query on vertical axis **/
-  @media (max-width: 480px) and (max-height: 800px) {
-    
-  }
+  /** Media query on vertical axis   (max-width: 480px)**/
+  /* @media  (min-height: 800px) {
+    .container{
+      padding-top:20vh;
+      padding-bottom:20vh
+    }
+  } */
