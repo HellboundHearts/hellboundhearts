@@ -27,6 +27,10 @@
       display: none;
     }
     p{
-      text-align:left;
+      text-align:justify;
+      width:33vw;
+    }
+    .right{
+      margin-bottom: 50px;
     }
   }
