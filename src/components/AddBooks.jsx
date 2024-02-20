@@ -61,7 +61,7 @@ function AddBooks() {
       <div className="AddBooks">
         <div className="d-inline-flex flex-column w-100 p-4">
           <form onSubmit={handleSubmit}>
-            <label>Book ID</label>
+            
             <input
               className="form-control mb-4"
               type="text"
@@ -70,7 +70,6 @@ function AddBooks() {
               value={bookId}
               onChange={handleBookId}
             />
-            <label>Title</label>
             <input
               className="form-control mb-4"
               type="text"
@@ -78,8 +77,7 @@ function AddBooks() {
               placeholder="Book Title"
               value={title}
               onChange={handleTitle}
-            />
-            <label>Author</label>
+            /> 
             <input
               className="form-control mb-4"
               type="text"
@@ -88,7 +86,6 @@ function AddBooks() {
               value={author}
               onChange={handleAuthor}
             />
-            <label>Year</label>
             <input
               className="form-control mb-4"
               type="text"
@@ -97,7 +94,6 @@ function AddBooks() {
               value={year}
               onChange={handleYear}
             />
-            <label>Genre</label>
             <input
               className="form-control mb-4"
               type="text"
@@ -106,7 +102,6 @@ function AddBooks() {
               value={genre}
               onChange={handleGenre}
             />
-            <label>Condition</label>
             <input
               className="form-control mb-4"
               type="text"
@@ -115,18 +110,18 @@ function AddBooks() {
               value={condition}
               onChange={handleCondition}
             />
-            <label>Price</label>
+           
             <input
               className="form-control mb-4"
-              type="number"
+              type="text"
+              pattern="\d*"
               name="price"
-              placeholder="Books Price"
+              placeholder="price"
               value={price}
               onChange={handlePrice}
-              min={0}
-              max={100}
+              
             />
-            <label htmlFor="fileInput">Image file</label>
+            
             <input
               className="form-control mb-4"
               type="file"
