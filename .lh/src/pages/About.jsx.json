@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 11,
             "patches": [
                 {
                     "date": 1708208826402,
@@ -12,6 +12,46 @@
                 {
                     "date": 1708208833511,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n             <p>Appreciation and sales of handpicked paperbacks from Hell.\r\n                 Horror Sci-fi, Fantasy and occasionally Roleplaying Games. Shipping from Berlin to the World.\r\n             </p>\r\n             <p>Illustrations by Philipp Simon</p>\r\n-            <img  src=\"src\\assets\\illustrations\\Contact_01.jpg\" alt=\"Contact_01_image\" />\r\n+            <img className=\"think\" src=\"src\\assets\\illustrations\\Contact_01.jpg\" alt=\"Contact_01_image\" />\r\n         </div>\r\n     );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708421135755,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,14 @@\n \r\n+\r\n function About() {\r\n     return (\r\n         <div>\r\n             <p>Appreciation and sales of handpicked paperbacks from Hell.\r\n                 Horror Sci-fi, Fantasy and occasionally Roleplaying Games. Shipping from Berlin to the World.\r\n             </p>\r\n             <p>Illustrations by Philipp Simon</p>\r\n-            <img className=\"think\" src=\"src\\assets\\illustrations\\Contact_01.jpg\" alt=\"Contact_01_image\" />\r\n+            <img className=\"thinking\" src=\"src\\assets\\illustrations\\Contact_01.jpg\" alt=\"Contact_01_image\" />\r\n         </div>\r\n     );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708421141442,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n+import ''\r\n \r\n-\r\n function About() {\r\n     return (\r\n         <div>\r\n             <p>Appreciation and sales of handpicked paperbacks from Hell.\r\n"
+                },
+                {
+                    "date": 1708421165800,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,15 @@\n+import '../index.css'\r\n+\r\n+function About() {\r\n+    return (\r\n+        <div>\r\n+            <p>Appreciation and sales of handpicked paperbacks from Hell.\r\n+                Horror Sci-fi, Fantasy and occasionally Roleplaying Games. Shipping from Berlin to the World.\r\n+            </p>\r\n+            <p>Illustrations by Philipp Simon</p>\r\n+            <img className=\"thinking\" src=\"src\\assets\\illustrations\\Contact_01.jpg\" alt=\"Contact_01_image\" />\r\n+        </div>\r\n+    );\r\n+}\r\n+\r\n+export default About;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708421235439,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import '../index.css'\r\n+import '..'\r\n \r\n function About() {\r\n     return (\r\n         <div>\r\n@@ -11,20 +11,5 @@\n         </div>\r\n     );\r\n }\r\n \r\n-export default About;\n-import ''\r\n-\r\n-function About() {\r\n-    return (\r\n-        <div>\r\n-            <p>Appreciation and sales of handpicked paperbacks from Hell.\r\n-                Horror Sci-fi, Fantasy and occasionally Roleplaying Games. Shipping from Berlin to the World.\r\n-            </p>\r\n-            <p>Illustrations by Philipp Simon</p>\r\n-            <img className=\"thinking\" src=\"src\\assets\\illustrations\\Contact_01.jpg\" alt=\"Contact_01_image\" />\r\n-        </div>\r\n-    );\r\n-}\r\n-\r\n export default About;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708421240642,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import '..'\r\n+import '../css/'\r\n \r\n function About() {\r\n     return (\r\n         <div>\r\n"
+                },
+                {
+                    "date": 1708421246760,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import '../css/'\r\n+import '../css/about.css'\r\n \r\n function About() {\r\n     return (\r\n         <div>\r\n"
+                },
+                {
+                    "date": 1708421770235,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import '../css/about.css'\r\n \r\n function About() {\r\n     return (\r\n-        <div>\r\n+        <div >\r\n             <p>Appreciation and sales of handpicked paperbacks from Hell.\r\n                 Horror Sci-fi, Fantasy and occasionally Roleplaying Games. Shipping from Berlin to the World.\r\n             </p>\r\n             <p>Illustrations by Philipp Simon</p>\r\n"
+                },
+                {
+                    "date": 1708421877734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n import '../css/about.css'\r\n \r\n function About() {\r\n     return (\r\n-        <div >\r\n+        <div className=\"about-container\">\r\n+            \r\n             <p>Appreciation and sales of handpicked paperbacks from Hell.\r\n                 Horror Sci-fi, Fantasy and occasionally Roleplaying Games. Shipping from Berlin to the World.\r\n             </p>\r\n             <p>Illustrations by Philipp Simon</p>\r\n"
+                },
+                {
+                    "date": 1708421887253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,13 +2,14 @@\n \r\n function About() {\r\n     return (\r\n         <div className=\"about-container\">\r\n-            \r\n+            <div className=\"paragraphs\">\r\n             <p>Appreciation and sales of handpicked paperbacks from Hell.\r\n                 Horror Sci-fi, Fantasy and occasionally Roleplaying Games. Shipping from Berlin to the World.\r\n             </p>\r\n             <p>Illustrations by Philipp Simon</p>\r\n+        \r\n             <img className=\"thinking\" src=\"src\\assets\\illustrations\\Contact_01.jpg\" alt=\"Contact_01_image\" />\r\n         </div>\r\n     );\r\n }\r\n"
+                },
+                {
+                    "date": 1708421895211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+import '../css/about.css'\r\n+\r\n+function About() {\r\n+    return (\r\n+        <div className=\"about-container\">\r\n+            <div className=\"paragraphs\">\r\n+                <p>Appreciation and sales of handpicked paperbacks from Hell.\r\n+                    Horror Sci-fi, Fantasy and occasionally Roleplaying Games. Shipping from Berlin to the World.\r\n+                </p>\r\n+                <p>Illustrations by Philipp Simon</p>\r\n+            </div>\r\n+            <img className=\"thinking\" src=\"src\\assets\\illustrations\\Contact_01.jpg\" alt=\"Contact_01_image\" />\r\n+        </div>\r\n+    );\r\n+}\r\n+\r\n+export default About;\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1708208826402,

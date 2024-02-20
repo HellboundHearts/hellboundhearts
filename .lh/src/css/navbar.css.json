@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 76,
+            "activePatchIndex": 77,
             "patches": [
                 {
                     "date": 1708176798938,
@@ -312,6 +312,10 @@
                 {
                     "date": 1708354867474,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     display: flex;\r\n     flex-direction: row;\r\n     width: 100%;\r\n     height: 5vh;\r\n-     outline: 1px solid black; To remove after the tests \r\n+     outline: 1px solid black; \r\n     list-style-type: none;/* Remove the dot */\r\n     font-family: garamond;\r\n     font-weight: 500;\r\n     \r\n"
+                },
+                {
+                    "date": 1708422109338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,31 +1,26 @@\n-.Navbar{\r\n-    display: flex;\r\n-    flex-direction: row;\r\n-    width: 100%;\r\n-    height: 5vh;\r\n-     outline: 1px solid black; \r\n-    list-style-type: none;/* Remove the dot */\r\n-    font-family: garamond;\r\n-    font-weight: 500;\r\n-    \r\n+.Navbar {\r\n+  display: flex;\r\n+  flex-direction: row;\r\n+  width: 100%;\r\n+  height: 14px;\r\n+  list-style-type: none;\r\n+  font-family: garamond;\r\n+  font-weight: 500;\r\n+  margin: 16px;\r\n+  padding-left: 0;\r\n }\r\n-.Box{\r\n-    outline: 1px solid;\r\n-    /* background: #ccccff; */\r\n-    padding: 1rem 2rem;\r\n-    \r\n-    \r\n+\r\n+.Navbar a {\r\n+  text-decoration: none;\r\n+  color: rgb(115, 115, 115); /* Text color inside the link*/\r\n+  padding-right: 30px;\r\n }\r\n-.Navbar a{\r\n-    text-decoration:none;\r\n-    color:black;/* Text color inside the link*/\r\n+.Navbar a:hover {\r\n+  color: #afafaf;\r\n }\r\n-.Navbar a:hover{\r\n-    color: chocolate;\r\n-}\r\n /****  480px is the maximum size for mobiles  ****/\r\n @media (max-width: 480px) {\r\n-    .Navbar{\r\n-        flex-direction: column;/* The menu becomes vertical   */\r\n-    }\r\n+  .Navbar {\r\n+    flex-direction: column;  The menu becomes vertical   */\r\n   }\r\n+}\r\n"
                 }
             ],
             "date": 1708176798938,

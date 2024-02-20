@@ -1,0 +1,11 @@
+.about-container{
+    display: flex;
+    align-items: center; 
+}
+.paragraphs {
+    flex: 1; /** to take the space available **/
+  }
+
+.thinking{
+    width:25vw;
+}
