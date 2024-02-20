@@ -35,7 +35,8 @@ function AddBooks() {
     console.log("ID:", bookId);
   console.log("Title:", title);
   console.log("Author:", author);
-  };
+  console.log("price: ",price)
+  console.log("imageUrl: ",imageUrl)
 
   const newBook = {
     id: bookId,
@@ -44,21 +45,27 @@ function AddBooks() {
     year,
     genre,
     condition,
-    price: Number(price),
+    price: price,
     image_url: imageUrl,
   };
-
-  useEffect(() => {
+/***add a book request ...something wrong here... */
+ // useEffect(() => {
     axios
       .post(`${apiURL}/books`, newBook)
       .then((response) => {
-        console.log(response.data);
+        console.log('book added here/deleted??: ',response.data);
         navigate("/books");
       })
       .catch((error) => {
         console.log("Error adding new book:", error);
       });
-  }, []);
+   // }, []);
+  };
+
+  // useEffect(() => {
+  //   // Aucune action n'est nécessaire ici, car la logique de la requête POST est déjà gérée dans handleSubmit
+  // }, [bookId, title, author, year, genre, condition, price, imageUrl]); 
+
 
   return (
     <>
@@ -67,7 +74,7 @@ function AddBooks() {
           <form onSubmit={handleSubmit}>
             
             <input
-              
+              required
               type="text"
               name="bookId"
               placeholder="Book ID"
@@ -75,7 +82,7 @@ function AddBooks() {
               onChange={handleBookId}
             />
             <input
-              
+              required
               type="text"
               name="title"
               placeholder="Book Title"
@@ -83,7 +90,7 @@ function AddBooks() {
               onChange={handleTitle}
             /> 
             <input
-              
+              required
               type="text"
               name="author"
               placeholder="Books Author"
@@ -91,7 +98,7 @@ function AddBooks() {
               onChange={handleAuthor}
             />
             <input
-              
+              required
               type="text"
               name="year"
               placeholder="Year"
@@ -99,7 +106,7 @@ function AddBooks() {
               onChange={handleYear}
             />
             <input
-              
+              required
               type="text"
               name="genre"
               placeholder="Books Genre"
@@ -107,7 +114,7 @@ function AddBooks() {
               onChange={handleGenre}
             />
             <input
-              
+              required
               type="text"
               name="condition"
               placeholder="Books Condition"
@@ -116,9 +123,9 @@ function AddBooks() {
             />
            
             <input
-             
+             required
               type="text"
-              pattern="\d*"
+              // pattern="\d*"
               name="price"
               placeholder="price"
               value={price}
@@ -127,7 +134,7 @@ function AddBooks() {
             />
             
             <input
-              
+              required
               type="text"
               name="imageUrl"
               placeholder="Image URL"
