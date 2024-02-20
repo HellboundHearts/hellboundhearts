@@ -5,6 +5,9 @@
 .paragraphs {
     flex: 1; /** to take the space available **/
   }
+  .paragraphs p {
+    margin-right: 5vw;
+  }
 
 .thinking{
     width:25vw;

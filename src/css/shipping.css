@@ -19,7 +19,8 @@
   p{
     text-align:justify;
   }
-  @media (max-width: 480px) {
+  /**  Media query on horizontal axis  **/
+  @media (max-width: 480px)  {
     .uk-overseas-right{
       display: block;
     }
@@ -33,4 +34,8 @@
     .right{
       margin-bottom: 50px;
     }
+  }
+  /** Media query on vertical axis **/
+  @media (max-width: 480px) and (max-height: 800px) {
+    
   }
