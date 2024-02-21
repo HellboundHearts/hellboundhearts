@@ -1,4 +1,5 @@
 .container {
+<<<<<<< HEAD
   display: flex;
   justify-content: space-between;
 }
@@ -9,3 +10,39 @@
 .right {
   padding: 20px;
 }
+=======
+    display: flex;
+    justify-content: space-between;
+    
+     }
+.left {
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+
+  .right {
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  .uk-overseas-right{
+    display: none;
+  }
+  p{
+    text-align:justify;
+  }
+  @media (max-width: 480px) {
+    .uk-overseas-right{
+      display: block;
+    }
+    .uk-overseas{
+      display: none;
+    }
+    p{
+      text-align:justify;
+      width:33vw;
+    }
+    .right{
+      margin-bottom: 50px;
+    }
+  }
+>>>>>>> 91c89e11e8c9341b43e0017920a93594a45f6ad9

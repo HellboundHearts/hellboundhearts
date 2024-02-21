@@ -1,4 +1,4 @@
-.input-wrapper {
+/* .input-wrapper {
   width: 100%;
   height: 3rem;
   border: 2px solid black;
@@ -21,13 +21,24 @@ input {
 
 input:focus {
   outline: none;
-}
+} */
 
 #search-icon {
   color: black;
   margin-left: 5px;
 }
 
-.AddBooks {
-  display: flex;
+.delete-button {
+  width: 80px;
+}
+
+.buy-button {
+  width: 80px;
+  border: solid 1px black;
+  background-color: rgb(70, 223, 9);
+}
+
+.book-covers {
+  width: 50px;
+  height: auto;
 }

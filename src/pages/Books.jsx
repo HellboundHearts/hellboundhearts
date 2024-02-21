@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 import AddBooks from "../components/AddBooks";
 import { FaSearch } from "react-icons/fa";
 import ShoppingCart from "./ShoppingCart";
+import "../css/books.css";
 
 const SearchBar = ({ searchTerm, handleSearch }) => (
-  <div className="input-wrapper">
+  <div className="Search-Bar">
     <FaSearch id="search-icon" />
     <input
       type="text"
@@ -75,29 +76,34 @@ function Books() {
 
   return (
     <>
+      <SearchBar searchTerm={searchTerm} handleSearch={handleSearch} />
       <AddBooks />
-      <div className="ProjectListPage">
-        <SearchBar searchTerm={searchTerm} handleSearch={handleSearch} />
-
+      <div>
         {filteredBooks.length === 0 ? (
           <p>No matching books found.</p>
         ) : (
           filteredBooks.map((bookDetails) => (
-            <div className="ProjectCard card" key={bookDetails.id}>
-              <h2>
-                {bookDetails.title}{" "}
-                <button onClick={() => handleDelete(bookDetails.id)}>
-                  Delete
-                </button>{" "}
-                <button onClick={() => handleBuy(bookDetails)}>Buy</button>{" "}
-              </h2>
+            <div key={bookDetails.id}>
+              <Link to={`/books/${bookDetails.id}`}>
+                <p className="book-covers">
+                  <img src={bookDetails.image_url} alt={bookDetails.title} />
+                </p>
+              </Link>
+              <h2>{bookDetails.title} </h2>
               <h3>{bookDetails.author}</h3>
               <h3>{bookDetails.price}</h3>
-              <Link to={`/books/${bookDetails.id}`}>
-                <h3>
-                  <img src={bookDetails.image_url} alt={bookDetails.title} />
-                </h3>
-              </Link>
+              <button
+                className="delete-button"
+                onClick={() => handleDelete(bookDetails.id)}
+              >
+                Delete
+              </button>{" "}
+              <button
+                className="buy-button"
+                onClick={() => handleBuy(bookDetails)}
+              >
+                Buy
+              </button>{" "}
             </div>
           ))
         )}
