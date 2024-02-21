@@ -1,16 +1,5 @@
 .container {
-<<<<<<< HEAD
-  display: flex;
-  justify-content: space-between;
-}
-.left {
-  padding: 20px;
-}
 
-.right {
-  padding: 20px;
-}
-=======
     display: flex;
     justify-content: space-between;
     
