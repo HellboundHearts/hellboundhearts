@@ -17,6 +17,11 @@ function App() {
   const [books, setBooks] = useState([]);
   const [selectedBooks, setSelectedBooks] = useState([]);
 
+  const handleBuy = (bookDetails) => {
+    setSelectedBooks([...selectedBooks, bookDetails]);
+    console.log("Selected Books:", selectedBooks);
+  };
+
   return (
     <div className="app-container">
       <Header selectedBooks={selectedBooks} />

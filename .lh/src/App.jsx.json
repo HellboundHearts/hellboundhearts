@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 47,
+            "activePatchIndex": 51,
             "patches": [
                 {
                     "date": 1708125002662,
@@ -196,6 +196,22 @@
                 {
                     "date": 1708334298836,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,13 +26,14 @@\n         <Route path=\"/about\" element={<About />} />\r\n         <Route path=\"/contact\" element={<Contact />} />\r\n         <Route path=\"/shipping\" element={<Shipping />} />\r\n         <Route path=\"/books/add\" element={<AddBooks />}  />\r\n-         <Route path=\"/books\" element={<Books />} /> */}\r\n+         <Route path=\"/books\" element={<Books />} /> \r\n         <Route path=\"/books/:bookId\" element={<BookDetailsPage />} />\r\n         <Route path=\"/*\" element={<NotFound />} />\r\n       </Routes>\r\n     </div>\r\n+    \r\n   );\r\n }\r\n \r\n export default App;\r\n"
+                },
+                {
+                    "date": 1708514537104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,39 +1,43 @@\n-import React, { useState, useEffect } from \"react\";\r\n+import React, { useState } from \"react\";\r\n import Header from \"./components/Header.jsx\";\r\n import Navbar from \"./components/Navbar.jsx\";\r\n import { Routes, Route } from \"react-router-dom\";\r\n import Books from \"./pages/Books.jsx\";\r\n import About from \"./pages/About.jsx\";\r\n import Contact from \"./pages/Contact.jsx\";\r\n import Shipping from \"./pages/Shipping.jsx\";\r\n+import ShoppingCart from \"./pages/ShoppingCart.jsx\";\r\n \r\n import NotFound from \"./pages/NotFound.jsx\";\r\n import HomePage from \"./pages/HomePage.jsx\";\r\n import BookDetailsPage from \"./pages/BookDetails.jsx\";\r\n-import AddBooks from \"./components/AddBooks.jsx\";\r\n+import \"./App.css\";\r\n \r\n function App() {\r\n   const [books, setBooks] = useState([]);\r\n- \r\n+  const [selectedBooks, setSelectedBooks] = useState([]);\r\n+  \r\n+\r\n   return (\r\n-    <div>\r\n-      <Header />\r\n+    <div className=\"app-container\">\r\n+      <Header selectedBooks={selectedBooks} />\r\n       <Navbar />\r\n \r\n       <Routes>\r\n-        <Route path=\"/\" element={<HomePage />} ></Route>\r\n-\r\n+        <Route path=\"/\" element={<HomePage />} />\r\n         <Route path=\"/about\" element={<About />} />\r\n         <Route path=\"/contact\" element={<Contact />} />\r\n         <Route path=\"/shipping\" element={<Shipping />} />\r\n-        <Route path=\"/books/add\" element={<AddBooks />}  />\r\n-         <Route path=\"/books\" element={<Books />} /> \r\n+        <Route path=\"/books\" element={<Books />} />\r\n+        <Route\r\n+          path=\"/shoppingCart\"\r\n+          element={<ShoppingCart selectedBooks={selectedBooks} />}\r\n+        />\r\n         <Route path=\"/books/:bookId\" element={<BookDetailsPage />} />\r\n         <Route path=\"/*\" element={<NotFound />} />\r\n       </Routes>\r\n     </div>\r\n-    \r\n   );\r\n }\r\n \r\n export default App;\r\n"
+                },
+                {
+                    "date": 1708514575451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,9 @@\n \r\n function App() {\r\n   const [books, setBooks] = useState([]);\r\n   const [selectedBooks, setSelectedBooks] = useState([]);\r\n+\r\n   \r\n \r\n   return (\r\n     <div className=\"app-container\">\r\n"
+                },
+                {
+                    "date": 1708514728444,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,12 @@\n function App() {\r\n   const [books, setBooks] = useState([]);\r\n   const [selectedBooks, setSelectedBooks] = useState([]);\r\n \r\n-  \r\n+  const handleBuy = (bookDetails) => {\r\n+    setSelectedBooks([...selectedBooks, bookDetails]);\r\n+    console.log(\"Selected Books:\", selectedBooks);\r\n+  };\r\n \r\n   return (\r\n     <div className=\"app-container\">\r\n       <Header selectedBooks={selectedBooks} />\r\n@@ -31,9 +34,9 @@\n         <Route path=\"/shipping\" element={<Shipping />} />\r\n         <Route path=\"/books\" element={<Books />} />\r\n         <Route\r\n           path=\"/shoppingCart\"\r\n-          element={<ShoppingCart selectedBooks={selectedBooks} />}\r\n+          element={<ShoppingCart handleBuy selectedBooks={selectedBooks} />}\r\n         />\r\n         <Route path=\"/books/:bookId\" element={<BookDetailsPage />} />\r\n         <Route path=\"/*\" element={<NotFound />} />\r\n       </Routes>\r\n"
+                },
+                {
+                    "date": 1708514740043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n         <Route path=\"/shipping\" element={<Shipping />} />\r\n         <Route path=\"/books\" element={<Books />} />\r\n         <Route\r\n           path=\"/shoppingCart\"\r\n-          element={<ShoppingCart handleBuy selectedBooks={selectedBooks} />}\r\n+          element={<ShoppingCart selectedBooks={selectedBooks} />}\r\n         />\r\n         <Route path=\"/books/:bookId\" element={<BookDetailsPage />} />\r\n         <Route path=\"/*\" element={<NotFound />} />\r\n       </Routes>\r\n"
                 }
             ],
             "date": 1708125002662,

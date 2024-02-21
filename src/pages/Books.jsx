@@ -54,10 +54,10 @@ function Books() {
       });
   };
 
-  const handleBuy = (bookDetails) => {
-    setSelectedBooks([...selectedBooks, bookDetails]);
-    console.log("Selected Books:", selectedBooks);
-  };
+  // const handleBuy = (bookDetails) => {
+  //   setSelectedBooks([...selectedBooks, bookDetails]);
+  //   console.log("Selected Books:", selectedBooks);
+  // };
 
   useEffect(() => {
     console.log("Selected Books updated:", selectedBooks);
@@ -77,7 +77,7 @@ function Books() {
   return (
     <>
       <SearchBar searchTerm={searchTerm} handleSearch={handleSearch} />
-      <AddBooks />
+      <AddBooks callBack={getAllBooks} />
       <div>
         {filteredBooks.length === 0 ? (
           <p>No matching books found.</p>

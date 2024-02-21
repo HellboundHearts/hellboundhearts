@@ -1,4 +1,5 @@
 function ShoppingCart({ selectedBooks }) {
+  
   console.log("Received selectedBooks:", selectedBooks);
   return (
     <div>

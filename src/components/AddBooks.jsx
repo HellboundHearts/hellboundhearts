@@ -5,7 +5,7 @@ import "../css/addBooks.css";
 
 const apiURL = "https://books.adaptable.app";
 
-function AddBooks() {
+function AddBooks(props) {
   //state variables to store values of the inputs
   const [bookId, setBookId] = useState("");
   const [title, setTitle] = useState("");
@@ -30,7 +30,8 @@ function AddBooks() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-  };
+
+  
 
   const newBook = {
     id: Number(bookId), 
@@ -43,18 +44,19 @@ function AddBooks() {
     image_url: imageUrl,
   };
 
- // useEffect(() => {
+ 
     axios
       .post(`${apiURL}/books`, newBook)
       .then((response) => {
         console.log('book added here: ',response.data);
-        navigate("/books");
+        props.callBack()
+        //navigate("/books");
       })
       .catch((error) => {
         console.log("Error adding new book:", error);
       });
-   // }, []);
-  };
+    };
+  
  
   return (
     <>
