@@ -27,7 +27,6 @@ function AddBooks() {
   const handleImageUrl = (e) => setImageUrl(e.target.value);
 
   const navigate = useNavigate();
-  //const [booksToDisplay, setBooksToDisplay] = useState([]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -39,7 +38,7 @@ function AddBooks() {
   console.log("imageUrl: ",imageUrl)
 
   const newBook = {
-    id: bookId,
+    id: Number(bookId), 
     title,
     author,
     year,
@@ -48,12 +47,12 @@ function AddBooks() {
     price: price,
     image_url: imageUrl,
   };
-/***add a book request ...something wrong here... */
+
  // useEffect(() => {
     axios
       .post(`${apiURL}/books`, newBook)
       .then((response) => {
-        console.log('book added here/deleted??: ',response.data);
+        console.log('book added here: ',response.data);
         navigate("/books");
       })
       .catch((error) => {
@@ -61,26 +60,21 @@ function AddBooks() {
       });
    // }, []);
   };
-
-  // useEffect(() => {
-  //   // Aucune action n'est nécessaire ici, car la logique de la requête POST est déjà gérée dans handleSubmit
-  // }, [bookId, title, author, year, genre, condition, price, imageUrl]); 
-
-
+ 
   return (
     <>
       <div className="AddBooks">
         <div className="d-inline-flex flex-column w-100 p-4">
           <form onSubmit={handleSubmit}>
             
-            <input
+             <input
               required
               type="text"
               name="bookId"
               placeholder="Book ID"
               value={bookId}
               onChange={handleBookId}
-            />
+            /> 
             <input
               required
               type="text"
