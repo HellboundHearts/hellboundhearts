@@ -27,14 +27,13 @@ function AddBooks() {
   const handleImageUrl = (e) => setImageUrl(e.target.value);
 
   const navigate = useNavigate();
-  //const [booksToDisplay, setBooksToDisplay] = useState([]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
   };
 
   const newBook = {
-    id: bookId,
+    id: Number(bookId), 
     title,
     author,
     year,
@@ -43,32 +42,34 @@ function AddBooks() {
     price: Number(price),
     image_url: imageUrl,
   };
-/***add a book request ...something wrong here... */
+
  // useEffect(() => {
     axios
       .post(`${apiURL}/books`, newBook)
       .then((response) => {
-        console.log(response.data);
+        console.log('book added here: ',response.data);
         navigate("/books");
       })
       .catch((error) => {
         console.log("Error adding new book:", error);
       });
-  }, []);
-
+   // }, []);
+  };
+ 
   return (
     <>
       <div className="AddBooks">
         <div className="d-inline-flex flex-column w-100 p-4">
           <form onSubmit={handleSubmit}>
-            <input
+            
+             <input
               required
               type="text"
               name="bookId"
               placeholder="Book ID"
               value={bookId}
               onChange={handleBookId}
-            />
+            /> 
             <input
               required
               type="text"
