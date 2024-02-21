@@ -1,5 +1,4 @@
-function ShoppingCart({ selectedBooks }) {
-  
+function ShoppingCart({ selectedBooks, handleBuy }) {
   console.log("Received selectedBooks:", selectedBooks);
   return (
     <div>

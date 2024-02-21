@@ -18,7 +18,7 @@ const SearchBar = ({ searchTerm, handleSearch }) => (
   </div>
 );
 
-function Books() {
+function Books({ handleBuy }) {
   const API_URL = "https://books.adaptable.app";
 
   const [books, setBooks] = useState(null);
