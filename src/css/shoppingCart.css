@@ -1,7 +1,40 @@
 .Shopping-Cart {
   color: rgb(115, 115, 115);
   position: absolute;
-  top: 10px;
+  /* top: 20px; */
+  top:2.5vh;
   right: 10px;
   padding: 10px;
+  
 }
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.Logo {
+  /* width: 700px; 
+  height: auto;*/
+  width:80vw;
+  height:8vw;
+}
+@media (max-width: 480px)  {
+  .Logo {
+    width:60vw;
+  }
+  .Shopping-Cart {
+    top:0.1vh;
+  }
+}
+@media (max-width: 600px)  {
+  
+  .Shopping-Cart {
+    top:0vh;
+    margin-right: -2.5vh;
+  }
+}
+
+
