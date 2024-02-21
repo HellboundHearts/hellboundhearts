@@ -30,7 +30,8 @@
   p{
     text-align:justify;
   }
-  @media (max-width: 480px) {
+  /**  Media query on horizontal axis  **/
+  @media (max-width: 480px)  {
     .uk-overseas-right{
       display: block;
     }
@@ -40,9 +41,9 @@
     p{
       text-align:justify;
       width:33vw;
+     
     }
     .right{
       margin-bottom: 50px;
     }
   }
->>>>>>> 91c89e11e8c9341b43e0017920a93594a45f6ad9

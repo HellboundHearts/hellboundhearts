@@ -107,7 +107,6 @@ function Books() {
             </div>
           ))
         )}
-        <ShoppingCart selectedBooks={selectedBooks} />
       </div>
     </>
   );

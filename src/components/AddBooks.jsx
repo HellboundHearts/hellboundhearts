@@ -43,8 +43,8 @@ function AddBooks() {
     price: Number(price),
     image_url: imageUrl,
   };
-
-  useEffect(() => {
+/***add a book request ...something wrong here... */
+ // useEffect(() => {
     axios
       .post(`${apiURL}/books`, newBook)
       .then((response) => {
@@ -62,7 +62,7 @@ function AddBooks() {
         <div className="d-inline-flex flex-column w-100 p-4">
           <form onSubmit={handleSubmit}>
             <input
-              className="form-control mb-4"
+              required
               type="text"
               name="bookId"
               placeholder="Book ID"
@@ -70,7 +70,7 @@ function AddBooks() {
               onChange={handleBookId}
             />
             <input
-              className="form-control mb-4"
+              required
               type="text"
               name="title"
               placeholder="Book Title"
@@ -78,7 +78,7 @@ function AddBooks() {
               onChange={handleTitle}
             />
             <input
-              className="form-control mb-4"
+              required
               type="text"
               name="author"
               placeholder="Books Author"
@@ -86,7 +86,7 @@ function AddBooks() {
               onChange={handleAuthor}
             />
             <input
-              className="form-control mb-4"
+              required
               type="text"
               name="year"
               placeholder="Year"
@@ -94,7 +94,7 @@ function AddBooks() {
               onChange={handleYear}
             />
             <input
-              className="form-control mb-4"
+              required
               type="text"
               name="genre"
               placeholder="Books Genre"
@@ -102,7 +102,7 @@ function AddBooks() {
               onChange={handleGenre}
             />
             <input
-              className="form-control mb-4"
+              required
               type="text"
               name="condition"
               placeholder="Books Condition"
@@ -111,9 +111,9 @@ function AddBooks() {
             />
 
             <input
-              className="form-control mb-4"
+                       className="form-control mb-4"
               type="text"
-              pattern="\d*"
+              // pattern="\d*"
               name="price"
               placeholder="price"
               value={price}

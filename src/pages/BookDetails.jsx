@@ -6,8 +6,24 @@ function BookDetailsPage() {
   const API_URL = "https://books.adaptable.app";
 
   const { bookId } = useParams();
-
   const [book, setBook] = useState(null);
+
+  const [error, setError] = useState(null);
+
+  /***Data validation */
+  const validateYear = (year) => {
+    if (!Number.isNaN(year)) {
+      setError(null); // if validation ok
+    } else {
+      setError("Year should be a number");
+    }
+  };
+  
+  useEffect(() => {
+    if (book) {
+      validateYear(book.year);
+    }
+  }, [book]);
 
   const getBook = () => {
     //axios.get(`${API_URL}/books/${bookId}?_embed=books`)
