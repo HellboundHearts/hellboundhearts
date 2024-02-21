@@ -50,7 +50,7 @@ function AddBooks(props) {
       .then((response) => {
         console.log('book added here: ',response.data);
         props.callBack()
-        //navigate("/books");
+        
       })
       .catch((error) => {
         console.log("Error adding new book:", error);
@@ -71,6 +71,9 @@ function AddBooks(props) {
               placeholder="Book ID"
               value={bookId}
               onChange={handleBookId}
+              /***Added for validation check */
+              pattern="[0-9]+"
+              title="Please enter a valid number for the id"
             /> 
             <input
               required
@@ -95,6 +98,9 @@ function AddBooks(props) {
               placeholder="Year"
               value={year}
               onChange={handleYear}
+              /***Added for validation check */
+              pattern="[0-9]+"
+              title="Please enter a valid number for the year"
             />
             <input
               required
@@ -114,13 +120,15 @@ function AddBooks(props) {
             />
 
             <input
-                       className="form-control mb-4"
+              className="form-control mb-4"
               type="text"
-              // pattern="\d*"
               name="price"
               placeholder="price"
               value={price}
               onChange={handlePrice}
+              /***Added for validation check */
+              pattern="[0-9]+"
+              title="Please enter a valid number for the price"
             />
 
             <input
