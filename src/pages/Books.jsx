@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AddBooks from "../components/AddBooks";
 import { FaSearch } from "react-icons/fa";
-import ShoppingCart from "./ShoppingCart";
+
 import "../css/books.css";
 
 const SearchBar = ({ searchTerm, handleSearch }) => (
@@ -54,11 +54,6 @@ function Books({ handleBuy }) {
       });
   };
 
-  // const handleBuy = (bookDetails) => {
-  //   setSelectedBooks([...selectedBooks, bookDetails]);
-  //   console.log("Selected Books:", selectedBooks);
-  // };
-
   useEffect(() => {
     console.log("Selected Books updated:", selectedBooks);
   }, [selectedBooks]);
@@ -100,7 +95,9 @@ function Books({ handleBuy }) {
               </button>{" "}
               <button
                 className="buy-button"
-                onClick={() => handleBuy(bookDetails)}
+                onClick={() => {
+                  handleBuy(bookDetails);
+                }}
               >
                 Buy
               </button>{" "}

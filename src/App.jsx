@@ -7,19 +7,30 @@ import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import Shipping from "./pages/Shipping.jsx";
 import ShoppingCart from "./pages/ShoppingCart.jsx";
-
+import axios from "axios";
 import NotFound from "./pages/NotFound.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import BookDetailsPage from "./pages/BookDetails.jsx";
 import "./App.css";
 
+const API_URL = "https://books.adaptable.app";
+
 function App() {
-  const [books, setBooks] = useState([]);
   const [selectedBooks, setSelectedBooks] = useState([]);
 
   const handleBuy = (bookDetails) => {
     setSelectedBooks([...selectedBooks, bookDetails]);
     console.log("Selected Books:", selectedBooks);
+  };
+
+  const handleShoppingCartDelete = (bookToDelete) => {
+    setSelectedBooks((prevSelectedBooks) =>
+      prevSelectedBooks.filter((book) => book.id !== bookToDelete.id)
+    );
+  };
+
+  const calculateTotalPrice = () => {
+    return selectedBooks.reduce((total, book) => total + book.price, 0);
   };
 
   return (
@@ -36,7 +47,12 @@ function App() {
         <Route
           path="/shoppingCart"
           element={
-            <ShoppingCart selectedBooks={selectedBooks} handleBuy={handleBuy} />
+            <ShoppingCart
+              selectedBooks={selectedBooks}
+              handleShoppingCartDelete={handleShoppingCartDelete}
+              handleBuy={handleBuy}
+              total={calculateTotalPrice()}
+            />
           }
         />
         <Route path="/books/:bookId" element={<BookDetailsPage />} />
