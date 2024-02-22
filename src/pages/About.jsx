@@ -9,7 +9,7 @@ function About() {
                 </p>
                 <p>Illustrations by Philipp Simon</p>
             </div>
-            <img className="thinking" src="src\assets\illustrations\Contact_01.jpg" alt="Contact_01_image" />
+            <img className="thinking" src=".\assets\illustrations\Contact_01.jpg" alt="Contact_01_image" />
         </div>
     );
 }

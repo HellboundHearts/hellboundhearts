@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 123,
+            "activePatchIndex": 133,
             "patches": [
                 {
                     "date": 1708124974528,
@@ -500,6 +500,46 @@
                 {
                     "date": 1708360936409,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React, { useState } from \"react\";\r\n import \"../index.css\";\r\n-import \"../css/Navbar\"\r\n+import \"../css/navbar.css\"\r\n import NewArrivals from \"../components/NewArrivals\";\r\n import Navbar from './../components/Navbar';\r\n \r\n const HomePage = () => {\r\n"
+                },
+                {
+                    "date": 1708616645793,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,6 @@\n import React, { useState } from \"react\";\r\n-import \"../index.css\";\r\n-import \"../css/navbar.css\"\r\n-import NewArrivals from \"../components/NewArrivals\";\r\n-import Navbar from './../components/Navbar';\r\n+import \"../css/homepage.css\";\r\n \r\n const HomePage = () => {\r\n   const [books, setBooks] = useState([]);\r\n \r\n@@ -11,12 +8,10 @@\n     <div>\r\n       <section className=\"FrontImage\">\r\n         <img\r\n           className=\"homepage-image\"\r\n-          src=\"src/assets/illustrations/Home_01.jpg\"\r\n+          src=\"public/assets/illustrations/Home_01.jpg\"\r\n         ></img>\r\n-\r\n-        {/* <NewArrivals books={books} /> */}\r\n       </section>\r\n     </div>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1708616653399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     <div>\r\n       <section className=\"FrontImage\">\r\n         <img\r\n           className=\"homepage-image\"\r\n-          src=\"public/assets/illustrations/Home_01.jpg\"\r\n+          src=\"/assets/illustrations/Home_01.jpg\"\r\n         ></img>\r\n       </section>\r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708616676051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     <div>\r\n       <section className=\"FrontImage\">\r\n         <img\r\n           className=\"homepage-image\"\r\n-          src=\"/assets/illustrations/Home_01.jpg\"\r\n+          src=\"public/assets/illustrations/Home_01.jpg\"\r\n         ></img>\r\n       </section>\r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708616688280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     <div>\r\n       <section className=\"FrontImage\">\r\n         <img\r\n           className=\"homepage-image\"\r\n-          src=\"public/assets/illustrations/Home_01.jpg\"\r\n+          src=\"/illustrations/Home_01.jpg\"\r\n         ></img>\r\n       </section>\r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708616695177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     <div>\r\n       <section className=\"FrontImage\">\r\n         <img\r\n           className=\"homepage-image\"\r\n-          src=\"/illustrations/Home_01.jpg\"\r\n+          src=\"public/assets/illustrations/Home_01.jpg\"\r\n         ></img>\r\n       </section>\r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708616773873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     <div>\r\n       <section className=\"FrontImage\">\r\n         <img\r\n           className=\"homepage-image\"\r\n-          src=\"public/assets/illustrations/Home_01.jpg\"\r\n+          src=\"/illustrations/Home_01.jpg\"\r\n         ></img>\r\n       </section>\r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708616787874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     <div>\r\n       <section className=\"FrontImage\">\r\n         <img\r\n           className=\"homepage-image\"\r\n-          src=\"/illustrations/Home_01.jpg\"\r\n+          src=\"p/assets/illustrations/Home_01.jpg\"\r\n         ></img>\r\n       </section>\r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708616810006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     <div>\r\n       <section className=\"FrontImage\">\r\n         <img\r\n           className=\"homepage-image\"\r\n-          src=\"p/assets/illustrations/Home_01.jpg\"\r\n+          src=\"./assets/illustrations/Home_01.jpg\"\r\n         ></img>\r\n       </section>\r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708616818000,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     <div>\r\n       <section className=\"FrontImage\">\r\n         <img\r\n           className=\"homepage-image\"\r\n-          src=\"./assets/illustrations/Home_01.jpg\"\r\n+          src=\"../assets/illustrations/Home_01.jpg\"\r\n         ></img>\r\n       </section>\r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708616823109,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     <div>\r\n       <section className=\"FrontImage\">\r\n         <img\r\n           className=\"homepage-image\"\r\n-          src=\"../assets/illustrations/Home_01.jpg\"\r\n+          src=\"./assets/illustrations/Home_01.jpg\"\r\n         ></img>\r\n       </section>\r\n     </div>\r\n   );\r\n"
                 }
             ],
             "date": 1708124974528,

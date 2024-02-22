@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 11,
+            "activePatchIndex": 12,
             "patches": [
                 {
                     "date": 1708208826402,
@@ -52,6 +52,10 @@
                 {
                     "date": 1708421895211,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+import '../css/about.css'\r\n+\r\n+function About() {\r\n+    return (\r\n+        <div className=\"about-container\">\r\n+            <div className=\"paragraphs\">\r\n+                <p>Appreciation and sales of handpicked paperbacks from Hell.\r\n+                    Horror Sci-fi, Fantasy and occasionally Roleplaying Games. Shipping from Berlin to the World.\r\n+                </p>\r\n+                <p>Illustrations by Philipp Simon</p>\r\n+            </div>\r\n+            <img className=\"thinking\" src=\"src\\assets\\illustrations\\Contact_01.jpg\" alt=\"Contact_01_image\" />\r\n+        </div>\r\n+    );\r\n+}\r\n+\r\n+export default About;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708617498909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,27 +8,10 @@\n                     Horror Sci-fi, Fantasy and occasionally Roleplaying Games. Shipping from Berlin to the World.\r\n                 </p>\r\n                 <p>Illustrations by Philipp Simon</p>\r\n             </div>\r\n-            <img className=\"thinking\" src=\"src\\assets\\illustrations\\Contact_01.jpg\" alt=\"Contact_01_image\" />\r\n+            <img className=\"thinking\" src=\"\\assets\\illustrations\\Contact_01.jpg\" alt=\"Contact_01_image\" />\r\n         </div>\r\n     );\r\n }\r\n \r\n-export default About;\n-import '../css/about.css'\r\n-\r\n-function About() {\r\n-    return (\r\n-        <div className=\"about-container\">\r\n-            <div className=\"paragraphs\">\r\n-            <p>Appreciation and sales of handpicked paperbacks from Hell.\r\n-                Horror Sci-fi, Fantasy and occasionally Roleplaying Games. Shipping from Berlin to the World.\r\n-            </p>\r\n-            <p>Illustrations by Philipp Simon</p>\r\n-        \r\n-            <img className=\"thinking\" src=\"src\\assets\\illustrations\\Contact_01.jpg\" alt=\"Contact_01_image\" />\r\n-        </div>\r\n-    );\r\n-}\r\n-\r\n export default About;\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1708208826402,

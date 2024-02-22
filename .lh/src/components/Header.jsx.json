@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 12,
+            "activePatchIndex": 13,
             "patches": [
                 {
                     "date": 1708277455912,
@@ -56,6 +56,10 @@
                 {
                     "date": 1708355818606,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import { Link } from \"react-router-dom\";\r\n import SearchBar from \"./SearchBar\";\r\n import SearchResultsList from \"./SearchResultsList\";\r\n import '../css/header.css'\r\n-import Header from './Header';\r\n+//import Header from './Header';\r\n \r\n function Header() {\r\n   const [searchResults, setSearchResults] = useState([]);\r\n \r\n"
+                },
+                {
+                    "date": 1708617290042,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,24 +1,24 @@\n import React, { useState } from \"react\";\r\n import { Link } from \"react-router-dom\";\r\n-import SearchBar from \"./SearchBar\";\r\n-import SearchResultsList from \"./SearchResultsList\";\r\n-import '../css/header.css'\r\n-//import Header from './Header';\r\n+import \"../css/header.css\";\r\n+import { FaShoppingCart } from \"react-icons/fa\";\r\n \r\n function Header() {\r\n-  const [searchResults, setSearchResults] = useState([]);\r\n+  const [results, setResults] = useState([]);\r\n \r\n   return (\r\n-    <div>\r\n-      <Link to=\"/\">\r\n-        <img className=\"Logo\" src=\"src/assets/illustrations/Logo_01.jpg\" />\r\n-      </Link>\r\n-      <div>\r\n-        {/* <SearchBar setSearchResults={setSearchResults} />\r\n-        {searchResults && searchResults.length > 0}\r\n-        <SearchResultsList searchResults={searchResults} /> */}\r\n+    <div className=\"header-container\">\r\n+      <div className=\"logo-container\">\r\n+        <Link to=\"/\">\r\n+          <img className=\"Logo\" src=\"/assets/illustrations/Logo_01.jpg\" />\r\n+        </Link>\r\n       </div>\r\n+      <div className=\"cart-container\">\r\n+        <Link to=\"/shoppingCart\">\r\n+          <FaShoppingCart className=\"Shopping-Cart\" />\r\n+        </Link>\r\n+      </div>\r\n     </div>\r\n   );\r\n }\r\n \r\n"
                 }
             ],
             "date": 1708277455912,
