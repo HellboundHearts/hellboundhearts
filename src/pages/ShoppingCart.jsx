@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { IoTrashBin } from "react-icons/io5";
+import '../css/shoppingCart.css'
 
 function ShoppingCart({ selectedBooks, handleShoppingCartDelete, total }) {
   console.log("Received selectedBooks:", selectedBooks);
@@ -33,37 +34,41 @@ function ShoppingCart({ selectedBooks, handleShoppingCartDelete, total }) {
   };
 
   return (
-    <div>
-      <h2>Shopping Cart</h2>
-      <ul>
-        {selectedBooks.map((book) => (
-          <li key={book.id}>
-            {book.title} - €{book.price}
-            <IoTrashBin
-              className="delete-button"
-              onClick={() => handleShoppingCartDelete(book)}
-            ></IoTrashBin>{" "}
-          </li>
-        ))}
-      </ul>
+    <>
+      <div className="shoppingCard-container">
+        <h2>Shopping Cart</h2>
+        <ul>
+          
+          {selectedBooks.map((book) => (
+            <li key={book.id} className="list-container">
+              <div className="title">{book.title} </div>
+              <div>€{book.price}</div>
+              <IoTrashBin
+                className="delete-button"
+                onClick={() => handleShoppingCartDelete(book)}
+              ></IoTrashBin>{" "}
+            </li>
+          ))}
+        </ul>
 
-      <div>
-        <label>
-          Shipping Option:
-          <select value={selectedOption} onChange={handleOptionChange}>
-            <option value="standard_europe">Standard Europe - 8.99€</option>
-            <option value="tracked_europe">Tracked Europe - 26.99€</option>
-            <option value="standard_uk">Standard UK - 8.99€ </option>
-            <option value="tracked_uk">Tracked UK - 26,99€</option>
-            <option value="standard_overseas">
-              Standard Overseas - 18,49€
-            </option>
-            <option value="tracked_overseas">Tracked Overseas - 47,99€</option>
-          </select>
-        </label>
+        <div>
+          <label>
+            Shipping Option:
+            <select value={selectedOption} onChange={handleOptionChange}>
+              <option value="standard_europe">Standard Europe - 8.99€</option>
+              <option value="tracked_europe">Tracked Europe - 26.99€</option>
+              <option value="standard_uk">Standard UK - 8.99€ </option>
+              <option value="tracked_uk">Tracked UK - 26,99€</option>
+              <option value="standard_overseas">
+                Standard Overseas - 18,49€
+              </option>
+              <option value="tracked_overseas">Tracked Overseas - 47,99€</option>
+            </select>
+          </label>
+        </div>
+        <p>Total: €{calculateTotalWithShipping().toFixed(2)}</p>
       </div>
-      <p>Total: €{calculateTotalWithShipping().toFixed(2)}</p>
-    </div>
+    </>
   );
 }
 
