@@ -9,7 +9,7 @@ const HomePage = () => {
       <section className="FrontImage">
         <img
           className="homepage-image"
-          src="src/assets/illustrations/Home_01.jpg"
+          src="./assets/illustrations/Home_01.jpg"
         ></img>
       </section>
     </div>
