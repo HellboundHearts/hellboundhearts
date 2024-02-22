@@ -2,9 +2,10 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 import { FaEdit } from "react-icons/fa";
+import { IoTrashBin } from "react-icons/io5";
 import "../css/editBooks.css";
 
-function EditBooks() {
+function EditBooks({ handleDelete, bookDetails }) {
   const API_URL = "https://books.adaptable.app";
 
   const [editBookId, setEditBookId] = useState("");
@@ -24,21 +25,14 @@ function EditBooks() {
     axios
       .get(`${API_URL}/books/${bookId}`)
       .then((response) => {
-        console.log(response.data);
         setEditBookId(response.data.bookId);
-        console.log(response.data.title);
         setEditTitle(response.data.title);
-        console.log(response.data.author);
         setEditAuthor(response.data.author);
-        console.log(response.data.year);
         setEditYear(response.data.year);
-        console.log(response.data.genre);
         setEditGenre(response.data.genre);
-        console.log(response.data.condition);
         setEditCondition(response.data.condition);
-        console.log(response.data.price);
         setEditPrice(response.data.price || 0);
-        console.log(response.data.imageUrl);
+
         setEditImageUrl(response.data.imageUrl);
       })
       .catch((error) => {
@@ -84,7 +78,6 @@ function EditBooks() {
           value={editBookId}
           onChange={(e) => setEditBookId(e.target.value)}
         />
-
         <input
           type="text"
           name="title"
@@ -92,7 +85,6 @@ function EditBooks() {
           value={editTitle}
           onChange={(e) => setEditTitle(e.target.value)}
         />
-
         <input
           type="text"
           name="author"
@@ -100,7 +92,6 @@ function EditBooks() {
           value={editAuthor}
           onChange={(e) => setEditAuthor(e.target.value)}
         />
-
         <input
           type="text"
           name="year"
@@ -108,7 +99,6 @@ function EditBooks() {
           value={editYear}
           onChange={(e) => setEditYear(e.target.value)}
         />
-
         <input
           type="text"
           name="genre"
@@ -116,7 +106,6 @@ function EditBooks() {
           value={editGenre}
           onChange={(e) => setEditGenre(e.target.value)}
         />
-
         <input
           type="text"
           name="condition"
@@ -124,7 +113,6 @@ function EditBooks() {
           value={editCondition}
           onChange={(e) => setEditCondition(e.target.value)}
         />
-
         <input
           type="text"
           name="price"
@@ -132,7 +120,6 @@ function EditBooks() {
           value={editPrice}
           onChange={(e) => setEditPrice(e.target.value)}
         />
-
         <input
           type="text"
           name="imageUrl"
@@ -140,10 +127,13 @@ function EditBooks() {
           value={editImageUrl}
           onChange={(e) => setEditImageUrl(e.target.value)}
         />
-
         <button type="submit" className="edit-button">
           <FaEdit />
         </button>
+        <IoTrashBin
+          className="delete-button"
+          onClick={() => handleDelete(bookId)}
+        ></IoTrashBin>{" "}
       </form>
     </div>
   );

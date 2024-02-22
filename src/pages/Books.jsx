@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AddBooks from "../components/AddBooks";
 import { FaSearch } from "react-icons/fa";
-import { IoTrashBin } from "react-icons/io5";
+//import { IoTrashBin } from "react-icons/io5";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaEdit } from "react-icons/fa";
 
@@ -46,7 +46,7 @@ function Books({ handleBuy }) {
     getAllBooks();
   }, []);
 
-  const handleDelete = (bookId) => {
+  /*const handleDelete = (bookId) => {
     axios
       .delete(`${API_URL}/books/${bookId}`)
       .then((response) => {
@@ -57,7 +57,7 @@ function Books({ handleBuy }) {
         console.log("Error deleting the book with id: " + bookId);
         console.error(error);
       });
-  };
+  };*/
 
   useEffect(() => {
     console.log("Selected Books updated:", selectedBooks);
@@ -98,10 +98,6 @@ function Books({ handleBuy }) {
                   handleBuy(bookDetails);
                 }}
               ></FaShoppingCart>{" "}
-              <IoTrashBin
-                className="delete-button"
-                onClick={() => handleDelete(bookDetails.id)}
-              ></IoTrashBin>{" "}
               <Link
                 className="edit-button"
                 to={`/books/${bookDetails.id}/edit`}

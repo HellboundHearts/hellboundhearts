@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import Header from "./components/Header.jsx";
 import Navbar from "./components/Navbar.jsx";
 import { Routes, Route } from "react-router-dom";
@@ -21,6 +22,22 @@ function App() {
   const handleBuy = (bookDetails) => {
     setSelectedBooks([...selectedBooks, bookDetails]);
     console.log("Selected Books:", selectedBooks);
+  };
+
+  const handleDelete = (bookId) => {
+    setSelectedBooks((prevSelectedBooks) =>
+      prevSelectedBooks.filter((book) => book.id !== bookId)
+    );
+
+    axios
+      .delete(`${API_URL}/books/${bookId}`)
+      .then((response) => {
+        console.log("Book deleted successfully", response.data);
+      })
+      .catch((error) => {
+        console.log("Error deleting the book with id: " + bookId);
+        console.error(error);
+      });
   };
 
   const handleShoppingCartDelete = (bookToDelete) => {
@@ -55,7 +72,10 @@ function App() {
             />
           }
         />
-        <Route path="/books/:bookId/edit" element={<EditBooks />} />
+        <Route
+          path="/books/:bookId/edit"
+          element={<EditBooks handleDelete={handleDelete} />}
+        />
         <Route path="/books/:bookId" element={<BookDetailsPage />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
