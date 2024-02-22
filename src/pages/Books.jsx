@@ -46,19 +46,6 @@ function Books({ handleBuy }) {
     getAllBooks();
   }, []);
 
-  /*const handleDelete = (bookId) => {
-    axios
-      .delete(`${API_URL}/books/${bookId}`)
-      .then((response) => {
-        getAllBooks();
-        console.log("Book deleted successfully", response.data);
-      })
-      .catch((error) => {
-        console.log("Error deleting the book with id: " + bookId);
-        console.error(error);
-      });
-  };*/
-
   useEffect(() => {
     console.log("Selected Books updated:", selectedBooks);
   }, [selectedBooks]);
@@ -78,32 +65,34 @@ function Books({ handleBuy }) {
     <>
       <SearchBar searchTerm={searchTerm} handleSearch={handleSearch} />
       <AddBooks callBack={getAllBooks} />
-      <div>
+      <div className="displayed-books">
         {filteredBooks.length === 0 ? (
           <p>No matching books found.</p>
         ) : (
           filteredBooks.map((bookDetails) => (
             <div key={bookDetails.id}>
-              <Link to={`/books/${bookDetails.id}`}>
-                <p className="book-covers">
-                  <img src={bookDetails.image_url} alt={bookDetails.title} />
-                </p>
-              </Link>
-              <h2>{bookDetails.title} </h2>
-              <h3>{bookDetails.author}</h3>
-              <h3>{bookDetails.price}</h3>
-              <FaShoppingCart
-                className="buy-button"
-                onClick={() => {
-                  handleBuy(bookDetails);
-                }}
-              ></FaShoppingCart>{" "}
-              <Link
-                className="edit-button"
-                to={`/books/${bookDetails.id}/edit`}
-              >
-                <FaEdit type="submit"></FaEdit>
-              </Link>
+              <div>
+                <Link to={`/books/${bookDetails.id}`}>
+                  <p className="book-covers">
+                    <img src={bookDetails.image_url} alt={bookDetails.title} />
+                  </p>
+                </Link>
+                <h2 className="text">{bookDetails.title} </h2>
+                <h3 className="text">{bookDetails.author}</h3>
+                <h3 className="text">{bookDetails.price} €</h3>
+                <FaShoppingCart
+                  className="buy-button"
+                  onClick={() => {
+                    handleBuy(bookDetails);
+                  }}
+                ></FaShoppingCart>{" "}
+                <Link
+                  className="edit-button"
+                  to={`/books/${bookDetails.id}/edit`}
+                >
+                  <FaEdit type="submit"></FaEdit>
+                </Link>
+              </div>
             </div>
           ))
         )}

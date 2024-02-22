@@ -8,7 +8,10 @@ import "../css/editBooks.css";
 function EditBooks({ handleDelete, bookDetails }) {
   const API_URL = "https://books.adaptable.app";
 
-  const [editBookId, setEditBookId] = useState("");
+  const { bookId } = useParams();
+  const navigate = useNavigate();
+
+  const [editBookId, setEditBookId] = useState(bookId);
   const [editTitle, setEditTitle] = useState("");
   const [editAuthor, setEditAuthor] = useState("");
   const [editYear, setEditYear] = useState("");
@@ -17,15 +20,11 @@ function EditBooks({ handleDelete, bookDetails }) {
   const [editPrice, setEditPrice] = useState(0);
   const [editImageUrl, setEditImageUrl] = useState("");
 
-  const { bookId } = useParams();
-  const navigate = useNavigate();
-
   useEffect(() => {
     // get project details from the API (so that we can pre-populate the form)
     axios
       .get(`${API_URL}/books/${bookId}`)
       .then((response) => {
-        setEditBookId(response.data.bookId);
         setEditTitle(response.data.title);
         setEditAuthor(response.data.author);
         setEditYear(response.data.year);
@@ -75,6 +74,7 @@ function EditBooks({ handleDelete, bookDetails }) {
           type="text"
           name="bookId"
           placeholder="Book ID"
+          disabled
           value={editBookId}
           onChange={(e) => setEditBookId(e.target.value)}
         />

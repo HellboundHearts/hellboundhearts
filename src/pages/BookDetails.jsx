@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link, useParams } from "react-router-dom";
+import "../css/booksDetails.css";
+import { TiArrowBack } from "react-icons/ti";
 
 function BookDetailsPage() {
   const API_URL = "https://books.adaptable.app";
@@ -18,7 +20,7 @@ function BookDetailsPage() {
       setError("Year should be a number");
     }
   };
-  
+
   useEffect(() => {
     if (book) {
       validateYear(book.year);
@@ -56,14 +58,14 @@ function BookDetailsPage() {
           <p>Genre : {book.genre}</p>
           <p>Condition : {book.condition}</p>
           <p>Price : {book.price}</p>
-          <p>
+          <p className="book-covers-detail">
             <img src={`../${book.image_url}`} alt="my image"></img>
           </p>
         </>
       )}
 
       <Link to="/books">
-        <button>Back to books</button>
+        <TiArrowBack className="back-button" />
       </Link>
     </div>
   );

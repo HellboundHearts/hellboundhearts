@@ -1,3 +1,10 @@
-.image-detail{
-    width: 120px;
+.book-covers-detail img {
+  width: 600px;
+  height: auto;
+}
+
+.back-button {
+  width: 50px;
+  height: auto;
+  color: rgb(115, 115, 115);
 }
