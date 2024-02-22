@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { IoTrashBin } from "react-icons/io5";
 
 function ShoppingCart({ selectedBooks, handleShoppingCartDelete, total }) {
   console.log("Received selectedBooks:", selectedBooks);
@@ -37,13 +38,11 @@ function ShoppingCart({ selectedBooks, handleShoppingCartDelete, total }) {
       <ul>
         {selectedBooks.map((book) => (
           <li key={book.id}>
-            {book.title} - ${book.price}
-            <button
+            {book.title} - €{book.price}
+            <IoTrashBin
               className="delete-button"
               onClick={() => handleShoppingCartDelete(book)}
-            >
-              Delete
-            </button>{" "}
+            ></IoTrashBin>{" "}
           </li>
         ))}
       </ul>
@@ -63,7 +62,7 @@ function ShoppingCart({ selectedBooks, handleShoppingCartDelete, total }) {
           </select>
         </label>
       </div>
-      <p>Total: ${calculateTotalWithShipping().toFixed(2)}</p>
+      <p>Total: €{calculateTotalWithShipping().toFixed(2)}</p>
     </div>
   );
 }

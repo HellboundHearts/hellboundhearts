@@ -29,13 +29,11 @@ input:focus {
 }
 
 .delete-button {
-  width: 80px;
+  padding: 5px;
 }
 
 .buy-button {
-  width: 80px;
-  border: solid 1px black;
-  background-color: rgb(70, 223, 9);
+  padding: 5px;
 }
 
 .book-covers {

@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AddBooks from "../components/AddBooks";
 import { FaSearch } from "react-icons/fa";
+import { IoTrashBin } from "react-icons/io5";
+import { FaShoppingCart } from "react-icons/fa";
 
 import "../css/books.css";
 
@@ -87,20 +89,18 @@ function Books({ handleBuy }) {
               <h2>{bookDetails.title} </h2>
               <h3>{bookDetails.author}</h3>
               <h3>{bookDetails.price}</h3>
-              <button
+              <IoTrashBin
                 className="delete-button"
                 onClick={() => handleDelete(bookDetails.id)}
-              >
-                Delete
-              </button>{" "}
-              <button
+              ></IoTrashBin>{" "}
+              <FaShoppingCart
                 className="buy-button"
                 onClick={() => {
                   handleBuy(bookDetails);
                 }}
               >
                 Buy
-              </button>{" "}
+              </FaShoppingCart>{" "}
             </div>
           ))
         )}
