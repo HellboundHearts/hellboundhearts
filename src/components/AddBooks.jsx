@@ -56,88 +56,86 @@ function AddBooks(props) {
   return (
     <>
       <div className="AddBooks">
-        <div className="d-inline-flex flex-column w-100 p-4">
-          <form onSubmit={handleSubmit}>
-            <input
-              required
-              type="text"
-              name="bookId"
-              placeholder="Book ID"
-              value={bookId}
-              onChange={handleBookId}
-              /***Added for validation check */
-              pattern="[0-9]+"
-              title="Please enter a valid number for the id"
-            />
-            <input
-              required
-              type="text"
-              name="title"
-              placeholder="Title"
-              value={title}
-              onChange={handleTitle}
-            />
-            <input
-              required
-              type="text"
-              name="author"
-              placeholder="Author"
-              value={author}
-              onChange={handleAuthor}
-            />
-            <input
-              required
-              type="text"
-              name="year"
-              placeholder="Year"
-              value={year}
-              onChange={handleYear}
-              /***Added for validation check */
-              pattern="[0-9]+"
-              title="Please enter a valid number for the year"
-            />
-            <input
-              required
-              type="text"
-              name="genre"
-              placeholder="Genre"
-              value={genre}
-              onChange={handleGenre}
-            />
-            <input
-              required
-              type="text"
-              name="condition"
-              placeholder="Condition"
-              value={condition}
-              onChange={handleCondition}
-            />
+        <form className="input-fields" onSubmit={handleSubmit}>
+          <input
+            required
+            type="text"
+            name="bookId"
+            placeholder="Book ID"
+            value={bookId}
+            onChange={handleBookId}
+            /***Added for validation check */
+            pattern="[0-9]+"
+            title="Please enter a valid number for the id"
+          />
+          <input
+            required
+            type="text"
+            name="title"
+            placeholder="Title"
+            value={title}
+            onChange={handleTitle}
+          />
+          <input
+            required
+            type="text"
+            name="author"
+            placeholder="Author"
+            value={author}
+            onChange={handleAuthor}
+          />
+          <input
+            required
+            type="text"
+            name="year"
+            placeholder="Year"
+            value={year}
+            onChange={handleYear}
+            /***Added for validation check */
+            pattern="[0-9]+"
+            title="Please enter a valid number for the year"
+          />
+          <input
+            required
+            type="text"
+            name="genre"
+            placeholder="Genre"
+            value={genre}
+            onChange={handleGenre}
+          />
+          <input
+            required
+            type="text"
+            name="condition"
+            placeholder="Condition"
+            value={condition}
+            onChange={handleCondition}
+          />
 
-            <input
-              className="form-control mb-4"
-              type="text"
-              name="price"
-              placeholder="price"
-              value={price}
-              onChange={handlePrice}
-              /***Added for validation check */
-              pattern="[0-9]+"
-              title="Please enter a valid number for the price"
-            />
+          <input
+            className="form-control mb-4"
+            type="text"
+            name="price"
+            placeholder="price"
+            value={price}
+            onChange={handlePrice}
+            /***Added for validation check */
+            pattern="[0-9]+"
+            title="Please enter a valid number for the price"
+          />
 
-            <input
-              className="form-control mb-4"
-              type="text"
-              name="imageUrl"
-              placeholder="Image URL"
-              value={imageUrl}
-              onChange={handleImageUrl}
-            />
-            <button type="submit" className="addbook-button">
-              Add Book
-            </button>
-          </form>
-        </div>
+          <input
+            className="form-control mb-4"
+            type="text"
+            name="imageUrl"
+            placeholder="Image URL"
+            value={imageUrl}
+            onChange={handleImageUrl}
+          />
+          <button type="submit" className="addbook-button">
+            Add Book
+          </button>
+        </form>
       </div>
     </>
   );
