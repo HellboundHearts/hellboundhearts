@@ -10,7 +10,7 @@ function Header() {
     <div className="header-container">
       <div className="logo-container">
         <Link to="/">
-          <img className="Logo" src="src/assets/illustrations/Logo_01.jpg" />
+          <img className="Logo" src="./assets/illustrations/Logo_01.jpg" />
         </Link>
       </div>
       <div className="cart-container">
