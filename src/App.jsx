@@ -7,7 +7,7 @@ import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import Shipping from "./pages/Shipping.jsx";
 import ShoppingCart from "./pages/ShoppingCart.jsx";
-import axios from "axios";
+import EditBooks from "./pages/EditBooks.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import BookDetailsPage from "./pages/BookDetails.jsx";
@@ -55,6 +55,7 @@ function App() {
             />
           }
         />
+        <Route path="/books/:bookId/edit" element={<EditBooks />} />
         <Route path="/books/:bookId" element={<BookDetailsPage />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>

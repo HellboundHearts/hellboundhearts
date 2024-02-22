@@ -5,18 +5,21 @@ import AddBooks from "../components/AddBooks";
 import { FaSearch } from "react-icons/fa";
 import { IoTrashBin } from "react-icons/io5";
 import { FaShoppingCart } from "react-icons/fa";
+import { FaEdit } from "react-icons/fa";
 
 import "../css/books.css";
 
 const SearchBar = ({ searchTerm, handleSearch }) => (
   <div className="Search-Bar">
-    <FaSearch id="search-icon" />
-    <input
-      type="text"
-      placeholder="Search..."
-      value={searchTerm}
-      onChange={handleSearch}
-    />
+    <div className="Search-Container">
+      <input
+        type="text"
+        placeholder="Search..."
+        value={searchTerm}
+        onChange={handleSearch}
+      />
+      <FaSearch id="search-icon" />
+    </div>
   </div>
 );
 
@@ -89,18 +92,22 @@ function Books({ handleBuy }) {
               <h2>{bookDetails.title} </h2>
               <h3>{bookDetails.author}</h3>
               <h3>{bookDetails.price}</h3>
-              <IoTrashBin
-                className="delete-button"
-                onClick={() => handleDelete(bookDetails.id)}
-              ></IoTrashBin>{" "}
               <FaShoppingCart
                 className="buy-button"
                 onClick={() => {
                   handleBuy(bookDetails);
                 }}
+              ></FaShoppingCart>{" "}
+              <IoTrashBin
+                className="delete-button"
+                onClick={() => handleDelete(bookDetails.id)}
+              ></IoTrashBin>{" "}
+              <Link
+                className="edit-button"
+                to={`/books/${bookDetails.id}/edit`}
               >
-                Buy
-              </FaShoppingCart>{" "}
+                <FaEdit type="submit"></FaEdit>
+              </Link>
             </div>
           ))
         )}

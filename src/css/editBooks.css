@@ -1,14 +1,10 @@
 /** To center the form in the webpage  **/
-.AddBooks {
+.EditBook {
   padding-top: 20px;
   display: flex;
   justify-content: left;
   align-items: left;
   height: 100vh;
-}
-
-.addbook-button {
-  cursor: pointer;
 }
 
 form {
@@ -34,4 +30,10 @@ button {
   border-radius: 0.25rem;
   border: 1px solid #ced4da;
   margin-bottom: 1rem;
+}
+
+.edit-button {
+  padding: 5px;
+  color: rgb(115, 115, 115);
+  cursor: pointer;
 }

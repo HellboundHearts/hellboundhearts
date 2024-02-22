@@ -31,40 +31,34 @@ function AddBooks(props) {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-  
+    const newBook = {
+      id: Number(bookId),
+      title,
+      author,
+      year,
+      genre,
+      condition,
+      price: Number(price),
+      image_url: imageUrl,
+    };
 
-  const newBook = {
-    id: Number(bookId), 
-    title,
-    author,
-    year,
-    genre,
-    condition,
-    price: Number(price),
-    image_url: imageUrl,
-  };
-
- 
     axios
       .post(`${apiURL}/books`, newBook)
       .then((response) => {
-        console.log('book added here: ',response.data);
-        props.callBack()
-        
+        console.log("book added here: ", response.data);
+        props.callBack();
       })
       .catch((error) => {
         console.log("Error adding new book:", error);
       });
-    };
-  
- 
+  };
+
   return (
     <>
       <div className="AddBooks">
         <div className="d-inline-flex flex-column w-100 p-4">
           <form onSubmit={handleSubmit}>
-            
-             <input
+            <input
               required
               type="text"
               name="bookId"
@@ -74,12 +68,12 @@ function AddBooks(props) {
               /***Added for validation check */
               pattern="[0-9]+"
               title="Please enter a valid number for the id"
-            /> 
+            />
             <input
               required
               type="text"
               name="title"
-              placeholder="Book Title"
+              placeholder="Title"
               value={title}
               onChange={handleTitle}
             />
@@ -87,7 +81,7 @@ function AddBooks(props) {
               required
               type="text"
               name="author"
-              placeholder="Books Author"
+              placeholder="Author"
               value={author}
               onChange={handleAuthor}
             />
@@ -106,7 +100,7 @@ function AddBooks(props) {
               required
               type="text"
               name="genre"
-              placeholder="Books Genre"
+              placeholder="Genre"
               value={genre}
               onChange={handleGenre}
             />
@@ -114,7 +108,7 @@ function AddBooks(props) {
               required
               type="text"
               name="condition"
-              placeholder="Books Condition"
+              placeholder="Condition"
               value={condition}
               onChange={handleCondition}
             />
@@ -139,7 +133,7 @@ function AddBooks(props) {
               value={imageUrl}
               onChange={handleImageUrl}
             />
-            <button type="submit" className="btn btn-primary btn-round">
+            <button type="submit" className="addbook-button">
               Add Book
             </button>
           </form>

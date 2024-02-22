@@ -22,21 +22,42 @@ input {
 input:focus {
   outline: none;
 } */
+.Search-Container {
+  position: relative;
+  display: inline-block;
+}
+input {
+  padding-right: 30px;
+}
 
 #search-icon {
-  color: black;
-  margin-left: 5px;
+  color: rgb(115, 115, 115);
+  position: absolute;
+  top: 30%;
+  right: 10px;
+  transform: translateY(-50%);
 }
 
 .delete-button {
   padding: 5px;
+  color: rgb(115, 115, 115);
+  cursor: pointer;
 }
 
 .buy-button {
   padding: 5px;
+  color: rgb(155, 245, 21);
+  cursor: pointer;
+}
+
+.edit-button {
+  padding: 5px;
+  color: rgb(115, 115, 115);
+  cursor: pointer;
 }
 
 .book-covers {
   width: 50px;
   height: auto;
+  cursor: pointer;
 }
