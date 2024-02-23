@@ -17,32 +17,32 @@ We have used React and axios for requesting json server, and Css with MediaQueri
 # The website pages:
 
 The homepage:
-![Homepage](src\assets\presentation\HomePage.jpg "Homepage")
+![Homepage](.\assets\presentation\HomePage.jpg "Homepage")
 
 The form to add a book (bubble for valid field):
-![addBookForm](src\assets\presentation\addBookForm.jpg "addBookForm")
+![addBookForm](.\assets\presentation\addBookForm.jpg "addBookForm")
 
 The list of books:
-![List_Of_Books](src\assets\presentation\List_Of_Books.jpg "List_Of_Books")
+![List_Of_Books](.\assets\presentation\List_Of_Books.jpg "List_Of_Books")
 
 The edit page:
-![Edit_a_book](src\assets\presentation\Edit_a_book.jpg "Edit_a_book")
+![Edit_a_book](.\assets\presentation\Edit_a_book.jpg "Edit_a_book")
 
 
 The about page:
-![About Page](src\assets\presentation\About_Page_Photo.png "About Page")
+![About Page](.\assets\presentation\About_Page_Photo.png "About Page")
 
 The contact page:
-![Contact Page](src/assets/presentation/contact_page.jpg "Contact Page")
+![Contact Page](./assets/presentation/contact_page.jpg "Contact Page")
 
 The shipping page (full width):
-![ShippingPage_full_width](src/assets/presentation/ShippingPage_full_width.jpg "ShippingPage 1")
+![ShippingPage_full_width](./assets/presentation/ShippingPage_full_width.jpg "ShippingPage 1")
 
 The shipping page (smartphone size):
-![The shipping page (smartphone size)](src\assets\presentation\shippingPage_SmartPhone_Size.jpg "ShippingPage Smartphone")
+![The shipping page (smartphone size)](.\assets\presentation\shippingPage_SmartPhone_Size.jpg "ShippingPage Smartphone")
 
 Empty shopping basket:
-![Empty shopping](src\assets\presentation\Empty_shopping.jpg "Empty shopping")
+![Empty shopping](.\assets\presentation\Empty_shopping.jpg "Empty shopping")
 
 A full shopping basket: 
-![full shopping basket](src/assets/presentation/Shopping_small_size.jpg "full shopping basket")
+![full shopping basket](./assets/presentation/Shopping_small_size.jpg "full shopping basket")
