@@ -36,13 +36,13 @@ The contact page:
 ![Contact Page](./assets/presentation/contact_page.jpg "Contact Page")
 
 The shipping page (full width):
-![ShippingPage_full_width](./assets/presentation/ShippingPage_full_width.jpg "ShippingPage 1")
+![ShippingPage_full_width](https://github.com/HellboundHearts/hellboundhearts/blob/7f1d636b1cab07ec9b21db255a78e6826f8af4df/public/assets/presentation/ShippingPage_full_width.jpg "ShippingPage 1")
 
 The shipping page (smartphone size):
-![The shipping page (smartphone size)](.\assets\presentation\shippingPage_SmartPhone_Size.jpg "ShippingPage Smartphone")
+![The shipping page (smartphone size)](https://github.com/HellboundHearts/hellboundhearts/blob/7f1d636b1cab07ec9b21db255a78e6826f8af4df/public/assets/presentation/shippingPage_SmartPhone_Size.jpg "ShippingPage Smartphone")
 
 Empty shopping basket:
-![Empty shopping](.\assets\presentation\Empty_shopping.jpg "Empty shopping")
+![Empty shopping](public\assets\presentation\Empty_shopping.jpg "Empty shopping")
 
 A full shopping basket: 
-![full shopping basket](./assets/presentation/Shopping_small_size.jpg "full shopping basket")
+![full shopping basket](public\assets\presentation\Shopping_small_size.jpg "full shopping basket")
