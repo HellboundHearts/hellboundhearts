@@ -17,23 +17,23 @@ We have used React and axios for requesting json server, and Css with MediaQueri
 # The website pages:
 
 The homepage:
-![Homepage](.\assets\presentation\HomePage.jpg "Homepage")
+![Homepage](https://github.com/HellboundHearts/hellboundhearts/blob/7f1d636b1cab07ec9b21db255a78e6826f8af4df/public/assets/presentation/HomePage.jpg "Homepage")
 
 The form to add a book (bubble for valid field):
-![addBookForm](.\assets\presentation\addBookForm.jpg "addBookForm")
+![addBookForm](https://github.com/HellboundHearts/hellboundhearts/blob/7f1d636b1cab07ec9b21db255a78e6826f8af4df/public/assets/presentation/addBookForm.jpg "addBookForm")
 
 The list of books:
-![List_Of_Books](.\assets\presentation\List_Of_Books.jpg "List_Of_Books")
+![List_Of_Books](https://github.com/HellboundHearts/hellboundhearts/blob/7f1d636b1cab07ec9b21db255a78e6826f8af4df/public/assets/presentation/List_Of_Books.jpg "List_Of_Books")
 
 The edit page:
-![Edit_a_book](.\assets\presentation\Edit_a_book.jpg "Edit_a_book")
+![Edit_a_book](https://github.com/HellboundHearts/hellboundhearts/blob/7f1d636b1cab07ec9b21db255a78e6826f8af4df/public/assets/presentation/Edit_a_book.jpg "Edit_a_book")
 
 
 The about page:
-![About Page](.\assets\presentation\About_Page_Photo.png "About Page")
+![About Page](https://github.com/HellboundHearts/hellboundhearts/blob/7f1d636b1cab07ec9b21db255a78e6826f8af4df/public/assets/presentation/About_Page_Photo.png "About Page")
 
 The contact page:
-![Contact Page](./assets/presentation/contact_page.jpg "Contact Page")
+![Contact Page](https://github.com/HellboundHearts/hellboundhearts/blob/7f1d636b1cab07ec9b21db255a78e6826f8af4df/public/assets/presentation/contact_page.jpg "Contact Page")
 
 The shipping page (full width):
 ![ShippingPage_full_width](https://github.com/HellboundHearts/hellboundhearts/blob/7f1d636b1cab07ec9b21db255a78e6826f8af4df/public/assets/presentation/ShippingPage_full_width.jpg "ShippingPage 1")
@@ -42,7 +42,7 @@ The shipping page (smartphone size):
 ![The shipping page (smartphone size)](https://github.com/HellboundHearts/hellboundhearts/blob/7f1d636b1cab07ec9b21db255a78e6826f8af4df/public/assets/presentation/shippingPage_SmartPhone_Size.jpg "ShippingPage Smartphone")
 
 Empty shopping basket:
-![Empty shopping](public\assets\presentation\Empty_shopping.jpg "Empty shopping")
+![Empty shopping](https://github.com/HellboundHearts/hellboundhearts/blob/7f1d636b1cab07ec9b21db255a78e6826f8af4df/public/assets/presentation/Empty_shopping.jpg "Empty shopping")
 
 A full shopping basket: 
-![full shopping basket](public\assets\presentation\Shopping_small_size.jpg "full shopping basket")
+![full shopping basket](https://github.com/HellboundHearts/hellboundhearts/blob/7f1d636b1cab07ec9b21db255a78e6826f8af4df/public/assets/presentation/Shopping_small_size.jpg "full shopping basket")
